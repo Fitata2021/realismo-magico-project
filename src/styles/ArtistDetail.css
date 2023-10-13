@@ -1,0 +1,89 @@
+.artistdetail {
+  display: flex;
+  flex-direction: column;
+}
+.card-artistdetail {
+  width: 75%;
+  display: flex;
+  justify-content: space-evenly;
+  background: #d8cca3;
+  border-radius: 8px;
+}
+
+.artist-title {
+  font-weight: 100;
+  text-align: center;
+  font-size: 35px;
+  margin-top: 7rem;
+  margin-bottom: 30px;
+  letter-spacing: 15px;
+  color: #1a120b;
+}
+
+.image-artistdetail {
+  width: 450px;
+  height: 450px;
+  margin-bottom: 30px;
+  margin-top: 30px;
+  border-radius: 8px;
+}
+.info-artistdetail {
+  margin-bottom: 30px;
+  margin-top: 30px;
+  width: 40%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: justify;
+  overflow-wrap: break-word;
+}
+.info-artistdetail li {
+  list-style: none;
+}
+.info-items {
+  margin: 5px 0;
+}
+.artist-video {
+  width: 600px;
+  margin: 50px auto;
+}
+.artworks-presentation {
+  margin-left: 0;
+}
+.artist-subtitle {
+  font-weight: 100;
+  text-align: center;
+  font-size: 35px;
+  margin-bottom: 30px;
+  letter-spacing: 15px;
+  color: #1a120b;
+}
+.artworks-section {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+.artworks {
+  width: 48%;
+  margin: 10px 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.artworks-section img {
+  width: 100%;
+  height: auto;
+}
+
+.artworks-section img:active {
+  right: 0;
+  left: 0;
+  top: 5em;
+  bottom: 0;
+  margin: auto;
+  position: fixed;
+  height: 80vh;
+  width: auto;
+  z-index: 1;
+}

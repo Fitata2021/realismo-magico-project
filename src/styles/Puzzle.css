@@ -1,0 +1,341 @@
+.puzzle-main {
+  display: flex;
+  justify-content: space-around;
+  margin-top: 7.5rem;
+  position: relative;
+}
+
+.container-pieces {
+  margin-left: 3.5rem;
+  width: 500px;
+  height: 500px;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(3, 1fr);
+  cursor: pointer;
+}
+
+.puzzle-main .info {
+  width: 25%;
+  font-size: 17px;
+  background: #473c2a;
+  color: #d8cca3;
+  margin-left: 3rem;
+  border-radius: 10px;
+  text-align: justify;
+  padding: 1rem;
+  height: 16.5rem;
+  margin-top: -8rem;
+}
+.puzzle-main .warning-section {
+  display: flex;
+  width: 100%;
+}
+.puzzle-main .warning-section article {
+  height: 33%;
+  width: 55%;
+  margin-left: 3rem;
+  padding: 5px;
+  background: #d8cca3;
+  font-weight: 600;
+  font-size: 15px;
+  text-align: justify;
+  color: #1a120b;
+  border: 2px solid #1a120b;
+
+  margin-top: 4rem;
+  border-radius: 10px;
+}
+.puzzle-main .warning-section i {
+  background: rgba(253, 207, 56, 1);
+  text-align: center;
+  border: solid 2px #473c2a;
+  color: #473c2a;
+  width: 40px;
+  height: 40px;
+  padding: 5px;
+  font-size: 28px;
+  border-radius: 50%;
+  margin-top: 4.5rem;
+}
+
+.puzzle-main .info-artwork {
+  width: 25%;
+  padding: 1rem;
+  height: 17.5rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+  margin: auto;
+}
+.puzzle-main .info-artwork .info {
+  margin-top: 2rem;
+  height: 500px;
+  width: 100%;
+  font-size: 17px;
+  background: #473c2a;
+  color: #d8cca3;
+  margin: auto;
+  border-radius: 10px;
+  text-align: justify;
+}
+
+.puzzle-main .info-artwork .info-hide {
+  margin-top: 2rem;
+  height: 500px;
+  width: 100%;
+  font-size: 17px;
+  background: #473c2a;
+  color: #d8cca3;
+  filter: blur(5px);
+  margin: auto;
+  border-radius: 10px;
+  text-align: justify;
+  padding: 10px;
+}
+
+.puzzle-main .info-artwork .info-show {
+  margin-top: 2rem;
+  height: 500px;
+  width: 100%;
+  font-size: 17px;
+  background: #473c2a;
+  color: #d8cca3;
+  margin: auto;
+  border-radius: 10px;
+  text-align: justify;
+  padding: 10px;
+}
+
+.puzzle-main .info-artwork i {
+  background: rgba(253, 207, 56, 1);
+  text-align: center;
+  border: solid 2px #473c2a;
+  color: #473c2a;
+  width: 40px;
+  height: 40px;
+  padding: 5px;
+  font-size: 28px;
+  border-radius: 50%;
+  margin-top: 3.5rem;
+}
+
+.puzzle-main .info-artwork .warning-section {
+  display: flex;
+  width: 70%;
+}
+
+.puzzle-main .warning-section .info-artwork-article {
+  height: 85%;
+  width: 90%;
+  margin-left: 2rem;
+  padding: 5px;
+  background: #d8cca3;
+
+  font-weight: 600;
+  font-size: 15px;
+  text-align: justify;
+  color: #1a120b;
+  border: 2px solid #1a120b;
+  cursor: pointer;
+  margin-top: 1rem;
+  border-radius: 10px;
+}
+.puzzle-main .info-artwork .info-artwork-icon-finished {
+  margin-top: -3rem;
+  width: 200px;
+  height: 80px;
+  text-align: center;
+  animation-name: intermittent-animation;
+  animation-duration: 1000ms;
+  animation-timing-function: ease;
+  animation-iteration-count: infinite;
+}
+
+.info-artwork-icon-start {
+  margin-top: -3rem;
+  width: 200px;
+  height: 80px;
+  text-align: center;
+}
+
+.puzzle-main .info-artwork .info-artwork-icon-active i {
+  background: rgba(253, 207, 56, 1);
+  text-align: center;
+  border: solid 2px #473c2a;
+  color: #473c2a;
+  width: 40px;
+  height: 40px;
+  padding: 5px;
+  font-size: 28px;
+  border-radius: 50%;
+  margin-top: 3.5rem;
+}
+@keyframes animacion-icon_active {
+  0% {
+    transform: rotate(-5deg);
+  }
+  25% {
+    display: none;
+  }
+
+  50% {
+    transform: rotate(-5deg);
+  }
+  75% {
+    display: none;
+  }
+  100% {
+    transform: rotate(-5deg);
+  }
+}
+
+.piece.unselected {
+  width: 150px;
+  height: 150px;
+}
+.piece.unselected img {
+  width: 110%;
+  height: 110%;
+}
+
+.piece.selected {
+  width: 150px;
+  height: 150px;
+}
+.piece.selected img {
+  width: 110%;
+  height: 110%;
+  /* border: solid 2px rgba(253, 207, 56, 1); */
+  box-shadow: 2px 2px 30px rgba(253, 207, 56, 0.7);
+}
+
+.puzzle-main .game-won {
+  position: absolute;
+  background: rgba(253, 207, 56, 1);
+  padding: 5px;
+  color: #473c2a;
+  font-size: 35px;
+  top: -2rem;
+  right: 0;
+  left: 32rem;
+  width: 26.2%;
+  border-radius: 8px;
+  box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.3);
+  position: absolute;
+  z-index: 3;
+}
+.game-won-final {
+  animation-name: animacion-puzzle_finished;
+  animation-duration: 1000ms;
+}
+@keyframes animacion-puzzle_finished {
+  0% {
+    transform: rotate(-5deg);
+  }
+  12% {
+    transform: rotate(5deg);
+  }
+  25% {
+    transform: rotate(-5deg);
+  }
+  37% {
+    transform: rotate(4deg);
+  }
+
+  50% {
+    transform: rotate(-4deg);
+  }
+  62% {
+    transform: rotate(3deg);
+  }
+  75% {
+    transform: rotate(-3deg);
+  }
+  87% {
+    transform: rotate(2deg);
+  }
+  100% {
+    transform: rotate(-2deg);
+  }
+}
+
+.puzzle-main .reset-button {
+  height: 50px;
+  width: 50px;
+  font-size: 22px;
+  font-weight: 500;
+  background: #473c2a;
+  color: #d8cca3;
+  margin-right: 1px;
+  margin-left: 0px;
+  margin-top: 27.5rem;
+  border: none;
+  border-radius: 50%;
+  cursor: pointer;
+}
+.puzzle-main .reset-button i {
+  font-size: 30px;
+  padding: 1px;
+  color: #d8cca3;
+  border-radius: 50%;
+}
+
+.puzzle-main .reset-button:hover {
+  /* box-shadow: 2px 2px 30px rgba(253, 207, 56, 0.7); */
+  box-shadow: 2px 2px 30px rgba(216, 204, 163, 1);
+  color: rgba(253, 207, 56, 1);
+  filter: sepia(1);
+}
+
+.puzzle-main .no-button {
+  height: 50px;
+  width: 50px;
+}
+
+.next {
+  height: 100px;
+  width: 100px;
+  background: rgba(253, 207, 56, 1);
+  position: absolute;
+  right: 21rem;
+  top: 20rem;
+  padding: 5px;
+  font-size: 1rem;
+  border-radius: 50%;
+  border: none;
+  cursor: pointer;
+  /* animation-name: animacion_ad-next;
+  animation-duration: 1000ms;
+  animation-timing-function: ease;
+  animation-iteration-count: infinite; */
+}
+@keyframes intermittent-animation {
+  0% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
+.next i {
+  font-size: 30px;
+}
+.game-won-final {
+  position: absolute;
+  color: #473c2a;
+  width: 50%;
+  left: 21rem;
+  padding: 5px;
+  background: rgba(253, 207, 56, 1);
+  font-size: 35px;
+  top: -2rem;
+  border-radius: 8px;
+  box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.3);
+  z-index: 3;
+}

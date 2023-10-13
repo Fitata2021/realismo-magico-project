@@ -1,23 +1,47 @@
-import logo from './logo.svg';
-import './App.css';
+import "./App.css";
+import { HashRouter, Routes, Route } from "react-router-dom";
+import {
+  Home,
+  Artistas,
+  ArtistDetail,
+  Tests,
+  Juegos,
+  Noticias,
+  Mas,
+} from "./pages";
+import {
+  CouplesGame,
+  NavBar,
+  Footer,
+  QuestionsTest,
+  Puzzle,
+  BooleanTest,
+  VisualTest,
+  ArtworkCanvas,
+} from "./components";
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <HashRouter>
+        <NavBar />
+        <Routes>
+          <Route path="/" element={<Home />} />
+          <Route path="/artists" element={<Artistas />} />
+          <Route path="/artist/:id" element={<ArtistDetail />} />
+          <Route path="/tests" element={<Tests />} />
+          <Route path="/games" element={<Juegos />} />
+          <Route path="/news" element={<Noticias />} />
+          <Route path="/more" element={<Mas />} />
+          <Route path="/couples-game" element={<CouplesGame />} />
+          <Route path="/questions-test" element={<QuestionsTest />} />
+          <Route path="/puzzle" element={<Puzzle />} />
+          <Route path="/boolean-test" element={<BooleanTest />} />
+          <Route path="/visual-test" element={<VisualTest />} />
+          <Route path="/canvas" element={<ArtworkCanvas />} />
+        </Routes>
+        <Footer />
+      </HashRouter>
     </div>
   );
 }

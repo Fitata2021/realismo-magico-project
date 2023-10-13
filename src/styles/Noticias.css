@@ -1,0 +1,34 @@
+.container {
+  width: 100%;
+  height: 31.5rem;
+  overflow: hidden;
+  position: relative;
+}
+
+.banner-noticias {
+  width: 100%;
+  position: absolute;
+  left: -0%;
+  bottom: 0%;
+}
+
+.description {
+  width: 90%;
+  margin: auto;
+  margin-top: 2rem;
+  text-align: justify;
+}
+
+.container-news {
+  display: flex;
+}
+.container-news p {
+  padding: 1em;
+
+  font-size: 20px;
+}
+.images-news {
+  width: 48%;
+  display: block;
+  margin: 1.5rem auto;
+}

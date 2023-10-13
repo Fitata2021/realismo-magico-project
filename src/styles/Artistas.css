@@ -1,0 +1,48 @@
+.container {
+  width: 100%;
+  height: 31.5rem;
+  overflow: hidden;
+  position: relative;
+}
+
+.banner {
+  width: 100%;
+  position: absolute;
+  left: -0%;
+  bottom: -30%;
+}
+
+.description {
+  width: 90%;
+  margin: auto;
+  margin-top: 2rem;
+  text-align: justify;
+}
+.artists-cards-container {
+  margin: 50px auto;
+  width: 80%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+.artists-cards-container li {
+  list-style: none;
+}
+.artist-card {
+  width: 240px;
+  height: 240px;
+  border-radius: 6px;
+  background: #d8cca3;
+  box-shadow: 2px 4px 8px rgba(0, 0, 0, 0.6);
+  margin: 10px;
+  cursor: pointer;
+}
+.artist-card:hover {
+  box-shadow: 2px 2px 30px rgba(253, 207, 56, 1);
+  filter: sepia(0.5);
+}
+.artist-card img {
+  margin-top: 10px;
+  width: 80%;
+  border-radius: 6px;
+}

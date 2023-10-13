@@ -1,0 +1,342 @@
+main {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  align-items: center;
+}
+.start-section {
+  margin-top: 11.5rem;
+  display: flex;
+  justify-content: center;
+  background-image: url("../images/couple-game-images/butterfly-card.jpg");
+  background-size: 200px 200px;
+  background-position: 10px 180px;
+  background-repeat: repeat;
+  padding: 2rem;
+}
+.start-section .info1 {
+  width: 31%;
+  font-size: 17px;
+  background: #473c2a;
+  color: #d8cca3;
+  margin-left: 1rem;
+  border-radius: 10px;
+  text-align: justify;
+  padding: 1rem;
+  height: 17rem;
+  margin-top: 1.3rem;
+}
+
+.start-section .info2 {
+  width: 30%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+}
+.start-section .info2 p {
+  font-size: 17px;
+  color: #473c2a;
+  background: #d8cca3;
+  margin-left: 1rem;
+  border-radius: 10px;
+  text-align: justify;
+  padding: 1rem;
+  height: 7.5rem;
+  margin-top: 1.3rem;
+  border: solid 2px #473c2a;
+}
+.develop-section {
+  width: 100%;
+  margin-top: 11.5rem;
+  height: 370px;
+  background-image: url("../images/couple-game-images/butterfly-card.jpg");
+  background-size: 200px 200px;
+  background-position: 10px 180px;
+  background-repeat: repeat;
+  display: flex;
+  justify-content: center;
+}
+.card-quiz {
+  display: flex;
+  justify-content: center;
+  margin-left: 8rem;
+  margin-top: 4rem;
+  width: 35%;
+  background: #473c2a;
+  color: #d8cca3;
+  padding: 10px;
+  border-radius: 8px;
+  font-size: 1.2em;
+  height: 15rem;
+}
+.left {
+  width: 100%;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin-right: 15px;
+  text-align: left;
+}
+
+.question-number {
+  margin-bottom: 20px;
+}
+
+.question-number span {
+  font-size: 1.2em;
+}
+
+.question-title {
+  margin-bottom: 1.2em;
+}
+
+.right {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.right button {
+  width: 100%;
+  font-size: 16px;
+  color: #473c2a;
+  background-color: #d8cca3;
+  border-radius: 15px;
+  display: flex;
+  padding: 7px;
+  justify-content: flex-start;
+  align-items: center;
+  border: none;
+  cursor: pointer;
+  margin: 1px;
+}
+.answers-right {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  justify-content: center;
+}
+.answers-right button {
+  width: 15%;
+  height: 25px;
+  font-size: 16px;
+  color: #473c2a;
+  background-color: #d8cca3;
+  border-radius: 15px;
+  display: flex;
+  padding: 7px;
+  justify-content: flex-start;
+  align-items: center;
+  border: none;
+  cursor: pointer;
+  margin-left: 40%;
+}
+.answer {
+  width: 100%;
+  height: 25px;
+  font-size: 16px;
+  color: #473c2a;
+  background-color: #d8cca3;
+  border-radius: 15px;
+  display: flex;
+  padding: 7px;
+  justify-content: flex-start;
+  align-items: center;
+  border: none;
+  cursor: pointer;
+  margin: 5px;
+}
+.info2-btn {
+  width: 17.5rem;
+  height: 2em;
+  font-size: 3em;
+  color: #473c2a;
+  background: rgba(253, 207, 56, 1);
+  border-radius: 15px;
+  display: flex;
+  padding: 7px;
+  justify-content: flex-start;
+  align-items: center;
+  border: solid 2px #473c2a;
+  cursor: pointer;
+  margin: auto;
+}
+.info2-btn:hover {
+  background: rgba(253, 207, 56, 1);
+  border: solid 2px transparent;
+}
+.check-icons {
+  display: flex;
+  justify-content: center;
+}
+.rigth-icon {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  width: 50px;
+  height: 50px;
+  background: #8da860;
+  border: solid #473c2a 1px;
+  border-radius: 50%;
+  font-size: 48px;
+  color: #473c2a;
+  margin: 10px;
+}
+
+.wrong-icon {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  width: 50px;
+  height: 50px;
+  background: #f55050;
+  border: solid #473c2a 1px;
+  border-radius: 50%;
+  font-size: 48px;
+  color: #473c2a;
+  margin: 10px;
+}
+
+/* finished */
+.finish-section {
+  width: 100%;
+  margin-top: 11.5rem;
+  height: 370px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-image: url("../images/couple-game-images/butterfly-card.jpg");
+  background-size: 200px 200px;
+  background-position: 10px 180px;
+  background-repeat: repeat;
+}
+.card-finished {
+  display: flex;
+  justify-content: center;
+  width: 30%;
+  background: #473c2a;
+  color: #d8cca3;
+  padding: 10px;
+  border-radius: 8px;
+  font-size: 1.2em;
+  height: 15rem;
+}
+.card-finished button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+.game-finished {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  font-size: 24px;
+  align-items: center;
+}
+.missing-time {
+  width: 35%;
+  height: 8rem;
+  margin-right: 8rem;
+  margin-top: 7.5rem;
+}
+.missing-time span {
+  font-size: 5rem;
+  color: rgba(253, 207, 56, 1);
+}
+.shown-answers-section {
+  width: 100%;
+  margin-top: 11.5rem;
+  height: 370px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-image: url("../images/couple-game-images/butterfly-card.jpg");
+  background-size: 200px 200px;
+  background-position: 10px 180px;
+  background-repeat: repeat;
+}
+.card-shown-answers {
+  display: flex;
+  justify-content: center;
+  width: 30%;
+  background: #473c2a;
+  color: #d8cca3;
+  padding: 10px;
+  border-radius: 8px;
+  font-size: 1.2em;
+  height: 17rem;
+}
+.btns-container button {
+  width: 100%;
+  font-size: 16px;
+  color: #473c2a;
+  background-color: #d8cca3;
+  border-radius: 15px;
+  display: flex;
+  padding: 7px;
+  justify-content: center;
+  align-items: center;
+  border: none;
+  cursor: pointer;
+  margin: 1px;
+}
+
+.correct,
+.correct:hover {
+  background-color: #8da860;
+}
+
+.incorrect,
+.incorrect:hover {
+  background-color: #f55050;
+}
+
+.btns-container {
+  display: flex;
+  width: 100%;
+  justify-content: space-evenly;
+}
+
+.btns-container button {
+  margin: 10px;
+}
+button:hover {
+  box-shadow: 2px 2px 30px rgba(253, 207, 56, 1);
+}
+
+.start-section .graphic {
+  background: #b09b71;
+  width: 200px;
+  height: 145px;
+  margin-top: 1.5rem;
+  margin-right: -1rem;
+  border-radius: 10px;
+  border: solid 2px #473c2a;
+}
+
+.point {
+  list-style: none;
+  display: flex;
+}
+
+.point:first-child {
+  margin-top: 20px;
+}
+.point p {
+  height: 4px;
+  width: 80px;
+  background: #000000;
+  margin-top: 15px;
+  margin-left: 30px;
+}
+.point div {
+  height: 10px;
+  width: 10px;
+  background-color: rgba(253, 207, 56, 1);
+  margin-top: 13px;
+  margin-left: 30px;
+  border-radius: 50%;
+}

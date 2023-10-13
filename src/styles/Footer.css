@@ -1,0 +1,34 @@
+.footer {
+  width: 100%;
+  height: 200px;
+  background: #b09b71;
+  border-top: solid #1a120b 2px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: center;
+  margin-top: 50px;
+}
+.container-logo {
+  width: 550px;
+  height: 75px;
+  overflow: hidden;
+}
+.container-logo img {
+  width: 100%;
+  object-fit: cover;
+  clip-path: inset(0 24% 28% 0);
+  padding-left: 65px;
+}
+.credits-bachelor-degree {
+  letter-spacing: 2px;
+  font-size: 10px;
+  padding-bottom: 40px;
+  color: #1a120b;
+}
+.credits-author-page {
+  letter-spacing: 5px;
+  font-size: 10px;
+  padding-bottom: 40px;
+  color: #1a120b;
+}
