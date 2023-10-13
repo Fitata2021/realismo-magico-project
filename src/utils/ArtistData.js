@@ -177,7 +177,7 @@ const ArtistData = [
     estado: "Activo",
     video: "https://www.youtube.com/embed/RiFE2STr0kE",
     webSite: "https://isabellaviviani.cl/",
-    bio: "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Fuga, expedita reprehenderit? Labore maxime odio molestiae iure suscipit temporibus eius in ducimus possimus tenetur laborum assumenda consectetur maiores sit similique delectus doloribus iste, omnis incidunt culpa! Animi repudiandae eum numquam modi fuga mollitia, similique temporibus, commodi doloremque harum sequi. Quo repellendus voluptates ipsa facilis impedit vel mollitia, tempore labore sit consectetur repellat ipsam quae sapiente cupiditate maxime optio esse reprehenderit hic animi, culpa aliquid! Nemo esse tempora numquam doloremque, praesentium similique eius aliquam nam facilis, explicabo mollitia, totam vero pariatur. In facilis aliquid a ipsam excepturi beatae rerum suscipit ducimus dolores!",
+    bio: "Artista con más de 25 años de trayectoria, en 1992 se traslada a vivir a México, donde estudia pintura y escultura.​​Entre 1994 y 1997 forma parte del directorio del COMAV (Consejo Mundial de Artistas Visuales). ¿Es magia, cuando lo que parece tan real es realmente insólito? Así se desenvuelve maravillosamente la cultura popular latinoamericana, un sincretismo en el que se combina lo prehispánico con lo religioso y lo barroco. Sus obras se distinguen por el color, textura y sincretismo que se manifiestan en figuras y fondos de múltiples lecturas.",
     artworks: [
       imgViviani1,
       imgViviani2,
@@ -245,7 +245,7 @@ const ArtistData = [
     estado: "Activo",
     video: "https://www.youtube.com/embed/Kg6u908bQAM",
     webSite: "https://mariogomez.cl/",
-    bio: "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Fuga, expedita reprehenderit? Labore maxime odio molestiae iure suscipit temporibus eius in ducimus possimus tenetur laborum assumenda consectetur maiores sit similique delectus doloribus iste, omnis incidunt culpa! Animi repudiandae eum numquam modi fuga mollitia, similique temporibus, commodi doloremque harum sequi. Quo repellendus voluptates ipsa facilis impedit vel mollitia, tempore labore sit consectetur repellat ipsam quae sapiente cupiditate maxime optio esse reprehenderit hic animi, culpa aliquid! Nemo esse tempora numquam doloremque, praesentium similique eius aliquam nam facilis, explicabo mollitia, totam vero pariatur. In facilis aliquid a ipsam excepturi beatae rerum suscipit ducimus dolores!",
+    bio: "Pintor, nació en 1968 en Concepción, Chile. Estudió Licenciatura en Artes con mención en pintura, en la Universidad Católica de Santiago. Comienza artísticamente en el apogeo del movimiento neofigurativo en Chile, por lo que su obra es en esencia forma y color.  El ser humano como eje central y contenido; más la fotografía como objeto e imagen, son elementos fundamentales en su trabajo, genera escenarios donde los elementos se relacionan de la manera más armónica posible sin que por ello le reste interés a las múltiples lecturas que se pueden realizar a partir de su iconografía, lo que sumado a la gran variedad de técnicas pictóricas genera un objeto artístico muy consistente en el tiempo. Todo esto ubica a Gómez de lleno dentro de la corriente artística latinoamericana del Realismo Mágico exponiendo en gran parte del mundo sus trabajos ",
     artworks: [
       imgGomez1,
       imgGomez2,
@@ -270,7 +270,7 @@ const ArtistData = [
     estado: "Inactivo",
     video: "https://www.youtube.com/embed/F8SgjGXOAe0",
     webSite: "https://www.facebook.com/MaestroArturoRivera/",
-    bio: "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Fuga, expedita reprehenderit? Labore maxime odio molestiae iure suscipit temporibus eius in ducimus possimus tenetur laborum assumenda consectetur maiores sit similique delectus doloribus iste, omnis incidunt culpa! Animi repudiandae eum numquam modi fuga mollitia, similique temporibus, commodi doloremque harum sequi. Quo repellendus voluptates ipsa facilis impedit vel mollitia, tempore labore sit consectetur repellat ipsam quae sapiente cupiditate maxime optio esse reprehenderit hic animi, culpa aliquid! Nemo esse tempora numquam doloremque, praesentium similique eius aliquam nam facilis, explicabo mollitia, totam vero pariatur. In facilis aliquid a ipsam excepturi beatae rerum suscipit ducimus dolores!",
+    bio: "Arturo Rivera (1945-2021) fue un reconocido pintor mexicano, nacido en la Ciudad de México. Estudió en la Academia de San Carlos. A lo largo de su carrera, Rivera se destacó por su estilo único, que mezclaba realismo con elementos de surrealismo y expresionismo.Su trabajo abordó temas relacionados con la psicología humana, la violencia, la muerte y la belleza. Sus pinturas, a menudo oscuras y perturbadoras, exploran la naturaleza del ser humano y su relación con el mundo que lo rodea.Lo interesante del artista es la manera en la que confronta al espectador respecto a la condición humana; sobre lo que afecta al personaje. También se percibe en su obra la presencia del arte japonés y del arte europeo clásico, pero siempre adaptándose a la intención el artista de proponer un fuerte discurso sobre los sentimientos humanos. ",
     artworks: [
       imgRivera1,
       imgRivera2,
@@ -317,7 +317,7 @@ const ArtistData = [
     estado: "Inactivo",
     video: "https://www.youtube.com/embed/6ERzcV4X708",
     webSite: "https://www.leocarrington.com/paintings-pinturas.html",
-    bio: "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Fuga, expedita reprehenderit? Labore maxime odio molestiae iure suscipit temporibus eius in ducimus possimus tenetur laborum assumenda consectetur maiores sit similique delectus doloribus iste, omnis incidunt culpa! Animi repudiandae eum numquam modi fuga mollitia, similique temporibus, commodi doloremque harum sequi. Quo repellendus voluptates ipsa facilis impedit vel mollitia, tempore labore sit consectetur repellat ipsam quae sapiente cupiditate maxime optio esse reprehenderit hic animi, culpa aliquid! Nemo esse tempora numquam doloremque ",
+    bio: "Leonora Carrington (1917-2011) fue una artista inglesa nacionalizada mexicana que se destacó dentro de la corriente surrealista. Aquí te compartimos sus obras en prosa, sus esculturas y pinturas más importantesLas pinturas de Leonora Carrington se inspiran en un mundo personal, íntimo y subjetivo, que surge de una fértil imaginación, influenciada fuertemente por los surrealistas y estimulada por lecturas fantásticas y esotéricas que fue aprehendiendo a lo largo de su vida. Estaba familiarizada desde pequeña con los mitos celtas, muy presentes en sus cuadros y obras de teatro, a los que sumó los mundos mágicos y fantásticos que descubrió en México, un país que tuvo una enorme influencia en su obra por la variedad de culturas indígenas y prehispánicas",
     artworks: [
       imgCarrington1,
       imgCarrington2,
@@ -386,7 +386,7 @@ const ArtistData = [
     estado: "Inactivo",
     video: "https://www.youtube.com/embed/uH2ho5JnjTg",
     webSite: "https://www.fridakahlo.org/",
-    bio: "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Fuga, expedita reprehenderit? Labore maxime odio molestiae iure suscipit temporibus eius in ducimus possimus tenetur laborum assumenda consectetur maiores sit similique delectus doloribus iste, omnis incidunt culpa! Animi repudiandae eum numquam modi fuga mollitia, similique temporibus, commodi doloremque harum sequi. Quo repellendus voluptates ipsa facilis impedit vel mollitia, tempore labore sit consectetur repellat ipsam quae sapiente cupiditate maxime optio esse reprehenderit hic animi, culpa aliquid! Nemo esse tempora numquam doloremque, praesentium similique eius aliquam nam facilis, explicabo mollitia, totam vero pariatur. In facilis aliquid a ipsam excepturi beatae rerum suscipit ducimus dolores!",
+    bio: "Magdalena Carmen Frida Kahlo Calderón (Coyoacán, Ciudad de México, 6 de julio de 1907-13 de julio de 1954),​ conocida como Frida Kahlo, fue una pintora mexicana. Su obra gira temáticamente en torno a su biografía y a su propio sufrimiento. Fue autora de 150 obras, principalmente autorretratos, en los que proyectó sus dificultades por sobrevivir. En 1939 expuso sus pinturas en Francia gracias a una invitación de André Breton, quien intentó convencerla de que eran «surrealistas», aunque Kahlo decía que esta tendencia no correspondía con su arte ya que ella no pintaba sueños sino su propia vida.  Aunque gozó de la admiración de destacados pintores e intelectuales de su época, su obra alcanzó fama y verdadero reconocimiento internacional después de su muerte, especialmente a finales de los años de 1980 y principios de 1990",
     artworks: [
       khalo1,
       khalo2,
@@ -408,7 +408,7 @@ const ArtistData = [
     estado: "Activo",
     video: "https://www.youtube.com/embed/5EIL_FOK2XY",
     webSite: "http://www.carmenchami.com/",
-    bio: "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Fuga, expedita reprehenderit? Labore maxime odio molestiae iure suscipit temporibus eius in ducimus possimus tenetur laborum assumenda consectetur maiores sit similique delectus doloribus iste, omnis incidunt culpa! Animi repudiandae eum numquam modi fuga mollitia, similique temporibus, commodi doloremque harum sequi. Quo repellendus voluptates ipsa facilis impedit vel mollitia, tempore labore sit consectetur repellat ipsam quae sapiente cupiditate maxime optio esse reprehenderit hic animi, culpa aliquid! Nemo esse tempora numquam doloremque, praesentium similique eius aliquam nam facilis, explicabo mollitia, totam vero pariatur. In facilis aliquid a ipsam excepturi beatae rerum suscipit ducimus dolores!",
+    bio: "Chami realizó sus estudios de licenciatura en Restauración de Bienes Muebles en la Escuela Nacional de Restauración del Instituto Nacional de Antropología e Historia. En su obra artística destaca el interés que tiene por el arte novohispano y las técnicas de la pintura de caballete, particularmente las de autores novohispanos.  Ha estudiado las técnicas pictóricas del Renacimiento y el Barroco, las cuales aplica a su pintura.En algunas obras, Chami, además del uso de la figura humana, también retrata historias cotidianas. En su pintura, Chami, realiza una exploración de las relaciones humanas, pero usando una perspectiva mordaz y crítica. Utiliza elementos del color y la iluminación para realizar la expresión.",
     artworks: [
       imgChamin1,
       imgChamin2,
@@ -429,7 +429,7 @@ const ArtistData = [
     country: "Brasil",
     estado: "Activo",
     video: "https://www.youtube.com/embed/FwdQWyKT820",
-    bio: "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Fuga, expedita reprehenderit? Labore maxime odio molestiae iure suscipit temporibus eius in ducimus possimus tenetur laborum assumenda consectetur maiores sit similique delectus doloribus iste, omnis incidunt culpa! Animi repudiandae eum numquam modi fuga mollitia, similique temporibus, commodi doloremque harum sequi. Quo repellendus voluptates ipsa facilis impedit vel mollitia, tempore labore sit consectetur repellat ipsam quae sapiente cupiditate maxime optio esse reprehenderit hic animi, culpa aliquid! Nemo esse tempora numquam doloremque, praesentium similique eius aliquam nam facilis, explicabo mollitia, totam vero pariatur. In facilis aliquid a ipsam excepturi beatae rerum suscipit ducimus dolores!",
+    bio: "Claudio Souza Pinto nació en Sao Paulo en 1954. Sus pinturas convierten lo cotidiano en algo surrealista; son el escape perfecto a lo divertido y lo romántico, a lo pajarero. Su trabajo es reconocido en Brasil, Europa y Norteamérica por lograr crear la atmósfera de realismo fantástico. Sus personajes alegres y humorísticos logran el surgimiento de un debate visual sobre la constante lucha entre la melancolía y el amor, la batalla entre la tristeza y la alegría. Claudio usa la pintura como medio para expresar el existencialismo que se esconde tras una máscara llena de color, una sonrisa vulnerable que no es más que una curva que mira hacia abajo, una mirada que refleja vida. Su trabajo resalta por plasmar un mundo ilusorio en el cual explora la figura humana, sus movimientos y su estado de ánimo desde una visión alejada de toda pretensión y superficialidad.",
     artworks: [
       imgSouza1,
       imgSouza2,
