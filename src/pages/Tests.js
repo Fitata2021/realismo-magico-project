@@ -48,16 +48,16 @@ const Tests = () => {
           del realismo mágico.
         </p>
 
-        <h3 className="test-titles">"Interpreta el Simbolismo"</h3>
+        <h3 className="test-titles">"Descubre el pintor"</h3>
 
         <p>
-          Por último, pero no menos importante, el tercer test, "Interpreta el
-          Simbolismo", te desafiará a analizar el simbolismo presente en las
-          obras del realismo mágico. Se te presentarán diferentes elementos y tu
-          tarea será descifrar su significado y su relación con los temas
-          recurrentes en este movimiento, como el tiempo, los sueños y la
-          dualidad. Prepárate para explorar las metáforas y la profundidad
-          simbólica del realismo mágico.
+          Por último, pero no menos importante, el tercer test, "Descubre el
+          pintor", sera un test visual que te desafiará a elegir de manera
+          correcta para lograr aprobar. Se te presentará una obra del realismo
+          magico y como opciones las imágenes de algunos artistas, tu tarea será
+          seleccionar el artista creador de la obra. Prepárate para poner a
+          prueba tu memoria visual y establecer las relaciones entre los
+          elementos y estilos propios de cada artista que estudiaste y su autor.
         </p>
 
         <p>
@@ -65,14 +65,41 @@ const Tests = () => {
           tu comprensión sobre el realismo mágico. ¡Buena suerte!
         </p>
       </section>
+
+      <ul className="titles">
+        <li>
+          <h3>Responde a Tiempo</h3>
+        </li>
+        <li>
+          <h3>Libera las mariposas</h3>
+        </li>
+        <li>
+          <h3>Descubre el pintor</h3>
+        </li>
+      </ul>
+
       <ul className="container-cards-test">
-        <li className="card-test" onClick={() => navigate("/questions-test")}>
+        <li
+          className="card-test"
+          title="COMENZAR"
+          onClick={() => navigate("/questions-test")}
+        >
           <img src={question_images} alt="" />
         </li>
-        <li className="card-test" onClick={() => navigate("/boolean-test")}>
+
+        <li
+          className="card-test"
+          title="COMENZAR"
+          onClick={() => navigate("/boolean-test")}
+        >
           <img src={FV_test} alt="" />
         </li>
-        <li className="card-test" onClick={() => navigate("/visual-test")}>
+
+        <li
+          className="card-test"
+          title="COMENZAR"
+          onClick={() => navigate("/visual-test")}
+        >
           <img src={visual_test} alt="" />
         </li>
       </ul>

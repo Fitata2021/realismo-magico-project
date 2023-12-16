@@ -178,8 +178,8 @@ const Home = () => {
         <p>
           Este espacio esta pensado para aprender un poco sobre el mundo del
           realismo magico en las artes plasticas, principalmente en la pintura.
-          En las siguientes secciones, podrás encontrar mas infomacion y
-          diferentes actividades interactivas para abordar el tema de una manera
+          En las otras secciones, podrás encontrar mas infomacion y diferentes
+          actividades interactivas para abordar el tema de una manera muy
           entretenida.
         </p>
       </section>

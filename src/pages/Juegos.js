@@ -2,6 +2,7 @@ import React from "react";
 import banner from "../images/artists-images/gomez-banner.jpg";
 import couples_game from "../images/couple-game-images/couples_game.jpg";
 import PuzzleGame from "../images/couple-game-images/PuzzleGame.jpg";
+import canvasGame from "../images/couple-game-images/canvas_game.jpg";
 import { useNavigate } from "react-router-dom";
 import "../styles/Juegos.css";
 import { useEffect } from "react";
@@ -53,37 +54,63 @@ const Juegos = () => {
           visión personal de la realidad mágica.
         </p>
 
-        <h3 className="game-titles">"Creando una obra magica"</h3>
+        <h3 className="game-titles">"Crea tu obra"</h3>
 
         <p>
-          Por último, pero no menos importante, les presento el juego "Descifra
-          el Simbolismo". El realismo mágico se caracteriza por su simbolismo y
-          metáforas en las obras de arte. En este juego, se les presentarán una
-          serie de obras emblemáticas del realismo mágico y su objetivo será
-          descifrar los significados ocultos detrás de los elementos presentes
-          en cada una. Podrán explorar los temas recurrentes en este movimiento,
-          como el tiempo, la dualidad y los sueños, y analizar cómo los artistas
-          plásticos los representan de manera simbólica.
+          Por último, pero no menos importante, se presenta el juego "Crea tu
+          obra". El realismo mágico se caracteriza por su simbolismo y metáforas
+          en las obras de arte. En este juego, se les presentarán una serie de
+          figuras que serviran para componer una obra del realismo mágico, tu
+          objetivo será componer tu propia obra usando estos elementos junto con
+          los distintos escenarios sugeridos. Usa tu imaginación y creatividad
+          de la misma manera que lo podrían hacer los artistas plásticos cuando
+          componen sus obras de realismo magico.
         </p>
 
         <p>
-          Estos tres juegos didácticos les brindarán una experiencia interactiva
-          y divertida para sumergirse en el fascinante mundo del realismo mágico
+          Estos tres juegos didácticos brindarán una experiencia interactiva y
+          divertida para sumergirse en el fascinante mundo del realismo mágico
           en Latinoamérica. A través de la exploración de obras de arte, la
-          creación de su propia realidad mágica y el análisis del simbolismo
-          presente en las obras, podrán comprender mejor las características y
-          significados detrás de este movimiento artístico. Los invito a
-          disfrutar y aprender de estas
+          creación de tu propia realidad mágica y el análisis del simbolismo
+          presente en las obras, podras comprender mejor las características y
+          significados detrás de este movimiento artístico. Te invito a
+          disfrutar y aprender!
         </p>
       </section>
+      <ul className="titles">
+        <li>
+          <h3>Obras Gemelas</h3>
+        </li>
+        <li>
+          <h3>Puzzle</h3>
+        </li>
+        <li>
+          <h3>Crea tu Obra</h3>
+        </li>
+      </ul>
+
       <ul className="container-cards-game">
-        <li onClick={() => navigate("/couples-game")} className="card-game">
+        <li
+          onClick={() => navigate("/couples-game")}
+          className="card-game"
+          title="JUGAR"
+        >
           <img src={couples_game} alt="" />
         </li>
-        <li onClick={() => navigate("/puzzle")} className="card-game">
+        <li
+          onClick={() => navigate("/puzzle")}
+          className="card-game"
+          title="JUGAR"
+        >
           <img src={PuzzleGame} alt="" />
         </li>
-        <li onClick={() => navigate("/canvas")} className="card-game"></li>
+        <li
+          onClick={() => navigate("/canvas")}
+          className="card-game"
+          title="JUGAR"
+        >
+          <img src={canvasGame} alt="" />
+        </li>
       </ul>
     </div>
   );

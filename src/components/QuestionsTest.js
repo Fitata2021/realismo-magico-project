@@ -8,6 +8,10 @@ const QuestionsTest = () => {
   const [quizStatus, setQuizStatus] = useState("beginning");
   const [missingTime, setMissingTime] = useState(15);
 
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
+
   function handleAnswer(isCorrect, e) {
     setMissingTime(15);
     //Handling score...

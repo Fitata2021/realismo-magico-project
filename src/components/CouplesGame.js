@@ -1,10 +1,14 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 
 import "../styles/CouplesGame.css";
 import arrayCards from "../utils/cardsData";
 import butterfly_card from "../images/couple-game-images/butterfly-card.jpg";
 
 const CouplesGame = () => {
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
+
   const [cardsList, setCardsList] = useState(
     arrayCards.sort(() => Math.random() - 0.5)
   );

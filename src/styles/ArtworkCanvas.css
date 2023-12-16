@@ -1,10 +1,140 @@
-.lienzo {
-  width: 500px;
-  height: 500px;
-  border: 2px solid #000;
-  background: lightcoral;
+main {
+  margin-top: 6em;
 }
-.image_palette {
+.file-interact-dropzone {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 34px;
+  border: 2px solid #473c2a;
+  border-radius: 10px;
+  width: 55%;
+  height: 32rem;
+  margin: auto;
+}
+.file-interact-dropzone img {
+  border-radius: 10px;
+}
+
+.background {
+  width: 100%;
+  height: 100%;
+}
+.draggable {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 34px;
+  width: 80px;
+  height: 80px;
+  margin: 1px;
+  position: absolute;
+  /* background: red; */
+}
+
+.draggable img {
+  width: 100%;
+  object-fit: cover;
+}
+
+.option-images {
+  display: flex;
+  flex-direction: column;
+  width: 35%;
+  height: 80vh;
+  padding: 3px;
+  margin: 1%;
+  background: #d8cca3;
+  position: relative;
+  /* flex-wrap: wrap; */
+  border-radius: 8px;
+  /* position: absolute; */
+}
+
+.option-images p {
+  font-size: 20px;
+  margin: 20px;
+  width: 80px;
+}
+
+.background-images {
+  display: flex;
+  flex-direction: column;
+  margin: 1%;
+  width: 10%;
+}
+.background-images i {
+  font-size: 40px;
+  margin-top: 20px;
+  width: 100px;
+}
+.background-images i:hover {
+  font-size: 45px;
+}
+.background-images p {
+  font-size: 20px;
+  margin: 15px;
+  width: 60px;
+}
+
+.background-images img {
+  width: 100px;
+  margin: 1px;
+}
+
+/* Draggables size... */
+
+#butterfly {
+  height: 50px;
+  width: 50px;
+  left: 40px;
+  top: 20px;
+}
+#pez {
+  height: 110px;
+  width: 170px;
+  left: 0px;
+  top: 220px;
+}
+#jaguar {
+  height: 170px;
+  width: 170px;
+  left: 10px;
+  top: 60px;
+}
+#armor {
+  height: 270px;
+  width: 270px;
+  left: 180px;
+  top: -5px;
+}
+#flowers {
+  height: 120px;
+  width: 120px;
+  left: 190px;
+  top: 10px;
+}
+#hyena {
+  height: 150px;
+  width: 150px;
+  left: 10px;
+  top: 330px;
+}
+#fungus {
   height: 100px;
   width: 100px;
+  left: 190px;
+  top: 210px;
+}
+#owl {
+  height: 70px;
+  width: 70px;
+  left: 360px;
+  top: 430px;
+}
+#woman {
+  height: 270px;
+  width: 270px;
+  left: 140px;
+  top: 230px;
 }

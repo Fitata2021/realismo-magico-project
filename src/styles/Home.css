@@ -37,8 +37,9 @@
 
 .description-title {
   letter-spacing: 0.5em;
-  margin-top: 1rem;
+  margin-top: 5rem;
   color: #1a120b;
+  font-size: 32px;
 }
 .description p {
   margin-top: 1rem;

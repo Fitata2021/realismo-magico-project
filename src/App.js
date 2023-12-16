@@ -38,7 +38,15 @@ function App() {
           <Route path="/puzzle" element={<Puzzle />} />
           <Route path="/boolean-test" element={<BooleanTest />} />
           <Route path="/visual-test" element={<VisualTest />} />
-          <Route path="/canvas" element={<ArtworkCanvas />} />
+          <Route
+            path="/canvas"
+            style={{
+              display: "flex",
+              justifyContent: "center",
+              marginTop: "50px",
+            }}
+            element={<ArtworkCanvas />}
+          />
         </Routes>
         <Footer />
       </HashRouter>

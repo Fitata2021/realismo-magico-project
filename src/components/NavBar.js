@@ -28,7 +28,7 @@ const NavBar = () => {
       </nav>
       <nav className="nav-options">
         <ul>
-          <li onClick={() => navigate("/")}>Home</li>
+          <li onClick={() => navigate("/")}>Inicio</li>
           <li onClick={() => navigate("/artists")}>Artistas</li>
           <li onClick={() => navigate("/tests")}>Tests</li>
 

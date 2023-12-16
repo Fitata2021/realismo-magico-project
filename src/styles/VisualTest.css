@@ -28,8 +28,13 @@
   height: 385px;
   position: absolute;
   z-index: 3;
-  left: 22px;
-  top: -10px;
+  left: 60%;
+  right: 0;
+  top: 0;
+  bottom: 150px;
+  margin: auto;
+  background: #d8cca3;
+  color: #473c2a;
 }
 
 .info1 p:first-child {

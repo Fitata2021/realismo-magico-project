@@ -23,6 +23,14 @@ const ArtistDetail = () => {
               <strong>Nacionalidad: </strong> {artist.country}
             </p>
           </li>
+
+          <li>
+            <p className="info-items">
+              <strong>Estado: </strong> {artist.estado}
+            </p>
+          </li>
+
+          <p>{artist.bio}</p>
           <li>
             <p className="info-items">
               <strong>Sitio-Web: </strong>
@@ -31,17 +39,6 @@ const ArtistDetail = () => {
               </Link>
             </p>
           </li>
-          <li>
-            <p className="info-items">
-              <strong>Estado: </strong> {artist.estado}
-            </p>
-          </li>
-          <li>
-            <p className="info-items">
-              <strong>Nacionalidad: </strong> {artist.country}
-            </p>
-          </li>
-          <p>{artist.bio}</p>
         </ul>
       </section>
       <section className="artist-video">
@@ -55,8 +52,8 @@ const ArtistDetail = () => {
           allowfullscreen
         ></iframe>
       </section>
-      <h2 className="artist-subtitle">Obras</h2>
-      <p className="artworks-presentation">Algunas obras del artista:</p>
+      <h2 className="artist-subtitle">Algunas de sus Obras</h2>
+
       <section className="artworks-section">
         {artist.artworks.map((artwork) => (
           <div className="artworks">

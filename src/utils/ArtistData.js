@@ -295,7 +295,7 @@ const ArtistData = [
     estado: "Activo",
     video: "https://www.youtube.com/embed/dBYnl9M5DCA",
     webSite: "https://marinapallares.wixsite.com/english/painting",
-    bio: "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Fuga, expedita reprehenderit? Labore maxime odio molestiae iure suscipit temporibus eius in ducimus possimus tenetur laborum assumenda consectetur maiores sit similique delectus doloribus iste, omnis incidunt culpa! Animi repudiandae eum numquam modi fuga mollitia, similique temporibus, commodi doloremque harum sequi. Quo repellendus voluptates ipsa facilis impedit vel mollitia, tempore labore sit consectetur repellat ipsam quae sapiente cupiditate maxime optio esse reprehenderit hic animi, culpa aliquid! Nemo esse tempora numquam doloremque, praesentium similique eius aliquam nam facilis, explicabo mollitia, totam vero pariatur. In facilis aliquid a ipsam excepturi beatae rerum suscipit ducimus dolores!",
+    bio: "Artista plástica, mexicana nacida en 1980. Es una artista emergente que al momento cuenta con 13 exposiciones individuales y 40 colectivas. Su obra forma parte de la colección permanente del Museo Nacional del Tequila (Tequila, Jalisco), de la Pinacoteca Alfonso Michel (Colima, Colima) y del National Museum of Mexican Art (Chicago, Illinois, USA).Al inicio de su carrera exploró la fotografía pero despues decide orientarse y focalizarse completamente en la pintura y el grabado. Sus trabajos estan caracterizados por escenas fantasticas y magicas en amientes naturales , como el mar, el cielo y los bosques",
     artworks: [
       imgPallares1,
       imgPallares2,
@@ -429,6 +429,7 @@ const ArtistData = [
     country: "Brasil",
     estado: "Activo",
     video: "https://www.youtube.com/embed/FwdQWyKT820",
+    webSite: "https://www.claudiosouzapinto.com.br/",
     bio: "Claudio Souza Pinto nació en Sao Paulo en 1954. Sus pinturas convierten lo cotidiano en algo surrealista; son el escape perfecto a lo divertido y lo romántico, a lo pajarero. Su trabajo es reconocido en Brasil, Europa y Norteamérica por lograr crear la atmósfera de realismo fantástico. Sus personajes alegres y humorísticos logran el surgimiento de un debate visual sobre la constante lucha entre la melancolía y el amor, la batalla entre la tristeza y la alegría. Claudio usa la pintura como medio para expresar el existencialismo que se esconde tras una máscara llena de color, una sonrisa vulnerable que no es más que una curva que mira hacia abajo, una mirada que refleja vida. Su trabajo resalta por plasmar un mundo ilusorio en el cual explora la figura humana, sus movimientos y su estado de ánimo desde una visión alejada de toda pretensión y superficialidad.",
     artworks: [
       imgSouza1,

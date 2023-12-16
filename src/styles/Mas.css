@@ -18,3 +18,32 @@
   margin-top: 2rem;
   text-align: justify;
 }
+
+.quotes {
+  color: #473c2a;
+  letter-spacing: 8px;
+  margin-top: 5rem;
+}
+.author-subtitle {
+  position: absolute;
+  z-index: 2;
+  font-size: 25px;
+  letter-spacing: 12px;
+  margin-top: 18rem;
+  margin-left: 50rem;
+  color: #eddfb3;
+}
+
+.description-title {
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+}
+
+.description-referentes {
+  margin-top: 10rem;
+  margin-bottom: 2rem;
+  letter-spacing: 0.5em;
+  margin-top: 10rem;
+  color: #1a120b;
+  font-size: 32px;
+}

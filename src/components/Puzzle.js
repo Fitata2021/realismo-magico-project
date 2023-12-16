@@ -1,9 +1,13 @@
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import "../styles/Puzzle.css";
 
 import { piecesData, infoArtwork } from "../utils/piecesData";
 
 const Puzzle = () => {
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
+
   const [numberPuzzle, setNumberPuzzle] = useState(0);
   const [piecesList, setPiecesList] = useState(
     [...piecesData[numberPuzzle]].sort(() => Math.random() - 0.5)
