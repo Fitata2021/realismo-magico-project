@@ -33,7 +33,6 @@ const NavBar = () => {
             <img
               onClick={() => {
                 navigate("/");
-                setMenuToogle(false);
               }}
               src={butterfly}
               alt="flying butterfly"
@@ -55,7 +54,6 @@ const NavBar = () => {
           <li
             onClick={() => {
               navigate("/");
-              setMenuToogle(false);
             }}
           >
             Inicio
@@ -63,7 +61,6 @@ const NavBar = () => {
           <li
             onClick={() => {
               navigate("/artists");
-              setMenuToogle(false);
             }}
           >
             Artistas
@@ -71,7 +68,6 @@ const NavBar = () => {
           <li
             onClick={() => {
               navigate("/tests");
-              setMenuToogle(false);
             }}
           >
             Tests
@@ -83,7 +79,6 @@ const NavBar = () => {
           <li
             onClick={() => {
               navigate("/games");
-              setMenuToogle(false);
             }}
           >
             Juegos
@@ -91,7 +86,6 @@ const NavBar = () => {
           <li
             onClick={() => {
               navigate("/news");
-              setMenuToogle(false);
             }}
           >
             Noticias
@@ -99,7 +93,6 @@ const NavBar = () => {
           <li
             onClick={() => {
               navigate("/more");
-              setMenuToogle(false);
             }}
           >
             Más

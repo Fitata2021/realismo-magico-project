@@ -126,6 +126,9 @@
     margin-top: 21rem;
     margin-left: 13rem;
   }
+  .main-nav-bar .page-title {
+    margin-top: 4.5rem;
+  }
 }
 @media screen and (max-width: 490px) {
   .banner-home {
@@ -135,7 +138,7 @@
     height: 20.5rem;
   }
   .home-title {
-    margin-top: 7rem;
+    margin-top: 5rem;
   }
   .home-subtitle {
     letter-spacing: 15px;

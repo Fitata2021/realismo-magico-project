@@ -6,6 +6,7 @@
   width: 75%;
   display: flex;
   justify-content: space-evenly;
+  align-items: center;
   background: #d8cca3;
   border-radius: 8px;
 }
@@ -14,7 +15,7 @@
   font-weight: 100;
   text-align: center;
   font-size: 35px;
-  margin-top: 7rem;
+  margin-top: 2rem;
   margin-bottom: 30px;
   letter-spacing: 15px;
   color: #1a120b;
@@ -30,12 +31,13 @@
 .info-artistdetail {
   margin-bottom: 30px;
   margin-top: 30px;
-  width: 40%;
+  width: 50%;
   display: flex;
   flex-direction: column;
   justify-content: center;
   text-align: justify;
   overflow-wrap: break-word;
+  font-size: 20px;
 }
 .info-artistdetail li {
   list-style: none;
@@ -44,7 +46,7 @@
   margin: 5px 0;
 }
 .artist-video {
-  width: 600px;
+  width: 60%;
   margin: 50px auto;
 }
 .artworks-presentation {
@@ -66,7 +68,7 @@
 }
 .artworks {
   width: 48%;
-  margin: 10px 0;
+  margin: 3px 0;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -86,4 +88,91 @@
   height: 80vh;
   width: auto;
   z-index: 1;
+}
+@media screen and (max-width: 1370px) {
+  .card-artistdetail {
+    width: 90%;
+  }
+  .info-artistdetail {
+    margin-bottom: 30px;
+    margin-top: 30px;
+    margin-left: 5px;
+    width: 50%;
+    font-size: 20px;
+  }
+}
+@media screen and (max-width: 1100px) {
+  .card-artistdetail {
+    width: 90%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .image-artistdetail {
+    width: 95%;
+    height: auto;
+    margin-bottom: 20px;
+    margin-top: 20px;
+    border-radius: 5px;
+  }
+  .info-artistdetail {
+    margin-bottom: 20px;
+    margin-top: 20px;
+    width: 90%;
+    font-size: 25px;
+  }
+  .artist-video {
+    width: 80%;
+    margin: 40px auto;
+  }
+  .artworks-section {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .artworks {
+    width: 100%;
+  }
+}
+@media screen and (max-width: 750px) {
+  .artist-title {
+    margin-top: 0rem;
+  }
+  .artworks {
+    margin: 2px 0;
+  }
+}
+@media screen and (max-width: 600px) {
+  .card-artistdetail {
+    width: 100%;
+    border-radius: 0px;
+  }
+  .image-artistdetail {
+    width: 100%;
+    border-radius: 0px;
+  }
+  .info-artistdetail {
+    width: 90%;
+    font-size: 18px;
+  }
+  .artist-video {
+    width: 100%;
+    margin: 40px auto;
+  }
+  .artworks {
+    margin: 1px 0;
+  }
+}
+@media screen and (max-width: 500px) {
+  .artist-title {
+    font-size: 28px;
+  }
+}
+@media screen and (max-width: 380px) {
+  .artist-title {
+    font-size: 23px;
+    letter-spacing: 10px;
+    margin-top: -1rem;
+  }
 }
