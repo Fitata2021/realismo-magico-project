@@ -1,11 +1,22 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import { useNavigate } from "react-router-dom";
 import "../styles/NavBar.css";
 import butterfly from "../images/couple-game-images/picmix.com_1899742.gif";
 
 const NavBar = () => {
   const navigate = useNavigate();
-  const [menuToogle, setMenuToogle] = useState(false);
+  const [menuToogle, setMenuToogle] = useState(window.innerWidth > 750);
+
+  useEffect(() => {
+    const handleResize = () => {
+      setMenuToogle(window.innerWidth > 750);
+    };
+    window.addEventListener("resize", handleResize);
+    // Eliminar el event listener al desmontar el componente
+    return () => {
+      window.removeEventListener("resize", handleResize);
+    };
+  }, []);
 
   const showMenu = () => {
     setMenuToogle((prevMenuToogle) => !prevMenuToogle);
