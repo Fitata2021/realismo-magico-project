@@ -12,10 +12,10 @@ const Artistas = () => {
   const navigate = useNavigate();
 
   return (
-    <div>
+    <div className="main-artists">
       <h1 className="page-title">ARTISTAS</h1>
       <div className="container">
-        <img src={banner} alt="" className="banner" />
+        <img src={banner} alt="" className="banner-artists" />
       </div>
       <section className="description">
         <h2 className="description-title">Que los caracteriza?</h2>
@@ -104,7 +104,7 @@ const Artistas = () => {
               onClick={() => navigate(`/artist/${artist.id}`)}
             >
               <img src={artist.img} alt="" />
-              <p>{artist.name}</p>
+              <p className="artist-name">{artist.name}</p>
             </li>
           ))}
         </ul>

@@ -5,11 +5,11 @@
   position: relative;
 }
 
-.banner {
+.banner-artists {
   width: 100%;
   position: absolute;
   left: -0%;
-  bottom: -30%;
+  bottom: -70%;
 }
 
 .description {
@@ -45,4 +45,108 @@
   margin-top: 10px;
   width: 80%;
   border-radius: 6px;
+}
+
+@media screen and (max-width: 1310px) {
+  .banner-artists {
+    bottom: -50%;
+  }
+  .artist-card {
+    width: 380px;
+    height: 380px;
+  }
+  .artist-name {
+    font-size: 25px;
+  }
+}
+
+@media screen and (max-width: 1160px) {
+  .banner-artists {
+    bottom: -40%;
+  }
+}
+@media screen and (max-width: 1100px) {
+  .banner-artists {
+    bottom: -30%;
+  }
+}
+@media screen and (max-width: 1030px) {
+  .banner-artists {
+    bottom: -20%;
+  }
+}
+@media screen and (max-width: 1018px) {
+  .artist-card {
+    width: 90%;
+    height: auto;
+  }
+  .artist-name {
+    font-size: 28px;
+  }
+}
+@media screen and (max-width: 950px) {
+  .banner-artists {
+    bottom: -5%;
+  }
+}
+@media screen and (max-width: 820px) {
+  .main-artists .container {
+    height: 29.5rem;
+  }
+  .banner-artists {
+    bottom: 10%;
+  }
+  .main-artists .description-title {
+    font-size: 28px;
+  }
+}
+@media screen and (max-width: 750px) {
+  .main-artists .page-title {
+    margin-top: 4rem;
+  }
+}
+@media screen and (max-width: 660px) {
+  .main-artists .container {
+    height: 25.5rem;
+  }
+}
+@media screen and (max-width: 580px) {
+  .main-artists .container {
+    height: 22.5rem;
+  }
+  .main-artists .description-title {
+    margin-top: 0rem;
+    font-size: 28px;
+    letter-spacing: 17px;
+  }
+  .artist-name {
+    font-size: 22px;
+  }
+}
+@media screen and (max-width: 520px) {
+  .main-artists .container {
+    height: 18.5rem;
+  }
+  .main-artists .description-title {
+    font-size: 28px;
+    letter-spacing: 13px;
+  }
+}
+@media screen and (max-width: 430px) {
+  .main-artists .container {
+    height: 15.5rem;
+  }
+  .main-artists .description-title {
+    font-size: 27px;
+    letter-spacing: 10px;
+    margin-top: -15px;
+  }
+  .artist-name {
+    font-size: 20px;
+  }
+}
+@media screen and (max-width: 340px) {
+  .main-artists .container {
+    margin-top: -2rem;
+  }
 }

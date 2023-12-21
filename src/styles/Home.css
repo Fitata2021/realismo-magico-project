@@ -9,7 +9,7 @@
   width: 100%;
   position: absolute;
   left: -0%;
-  bottom: -135%;
+  bottom: -200%;
 }
 
 .home-title {
@@ -40,6 +40,7 @@
   margin-top: 5rem;
   color: #1a120b;
   font-size: 32px;
+  text-align: left;
 }
 .description p {
   margin-top: 1rem;
@@ -61,116 +62,124 @@
   margin: 1.5rem auto;
   width: 98%;
 }
+@media screen and (max-width: 1380px) {
+  .banner-home {
+    bottom: -130%;
+  }
+}
 
 @media screen and (max-width: 1130px) {
+  .banner-home {
+    bottom: -100%;
+  }
   .home-subtitle {
-    position: absolute;
-    z-index: 2;
-    letter-spacing: 20px;
     margin-top: 18rem;
     margin-left: 40rem;
-    color: #eddfb3;
   }
 }
 
 @media screen and (max-width: 950px) {
+  .banner-home {
+    bottom: -70%;
+  }
   .home-subtitle {
-    position: absolute;
-    z-index: 2;
-    letter-spacing: 20px;
-    margin-top: 18rem;
     margin-left: 30rem;
-    color: #eddfb3;
+  }
+}
+@media screen and (max-width: 860px) {
+  .banner-home {
+    bottom: -40%;
   }
 }
 @media screen and (max-width: 790px) {
   .home-title {
-    position: absolute;
-    z-index: 2;
     letter-spacing: 25px;
     margin-top: 12rem;
-    color: #eddfb3;
-    width: 100%;
     align-items: center;
   }
   .home-subtitle {
-    position: absolute;
-    z-index: 2;
-    letter-spacing: 20px;
     margin-top: 20rem;
     margin-left: 20rem;
-    color: #eddfb3;
+  }
+}
+@media screen and (max-width: 690px) {
+  .banner-home {
+    bottom: -20%;
   }
 }
 @media screen and (max-width: 630px) {
   .home-subtitle {
-    position: absolute;
-    z-index: 2;
-    letter-spacing: 20px;
     margin-top: 21rem;
     margin-left: 15rem;
-    color: #eddfb3;
   }
 }
 @media screen and (max-width: 570px) {
+  .banner-home {
+    bottom: 0%;
+  }
   .home-title {
-    position: absolute;
-    z-index: 2;
     letter-spacing: 20px;
     margin-top: 12rem;
-    color: #eddfb3;
   }
   .home-subtitle {
-    position: absolute;
-    z-index: 2;
     letter-spacing: 15px;
     margin-top: 21rem;
     margin-left: 13rem;
-    color: #eddfb3;
   }
 }
-
-@media screen and (max-width: 470px) {
+@media screen and (max-width: 490px) {
+  .banner-home {
+    bottom: -25%;
+  }
+  .container-banner-home {
+    height: 20.5rem;
+  }
   .home-title {
-    position: absolute;
-    z-index: 2;
-    letter-spacing: 20px;
-    margin-top: 12rem;
-    color: #eddfb3;
+    margin-top: 7rem;
   }
   .home-subtitle {
-    position: absolute;
-    z-index: 2;
     letter-spacing: 15px;
-    margin-top: 23rem;
+    margin-top: 16rem;
     margin-left: 10rem;
-    color: #eddfb3;
+  }
+}
+@media screen and (max-width: 470px) {
+  .home-title {
+    letter-spacing: 16px;
+    margin-top: 6rem;
+  }
+  .home-subtitle {
+    letter-spacing: 15px;
+    margin-top: 16rem;
+    margin-left: 10rem;
   }
   .description-title {
-    letter-spacing: 0.3em;
+    letter-spacing: 0.2em;
+    margin-top: 0rem;
   }
 }
 
 @media screen and (max-width: 420px) {
+  .container-banner-home {
+    height: 12.5rem;
+  }
+  .banner-home {
+    bottom: -60%;
+  }
   .home-title {
-    position: absolute;
-    z-index: 2;
+    margin-top: 0rem;
     letter-spacing: 12px;
-    margin-top: 12rem;
-    color: #eddfb3;
-    font-size: 30px;
+    font-size: 27px;
   }
   .home-subtitle {
-    position: absolute;
-    z-index: 2;
     letter-spacing: 10px;
-    margin-top: 20rem;
+    margin-top: 6.5rem;
     margin-left: 9rem;
-    color: #eddfb3;
   }
   .description-title {
-    letter-spacing: 0.2em;
-    font-size: 28px;
+    text-align: left;
+    letter-spacing: 0.2rem;
+    font-size: 25px;
   }
   .roh-image {
     display: block;
@@ -180,22 +189,36 @@
   }
 }
 @media screen and (max-width: 360px) {
+  .banner-home {
+    bottom: -80%;
+  }
+  .home-title {
+    letter-spacing: 12px;
+    margin-top: 3rem;
+  }
   .home-subtitle {
-    position: absolute;
-    z-index: 2;
     letter-spacing: 10px;
-    margin-top: 20rem;
+    margin-top: 10rem;
     margin-left: 6rem;
-    color: #eddfb3;
+    font-size: 13px;
   }
 }
 @media screen and (max-width: 340px) {
+  .container-banner-home {
+    height: 8.5rem;
+  }
+  .banner-home {
+    bottom: -100%;
+  }
+  .home-title {
+    letter-spacing: 8px;
+    margin-top: 1rem;
+    font-size: 20px;
+  }
   .home-subtitle {
-    position: absolute;
-    z-index: 2;
-    letter-spacing: 10px;
-    margin-top: 22rem;
+    letter-spacing: 8px;
+    margin-top: 5rem;
     margin-left: 6rem;
-    color: #eddfb3;
+    font-size: 12px;
   }
 }
