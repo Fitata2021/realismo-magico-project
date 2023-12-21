@@ -11,10 +11,10 @@ const QuestionsTest = () => {
   useEffect(() => {
     window.scrollTo(0, 0);
   }, []);
-
   function handleAnswer(isCorrect, e) {
     setMissingTime(15);
     //Handling score...
+
     if (isCorrect) setScore(score + 1);
     //Handling styles...
     e.target.classList.add(isCorrect ? "correct" : "incorrect");
@@ -190,7 +190,7 @@ const QuestionsTest = () => {
               <div className="answer">
                 {
                   questions[currentQuestion].options.filter(
-                    (answer) => answer.isCorrect
+                    (answer) => answer.isCorrect,
                   )[0].answerText
                 }
               </div>

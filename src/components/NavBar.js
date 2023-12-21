@@ -9,9 +9,10 @@ const NavBar = () => {
     <div>
       <nav className="nav-bar">
         <ul className="title">
+          <i className="fa-solid fa-bars"></i>
           <li className="title1">REALISMO </li>
           <div className="space-nav"></div>
-          <li>
+          <li className="image-center-nav">
             <img
               onClick={() => navigate("/")}
               src={butterfly}
@@ -32,7 +33,7 @@ const NavBar = () => {
           <li onClick={() => navigate("/artists")}>Artistas</li>
           <li onClick={() => navigate("/tests")}>Tests</li>
 
-          <li>
+          <li className="space-between-options">
             <div className="space-nav"></div>
           </li>
           <li onClick={() => navigate("/games")}>Juegos</li>

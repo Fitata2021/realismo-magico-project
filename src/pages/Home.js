@@ -12,7 +12,7 @@ const Home = () => {
     window.scrollTo(0, 0);
   }, []);
   return (
-    <div>
+    <div className="main-nav-bar">
       <h1 className="page-title">"LO REAL MARAVILLOSO"</h1>
       <h1 className="home-title">"Aquí lo insólito es lo cotidiano"</h1>
       <h3 className="home-subtitle">Carpentier</h3>

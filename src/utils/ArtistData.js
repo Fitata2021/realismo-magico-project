@@ -179,7 +179,7 @@ const ArtistData = [
     webSite: "https://isabellaviviani.cl/",
     bio: "Artista con más de 25 años de trayectoria, en 1992 se traslada a vivir a México, donde estudia pintura y escultura.​​Entre 1994 y 1997 forma parte del directorio del COMAV (Consejo Mundial de Artistas Visuales). ¿Es magia, cuando lo que parece tan real es realmente insólito? Así se desenvuelve maravillosamente la cultura popular latinoamericana, un sincretismo en el que se combina lo prehispánico con lo religioso y lo barroco. Sus obras se distinguen por el color, textura y sincretismo que se manifiestan en figuras y fondos de múltiples lecturas.",
     artworks: [
-      imgViviani1,
+    imgViviani1,
       imgViviani2,
       imgViviani3,
       imgViviani4,

@@ -9,6 +9,7 @@
   opacity: 0.9;
   height: 3.5em;
 }
+
 .nav-bar .subtitles {
   display: flex;
   justify-content: center;
@@ -26,6 +27,14 @@
   justify-content: center;
   align-items: center;
   list-style: none;
+  width: 100%;
+}
+.title i {
+  font-size: 40px;
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  display: none;
 }
 .title .title1 {
   font-size: 23px;
@@ -55,6 +64,7 @@
 .space-nav {
   width: 5%;
 }
+
 .nav-options {
   background: #1a120b;
   color: #d8cca3;
@@ -81,4 +91,198 @@
 .nav-options li:hover {
   color: rgba(253, 207, 56, 1);
   padding-right: 2px;
+}
+@media screen and (max-width: 750px) {
+  .nav-bar .subtitle {
+    color: #d8cca3;
+    font-size: 16px;
+    letter-spacing: 8px;
+    margin-bottom: 10px;
+    width: 300px;
+  }
+  .title i {
+    display: block;
+  }
+
+  .title {
+    margin-left: 32px;
+  }
+  .title img {
+    left: 60px;
+  }
+  .subtitles {
+    margin-left: 55px;
+  }
+  .nav-options {
+    width: 200px;
+    border-radius: 0px;
+    left: 0%;
+    right: 0%;
+  }
+  .nav-options ul {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    list-style: none;
+    margin: 4px;
+    cursor: pointer;
+    margin: 5px;
+  }
+  .nav-options ul li {
+    margin-top: 5px;
+    margin-bottom: 5px;
+    width: 50px;
+  }
+  .space-between-options {
+    display: none;
+  }
+}
+@media screen and (max-width: 620px) {
+  .nav-bar .subtitle {
+    color: #d8cca3;
+    font-size: 16px;
+    letter-spacing: 5px;
+    margin-bottom: 10px;
+    width: 100%;
+  }
+  .subtitle {
+    letter-spacing: 1.5px;
+  }
+}
+@media screen and (max-width: 565px) {
+  .nav-bar .subtitle {
+    font-size: 16px;
+    letter-spacing: 3px;
+    margin-bottom: 10px;
+    width: 300px;
+  }
+  .title {
+    margin-left: 35px;
+  }
+  .nav-bar .title1 {
+    font-size: 20px;
+    letter-spacing: 8px;
+  }
+  .nav-bar .title2 {
+    font-size: 20px;
+  }
+}
+@media screen and (max-width: 535px) {
+  .nav-bar .subtitle {
+    font-size: 16px;
+    letter-spacing: 1px;
+  }
+  .title {
+    margin-left: 38px;
+  }
+}
+@media screen and (max-width: 480px) {
+  .nav-bar .subtitle {
+    font-size: 16px;
+    letter-spacing: 1px;
+  }
+  .nav-bar .title1 {
+    font-size: 20px;
+    letter-spacing: 8px;
+  }
+  .nav-bar .title2 {
+    font-size: 20px;
+  }
+
+  .title {
+    margin-left: 55px;
+  }
+  .title img {
+    left: 90px;
+  }
+  .subtitles {
+    margin-left: 90px;
+  }
+  .nav-bar img {
+    width: 50px;
+  }
+  .subtitles .space-nav {
+    width: 100px;
+  }
+  .title img {
+    left: 90px;
+  }
+}
+@media screen and (max-width: 462px) {
+  .nav-bar .subtitle {
+    color: #d8cca3;
+    font-size: 13px;
+    letter-spacing: 1px;
+    margin-bottom: 10px;
+    width: 150px;
+  }
+  .nav-bar .title1 {
+    font-size: 17px;
+    letter-spacing: 5px;
+  }
+  .nav-bar .title2 {
+    font-size: 17px;
+    letter-spacing: 5px;
+  }
+  .title img {
+    top: 3px;
+  }
+  .subtitles .space-nav {
+    width: 20%;
+  }
+  .title i {
+    font-size: 30px;
+    margin-top: 4.5px;
+  }
+  .title {
+    margin-left: 35px;
+  }
+  .title img {
+    left: 60px;
+  }
+  .subtitles {
+    margin-left: 50px;
+    margin-top: 8px;
+  }
+}
+@media screen and (max-width: 380px) {
+  .title i {
+    font-size: 30px;
+  }
+  .subtitles .space-nav {
+    width: 50px;
+  }
+  .subtitles {
+    margin-left: 55px;
+    margin-top: 8px;
+  }
+}
+@media screen and (max-width: 360px) {
+  .title img {
+    width: 40px;
+    top: 10px;
+    left: 45px;
+  }
+  .subtitles {
+    margin-left: 45px;
+  }
+  .title {
+    margin-left: 28px;
+  }
+  .subtitles .space-nav {
+    width: 30px;
+  }
+}
+@media screen and (max-width: 333px) {
+  .title img {
+    width: 35px;
+    top: 6px;
+    left: 48px;
+  }
+  .subtitles .space-nav {
+    width: 15px;
+  }
+  .title i {
+    left: 5.5px;
+  }
 }
