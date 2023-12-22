@@ -12,7 +12,7 @@ const Tests = () => {
   }, []);
   const navigate = useNavigate();
   return (
-    <div>
+    <div className="main-tests">
       <h1 className="page-title">TESTS</h1>
       <div className="container">
         <img src={banner} alt="" className="banner-tests" />
@@ -66,25 +66,14 @@ const Tests = () => {
         </p>
       </section>
 
-      <ul className="titles">
-        <li>
-          <h3>Responde a Tiempo</h3>
-        </li>
-        <li>
-          <h3>Libera las mariposas</h3>
-        </li>
-        <li>
-          <h3>Descubre el pintor</h3>
-        </li>
-      </ul>
-
       <ul className="container-cards-test">
         <li
           className="card-test"
           title="COMENZAR"
           onClick={() => navigate("/questions-test")}
         >
-          <img src={question_images} alt="" />
+          <h3>Responde a Tiempo</h3>
+          <img className="card-img" src={question_images} alt="" />
         </li>
 
         <li
@@ -92,7 +81,8 @@ const Tests = () => {
           title="COMENZAR"
           onClick={() => navigate("/boolean-test")}
         >
-          <img src={FV_test} alt="" />
+          <h3>Libera Mariposas</h3>
+          <img className="card-img" src={FV_test} alt="" />
         </li>
 
         <li
@@ -100,7 +90,8 @@ const Tests = () => {
           title="COMENZAR"
           onClick={() => navigate("/visual-test")}
         >
-          <img src={visual_test} alt="" />
+          <h3>Crea tu obra</h3>
+          <img src={visual_test} alt="" className="card-img" />
         </li>
       </ul>
     </div>

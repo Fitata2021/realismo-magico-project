@@ -54,6 +54,7 @@ const NavBar = () => {
           <li
             onClick={() => {
               navigate("/");
+              setMenuToogle(window.innerWidth > 750);
             }}
           >
             Inicio
@@ -61,6 +62,7 @@ const NavBar = () => {
           <li
             onClick={() => {
               navigate("/artists");
+              setMenuToogle(window.innerWidth > 750);
             }}
           >
             Artistas
@@ -68,6 +70,7 @@ const NavBar = () => {
           <li
             onClick={() => {
               navigate("/tests");
+              setMenuToogle(window.innerWidth > 750);
             }}
           >
             Tests
@@ -79,6 +82,7 @@ const NavBar = () => {
           <li
             onClick={() => {
               navigate("/games");
+              setMenuToogle(window.innerWidth > 750);
             }}
           >
             Juegos
@@ -86,6 +90,7 @@ const NavBar = () => {
           <li
             onClick={() => {
               navigate("/news");
+              setMenuToogle(window.innerWidth > 750);
             }}
           >
             Noticias
@@ -93,6 +98,7 @@ const NavBar = () => {
           <li
             onClick={() => {
               navigate("/more");
+              setMenuToogle(window.innerWidth > 750);
             }}
           >
             Más
