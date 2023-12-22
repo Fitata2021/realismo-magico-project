@@ -73,7 +73,7 @@ const Tests = () => {
           onClick={() => navigate("/questions-test")}
         >
           <h3>Responde a Tiempo</h3>
-          <img className="card-img" src={question_images} alt="" />
+          <img src={question_images} alt="" className="card-img" />
         </li>
 
         <li
@@ -82,7 +82,7 @@ const Tests = () => {
           onClick={() => navigate("/boolean-test")}
         >
           <h3>Libera Mariposas</h3>
-          <img className="card-img" src={FV_test} alt="" />
+          <img src={FV_test} alt="" className="card-img" />
         </li>
 
         <li

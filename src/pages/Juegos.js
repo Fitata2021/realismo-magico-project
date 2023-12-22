@@ -13,11 +13,11 @@ const Juegos = () => {
   }, []);
   const navigate = useNavigate();
   return (
-    <div>
+    <div className="main-games">
       <h1 className="page-title">JUEGOS</h1>
       {/* <CouplesGame /> */}
       <div className="container">
-        <img src={banner} alt="" className="banner-juegos" />
+        <img src={banner} alt="" className="banner-games" />
       </div>
       <section className="description">
         <p>
@@ -77,17 +77,6 @@ const Juegos = () => {
           disfrutar y aprender!
         </p>
       </section>
-      <ul className="titles">
-        <li>
-          <h3>Obras Gemelas</h3>
-        </li>
-        <li>
-          <h3>Puzzle</h3>
-        </li>
-        <li>
-          <h3>Crea tu Obra</h3>
-        </li>
-      </ul>
 
       <ul className="container-cards-game">
         <li
@@ -95,21 +84,24 @@ const Juegos = () => {
           className="card-game"
           title="JUGAR"
         >
-          <img src={couples_game} alt="" />
+          <h3>Obras Gemelas</h3>
+          <img src={couples_game} alt="" className="game-img" />
         </li>
         <li
           onClick={() => navigate("/puzzle")}
           className="card-game"
           title="JUGAR"
         >
-          <img src={PuzzleGame} alt="" />
+          <h3>Puzzle</h3>
+          <img src={PuzzleGame} alt="" className="game-img" />
         </li>
         <li
           onClick={() => navigate("/canvas")}
           className="card-game"
           title="JUGAR"
         >
-          <img src={canvasGame} alt="" />
+          <h3>Crea tu Obra</h3>
+          <img src={canvasGame} alt="" className="game-img" />
         </li>
       </ul>
     </div>

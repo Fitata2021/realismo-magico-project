@@ -1,15 +1,15 @@
-.container {
+.main-games .container {
   width: 100%;
   height: 31.5rem;
   overflow: hidden;
   position: relative;
 }
 
-.banner-juegos {
+.banner-games {
   width: 100%;
   position: absolute;
   left: -0%;
-  bottom: -40%;
+  bottom: -80%;
 }
 
 .description {
@@ -24,25 +24,26 @@
 .container-cards-game {
   display: flex;
   justify-content: space-evenly;
+  margin-top: 2rem;
+  flex-wrap: wrap;
 }
 .card-game {
-  width: 25%;
-  height: 20rem;
+  width: 25rem;
+  height: 25rem;
   box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.8);
-  filter: blur(1px);
+  filter: blur(0px);
   border-radius: 8px;
-  list-style: none;
   display: flex;
-  justify-content: center;
-  text-align: center;
-  position: relative;
+  flex-direction: column;
+  align-items: center;
+  margin: 10px;
 }
 .card-game:hover::after {
   content: attr(title);
   font-size: 50px;
-
   position: absolute;
   background: rgba(253, 207, 56, 1);
+  border: solid #473c2a 2px;
   color: #473c2a;
   padding: 10px 10px;
   border-radius: 5px;
@@ -55,10 +56,196 @@
 }
 .card-game:hover {
   filter: blur(0px);
-  width: 25.5%;
-  height: 20.5rem;
+  width: 25.1rem;
+  height: 25.1rem;
+  .game-img {
+    filter: blur(0px);
+  }
+}
+.card-game h3 {
+  padding: 5px 10px;
+  background: #eddfb3;
+  border-radius: 4px;
+  box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.8);
+  font-size: 1.5rem;
+  position: absolute;
+  z-index: 9;
+  top: 2rem;
 }
 .card-game img {
   width: 100%;
-  border-radius: 8px;
+  height: 100%;
+  border-radius: 4px;
+  filter: blur(1px);
+}
+@media screen and (max-width: 1430px) {
+  .banner-games {
+    bottom: -50%;
+  }
+}
+@media screen and (max-width: 1330px) {
+  .banner-games {
+    bottom: -30%;
+  }
+  .card-game::after {
+    content: attr(title);
+    font-size: 50px;
+    position: absolute;
+    background: rgba(253, 207, 56, 1);
+    border: solid #473c2a 2px;
+    color: #473c2a;
+    padding: 10px 10px;
+    border-radius: 5px;
+    top: 40%;
+    left: 50%;
+    transform: translateX(-50%);
+    white-space: wrap;
+    transition: opacity 0.2s ease-in-out;
+    opacity: 1;
+  }
+}
+
+@media screen and (max-width: 1130px) {
+  .banner-games {
+    bottom: -20%;
+  }
+  .card-game:hover {
+    filter: blur(0px);
+  }
+}
+@media screen and (max-width: 1100px) {
+  .banner-games {
+    bottom: -15%;
+  }
+  .main-games .container {
+    height: 29.5rem;
+  }
+}
+@media screen and (max-width: 1000px) {
+  .banner-games {
+    bottom: -10%;
+  }
+  .main-games .container {
+    height: 27.5rem;
+  }
+}
+
+@media screen and (max-width: 920px) {
+  .main-games .container {
+    height: 25.5rem;
+  }
+  .banner-games {
+    bottom: -15%;
+  }
+  .card-game:hover {
+    filter: blur(0px);
+    width: 253px;
+    height: auto;
+  }
+  .card-game:hover::after {
+    font-size: 45px;
+  }
+
+  .container-cards-game {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .card-game {
+    width: 50%;
+    height: auto;
+    margin: 10px;
+  }
+  .card-game:hover {
+    width: 56%;
+    height: auto;
+  }
+  .card-game:hover::after {
+    font-size: 80px;
+  }
+}
+
+@media screen and (max-width: 780px) {
+  .main-games .container {
+    height: 22.5rem;
+  }
+}
+@media screen and (max-width: 750px) {
+  .main-games .page-title {
+    margin-top: 4.5rem;
+  }
+  .card-test {
+    width: 60%;
+    height: auto;
+    margin: 10px;
+  }
+  .card-game:hover {
+    width: 61%;
+    height: auto;
+    margin: 10px;
+  }
+}
+@media screen and (max-width: 700px) {
+  .main-games .container {
+    height: 20.5rem;
+  }
+}
+/* gfgfgdgdf */
+@media screen and (max-width: 620px) {
+  .main-games .container {
+    height: 18.5rem;
+  }
+  .main-games .page-title {
+    margin-top: 4.5rem;
+  }
+
+  .card-game:hover::after {
+    font-size: 67px;
+  }
+  .card-game {
+    width: 80%;
+    height: auto;
+    margin: 10px;
+  }
+  .card-game:hover {
+    width: 81%;
+    height: auto;
+    margin: 10px;
+  }
+}
+@media screen and (max-width: 570px) {
+  .main-games .container {
+    height: 15.5rem;
+  }
+  .banner-games {
+    bottom: -20%;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .main-games .container {
+    height: 14.5rem;
+  }
+  .card-game:hover::after {
+    font-size: 50px;
+  }
+}
+
+@media screen and (max-width: 400px) {
+  .main-games .container {
+    height: 14.5rem;
+  }
+  .card-game:hover::after {
+    font-size: 40px;
+  }
+}
+@media screen and (max-width: 450px) {
+  .main-games .container {
+    height: 12.5rem;
+  }
+}
+@media screen and (max-width: 385px) {
+  .main-games .container {
+    height: 10.5rem;
+  }
 }
