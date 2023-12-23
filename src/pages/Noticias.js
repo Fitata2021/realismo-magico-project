@@ -14,7 +14,7 @@ const Noticias = () => {
     window.scrollTo(0, 0);
   }, []);
   return (
-    <div>
+    <div className="main-news">
       <h1 className="page-title">NOTICIAS</h1>
       <div className="container">
         <img src={banner} alt="" className="banner-noticias" />
