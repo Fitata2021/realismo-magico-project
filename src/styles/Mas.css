@@ -24,13 +24,12 @@
   color: #473c2a;
   letter-spacing: 8px;
   margin-top: 5rem;
-  border-top: solid 1px #473c2a;
   margin-bottom: -8px;
 }
 .quotes:first-child {
   border-top: none;
-  margin-top: 1rem;
 }
+
 .author-subtitle {
   position: absolute;
   z-index: 2;
@@ -99,6 +98,13 @@
 }
 
 @media screen and (max-width: 885px) {
+  .quotes {
+    border-top: solid 1px #473c2a;
+  }
+  .quotes:first-child {
+    margin-top: 1rem;
+  }
+
   .author-subtitle {
     margin-left: 20rem;
     font-size: 20px;

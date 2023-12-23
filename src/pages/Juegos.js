@@ -80,9 +80,9 @@ const Juegos = () => {
 
       <ul className="container-cards-game">
         <li
-          onClick={() => navigate("/couples-game")}
           className="card-game"
           title="JUGAR"
+          onClick={() => navigate("/couples-game")}
         >
           <h3>Obras Gemelas</h3>
           <img src={couples_game} alt="" className="game-img" />
