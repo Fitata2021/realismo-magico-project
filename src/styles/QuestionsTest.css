@@ -128,7 +128,7 @@ main {
 .play-button {
   width: 100%;
   display: flex;
-  justify-content: end;
+  justify-content: flex-end;
 }
 .border-button {
   width: 80px;
