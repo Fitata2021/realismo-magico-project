@@ -3,13 +3,14 @@
   height: 31.5rem;
   overflow: hidden;
   position: relative;
+  text-align: left;
 }
 
 .banner-mas {
   width: 100%;
   position: absolute;
   left: -0%;
-  bottom: -70%;
+  bottom: -100%;
 }
 
 .description {
@@ -23,13 +24,19 @@
   color: #473c2a;
   letter-spacing: 8px;
   margin-top: 5rem;
+  border-top: solid 1px #473c2a;
+  margin-bottom: -8px;
+}
+.quotes:first-child {
+  border-top: none;
+  margin-top: 1rem;
 }
 .author-subtitle {
   position: absolute;
   z-index: 2;
   font-size: 25px;
   letter-spacing: 12px;
-  margin-top: 18rem;
+  margin-top: 10rem;
   margin-left: 50rem;
   color: #eddfb3;
 }
@@ -40,10 +47,157 @@
 }
 
 .description-referentes {
+  width: 90%;
   margin-top: 10rem;
   margin-bottom: 2rem;
   letter-spacing: 0.5em;
   margin-top: 10rem;
   color: #1a120b;
   font-size: 32px;
+}
+.bibliografias {
+  width: 98%;
+  word-wrap: break-word;
+}
+
+/* Responsive */
+
+@media screen and (max-width: 1380px) {
+  .main-more .container {
+    height: 29.5rem;
+  }
+  .banner-mas {
+    bottom: -80%;
+  }
+}
+@media screen and (max-width: 1220px) {
+  .author-subtitle {
+    margin-left: 40rem;
+  }
+}
+@media screen and (max-width: 1170px) {
+  .main-more .container {
+    height: 27.5rem;
+  }
+  .banner-mas {
+    bottom: -50%;
+  }
+  .author-subtitle {
+    margin-left: 30rem;
+  }
+}
+@media screen and (max-width: 920px) {
+  .main-more .container {
+    height: 25.5rem;
+  }
+  .banner-mas {
+    bottom: -30%;
+  }
+  .author-subtitle {
+    margin-left: 25rem;
+  }
+}
+
+@media screen and (max-width: 885px) {
+  .author-subtitle {
+    margin-left: 20rem;
+    font-size: 20px;
+    letter-spacing: 10px;
+  }
+}
+
+@media screen and (max-width: 750px) {
+  .main-more .container {
+    height: 23.5rem;
+  }
+  .main-more .page-title {
+    margin-top: 4rem;
+  }
+  .banner-mas {
+    bottom: -20%;
+  }
+  .quotes {
+    margin-top: 4.5rem;
+    font-size: 23px;
+    letter-spacing: 6px;
+  }
+  .author-subtitle {
+    margin-left: 18rem;
+    font-size: 19px;
+    letter-spacing: 8px;
+  }
+  .description-referentes {
+    letter-spacing: 8px;
+    font-size: 30px;
+  }
+}
+@media screen and (max-width: 640px) {
+  .main-more .container {
+    height: 21.5rem;
+  }
+  .banner-mas {
+    bottom: -10%;
+  }
+  .quotes {
+    margin-top: 4.5rem;
+    font-size: 21px;
+    letter-spacing: 4px;
+  }
+  .author-subtitle {
+    margin-left: 18rem;
+    font-size: 19px;
+    letter-spacing: 6px;
+  }
+}
+@media screen and (max-width: 570px) {
+  .author-subtitle {
+    margin-left: 12rem;
+  }
+  .quotes {
+    margin-top: 4.5rem;
+    font-size: 20px;
+    letter-spacing: 3px;
+  }
+}
+@media screen and (max-width: 530px) {
+  .main-more .container {
+    height: 19.5rem;
+  }
+  .banner-mas {
+    bottom: 0%;
+  }
+}
+@media screen and (max-width: 480px) {
+  .author-subtitle {
+    margin-left: 8rem;
+  }
+}
+@media screen and (max-width: 430px) {
+  .main-more .container {
+    height: 17.5rem;
+  }
+  .banner-mas {
+    bottom: 5%;
+  }
+  .author-subtitle {
+    margin-left: 4rem;
+    letter-spacing: 4px;
+  }
+}
+@media screen and (max-width: 380px) {
+  .main-more .container {
+    height: 15.5rem;
+  }
+  .banner-mas {
+    bottom: 5%;
+  }
+  .author-subtitle {
+    margin-left: 2rem;
+    font-size: 18px;
+    letter-spacing: 6px;
+  }
+  .description-referentes {
+    font-size: 28px;
+    letter-spacing: 4px;
+  }
 }

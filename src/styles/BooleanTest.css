@@ -18,7 +18,7 @@
   display: flex;
   justify-content: space-between;
   margin-top: 13.5rem;
-  background-image: url("../images/couple-game-images/butterfly-card.jpg");
+  /* background-image: url("../images/couple-game-images/butterfly-card.jpg"); */
   background-size: 200px 200px;
   background-position: 10px 180px;
   background-repeat: repeat;

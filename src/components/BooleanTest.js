@@ -145,7 +145,7 @@ const BooleanTest = () => {
             de mariposas que hayas liberado!
             <img
               className={"butterfly-active"}
-              style={{ width: "50px", float: "right", margin: "0px" }}
+              style={{ width: "30px", float: "right", margin: "0px" }}
               src={butterfly}
               alt=""
             />
@@ -166,7 +166,7 @@ const BooleanTest = () => {
             <div className="border-button">
               <i
                 class="fa-solid fa-play"
-                onClick={() => setStatusGame("beginning")}
+                onClick={() => [reset(), setStatusGame("beginning")]}
               ></i>
             </div>
           </div>

@@ -8,7 +8,7 @@ const Mas = () => {
     window.scrollTo(0, 0);
   }, []);
   return (
-    <div>
+    <div className="main-more">
       <h1 className="page-title">"QUOTES"</h1>
       <div className="container">
         <img src={banner} alt="" className="banner-mas" />
@@ -66,16 +66,24 @@ const Mas = () => {
         <p className="author-subtitle">Pedro Calderón de la Barca</p>
 
         <h2 className="description-referentes">Referentes</h2>
-        <p>http://www.leonoracarrington.com.mx/index.html</p>
-        <p>https://es.wikidat.com/info/isabel-viviani</p>
-        <p>
-          https://galeria13.cl/portfolio/mario-gomez/#:~:text=Estudi%C3%B3%20Licenciatura%20en%20Artes%20con,en%20esencia%20forma%20y%20color.
+        <p className="bibliografias">
+          http://www.leonoracarrington.com.mx/index.html
         </p>
-        <p>https://lsgaleria.com/pages/biografia-arturo-rivera</p>
-        <p>
+        <p className="bibliografias">
+          https://es.wikidat.com/info/isabel-viviani
+        </p>
+        <p className="bibliografias">
+          https://galeria13.cl/portfolio/mario-gomez/#:~:text=Estudi%C3%B3%20Licenciatura%20en%20Artes%20con,en%20esencia%20forma%20y%20color
+        </p>
+        <p className="bibliografias">
+          https://lsgaleria.com/pages/biografia-arturo-rivera
+        </p>
+        <p className="bibliografias">
           https://www.mexicodesconocido.com.mx/leonora-carrington-biografia-obras-y-pintura.html
         </p>
-        <p>https://datos.bne.es/persona/XX1119271.html</p>
+        <p className="bibliografias">
+          https://datos.bne.es/persona/XX1119271.html
+        </p>
       </section>
     </div>
   );
