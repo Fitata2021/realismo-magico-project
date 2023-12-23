@@ -5,45 +5,21 @@ main {
   align-items: center;
 }
 .start-section {
-  margin-top: 11.5rem;
-  display: flex;
-  justify-content: center;
-  background-image: url("../images/couple-game-images/butterfly-card.jpg");
-  background-size: 200px 200px;
-  background-position: 10px 180px;
-  background-repeat: repeat;
-  padding: 2rem;
-}
-.start-section .info1 {
-  width: 31%;
-  font-size: 17px;
-  background: #473c2a;
-  color: #d8cca3;
-  margin-left: 1rem;
-  border-radius: 10px;
-  text-align: justify;
-  padding: 1rem;
-  height: 17rem;
-  margin-top: 1.3rem;
-}
-
-.start-section .info2 {
-  width: 30%;
+  width: 60%;
+  font-size: 22px;
+  margin-top: 2rem;
   display: flex;
   flex-direction: column;
-  justify-content: space-evenly;
-}
-.start-section .info2 p {
-  font-size: 17px;
-  color: #473c2a;
+  align-items: center;
+  text-align: start;
+  padding: 2rem;
   background: #d8cca3;
-  margin-left: 1rem;
-  border-radius: 10px;
-  text-align: justify;
-  padding: 1rem;
-  height: 7.5rem;
-  margin-top: 1.3rem;
-  border: solid 2px #473c2a;
+  box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.8);
+  border-radius: 8px;
+}
+
+.start-section p {
+  margin: 15px;
 }
 .develop-section {
   width: 100%;
@@ -148,25 +124,31 @@ main {
   cursor: pointer;
   margin: 5px;
 }
-.info2-btn {
-  width: 17.5rem;
-  height: 2em;
-  font-size: 3em;
-  color: #473c2a;
-  background: rgba(253, 207, 56, 1);
-  border-radius: 15px;
+
+.play-button {
+  width: 100%;
   display: flex;
-  padding: 7px;
-  justify-content: flex-start;
+  justify-content: end;
+}
+.border-button {
+  width: 80px;
+  height: 80px;
+  padding: 2px;
+  border: solid #473c2a 1px;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
   align-items: center;
-  border: solid 2px #473c2a;
-  cursor: pointer;
-  margin: auto;
 }
-.info2-btn:hover {
+.border-button:hover {
   background: rgba(253, 207, 56, 1);
-  border: solid 2px transparent;
+  box-shadow: 2px 2px 30px rgba(253, 207, 56, 1);
 }
+.play-button i {
+  font-size: 50px;
+  margin-left: 5px;
+}
+
 .check-icons {
   display: flex;
   justify-content: center;
@@ -307,36 +289,46 @@ button:hover {
   box-shadow: 2px 2px 30px rgba(253, 207, 56, 1);
 }
 
-.start-section .graphic {
-  background: #b09b71;
-  width: 200px;
-  height: 145px;
-  margin-top: 1.5rem;
-  margin-right: -1rem;
-  border-radius: 10px;
-  border: solid 2px #473c2a;
+@media screen and (max-width: 1130px) {
+  .start-section {
+    font-size: 20px;
+  }
 }
-
-.point {
-  list-style: none;
-  display: flex;
+@media screen and (max-width: 1046px) {
+  .start-section {
+    width: 90%;
+  }
 }
-
-.point:first-child {
-  margin-top: 20px;
+@media screen and (max-width: 750px) {
+  .start-section {
+    margin-top: 0rem;
+  }
+  .border-button {
+    width: 60px;
+    height: 60px;
+    /* background: rgba(253, 207, 56, 1); */
+  }
+  .play-button i {
+    font-size: 30px;
+    margin-left: 5px;
+  }
 }
-.point p {
-  height: 4px;
-  width: 80px;
-  background: #000000;
-  margin-top: 15px;
-  margin-left: 30px;
-}
-.point div {
-  height: 10px;
-  width: 10px;
-  background-color: rgba(253, 207, 56, 1);
-  margin-top: 13px;
-  margin-left: 30px;
-  border-radius: 50%;
+@media screen and (max-width: 705px) {
+  .start-section {
+    font-size: 18px;
+    padding: 1rem;
+  }
+  .start-section h2 {
+    font-size: 22px;
+    padding: 1rem;
+  }
+  .start-section p {
+    margin: 5px;
+  }
+  .rigth-icon {
+    margin: 5px;
+  }
+  .wrong-icon {
+    margin: 5px;
+  }
 }

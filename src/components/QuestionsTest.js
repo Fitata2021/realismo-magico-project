@@ -55,61 +55,34 @@ const QuestionsTest = () => {
     return (
       <main>
         <section className="start-section">
-          <article className="graphic">
-            <ul>
-              <li className="point">
-                <div></div>
-                <p></p>
-              </li>
-              <li className="point">
-                <div></div>
-                <p></p>
-              </li>
-              <li className="point">
-                <div></div>
-                <p></p>
-              </li>
-              <li className="point">
-                <div></div>
-                <p></p>
-              </li>
-            </ul>
-          </article>
-          <article className="info1">
-            <h1 className="info-title">TEST DE SELECCION MULTIPLE</h1>
-            <p>
-              Para poder realizar este test es necesario que hayas abordado todo
-              el contenido sobre realismo magico presentado en esta pagina. Las
-              preguntas estan diseñadas como selección multiple y solo una de
-              las opciones es correcta. Tendras un tiempo limite para contestar,
-              si se termina el tiempo y no has contestado, la pregunta pasará a
-              la siguiente. Al final del test obtendras tu puntuación.
-            </p>
-          </article>
-
-          <article className="info2">
-            <div>
-              <p>
-                UNA VEZ SELECCIONES LA RESPUESTA, SE MARCARÁ DE COLOR VERDE SI
-                ES CORRECTA Ó SE MARCARÁ DE COLOR ROJO SI ES INCORRECTA
-              </p>
-              <div className="check-icons">
-                <div className="rigth-icon">
-                  <i className="fa-solid fa-check"></i>
-                </div>
-                <div className="wrong-icon">
-                  <i className="fa-solid fa-xmark"></i>
-                </div>
-              </div>
+          <h2>SELECCION MULTIPLE</h2>
+          <p>
+            Para poder realizar este test es necesario que hayas abordado todo
+            el contenido sobre realismo magico presentado en esta pagina. Las
+            preguntas estan diseñadas como selección multiple y solo una de las
+            opciones es correcta. Tendras un tiempo limite para contestar, si se
+            termina el tiempo y no has contestado, la pregunta pasará a la
+            siguiente. Al final del test obtendras tu puntuación.
+          </p>
+          <p>
+            UNA VEZ SELECCIONES LA RESPUESTA, SE MARCARÁ DE COLOR VERDE SI ES
+            CORRECTA
+            <div className="rigth-icon">
+              <i className="fa-solid fa-check"></i>
+            </div>{" "}
+            Ó SE MARCARÁ DE COLOR ROJO SI ES INCORRECTA
+            <div className="wrong-icon">
+              <i className="fa-solid fa-xmark"></i>
             </div>
-
-            <button
-              className="info2-btn"
-              onClick={() => setQuizStatus("development")}
-            >
-              COMENZAR
-            </button>
-          </article>
+          </p>
+          <div className="play-button">
+            <div className="border-button">
+              <i
+                class="fa-solid fa-play"
+                onClick={() => setQuizStatus("development")}
+              ></i>
+            </div>
+          </div>
         </section>
       </main>
     );

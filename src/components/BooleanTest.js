@@ -110,7 +110,7 @@ const BooleanTest = () => {
             <div className="answer">
               {
                 booleanQuestions[currentQuestion].options.filter(
-                  (answer) => answer.isCorrect
+                  (answer) => answer.isCorrect,
                 )[0].answerText
               }
             </div>
@@ -136,59 +136,40 @@ const BooleanTest = () => {
         </section>
       ) : (
         <section className="main-section">
-          <article className="graphic">
-            <ul>
-              <li className="point">
-                <div className="rst"></div>
-                <p></p>
-              </li>
-
-              <li className="point">
-                <div className="snd"></div>
-                <p></p>
-              </li>
-            </ul>
-          </article>
-          <article className="info1">
-            <h1 className="info-title">TEST: FALSO / VERDADERO</h1>
-            <p>
-              Para poder realizar este test es necesario que hayas abordado todo
-              el contenido sobre realismo mágico presentado en esta página. Cada
-              vez que aciertes en una pregunta le darás vida a una mariposa
-              mágica . Al final del test, obtendrás un puntaje equivalente a la
-              camtidad de mariposas que hayas liberado!
-              <img
-                className={"butterfly-active"}
-                style={{ width: "60px", float: "right", margin: "0px" }}
-                src={butterfly}
-                alt=""
-              />
-            </p>
-          </article>
-
-          <article className="info2">
-            <div>
-              <p>
-                UNA VEZ SELECCIONES LA RESPUESTA, SE MARCARÁ DE COLOR VERDE SI
-                ES CORRECTA Ó SE MARCARÁ DE COLOR ROJO SI ES INCORRECTA
-              </p>
-              <div className="check-icons">
-                <div className="rigth-icon">
-                  <i className="fa-solid fa-check"></i>
-                </div>
-                <div className="wrong-icon">
-                  <i className="fa-solid fa-xmark"></i>
-                </div>
-              </div>
+          <h2 className="info-title">FALSO / VERDADERO</h2>
+          <p>
+            Para poder realizar este test es necesario que hayas abordado todo
+            el contenido sobre realismo mágico presentado en esta página. Cada
+            vez que aciertes en una pregunta le darás vida a una mariposa mágica
+            . Al final del test, obtendrás un puntaje equivalente a la cantidad
+            de mariposas que hayas liberado!
+            <img
+              className={"butterfly-active"}
+              style={{ width: "50px", float: "right", margin: "0px" }}
+              src={butterfly}
+              alt=""
+            />
+          </p>
+          <p>
+            UNA VEZ SELECCIONES LA RESPUESTA, SE MARCARÁ DE COLOR VERDE SI ES
+            CORRECTA{" "}
+            <div className="rigth-icon">
+              <i className="fa-solid fa-check"></i>
+            </div>{" "}
+            Ó SE MARCARÁ DE COLOR ROJO SI ES INCORRECTA{" "}
+            <div className="wrong-icon">
+              <i className="fa-solid fa-xmark"></i>
             </div>
+          </p>
 
-            <button
-              className="info2-btn"
-              onClick={() => [reset(), setStatusGame("beginning")]}
-            >
-              COMENZAR
-            </button>
-          </article>
+          <div className="play-button">
+            <div className="border-button">
+              <i
+                class="fa-solid fa-play"
+                onClick={() => setStatusGame("beginning")}
+              ></i>
+            </div>
+          </div>
         </section>
       )}
       {statusGame !== "game" && (
