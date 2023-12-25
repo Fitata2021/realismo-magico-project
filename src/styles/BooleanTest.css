@@ -180,12 +180,20 @@
   .butterfly-inactive {
     width: 80px;
   }
+  .main-section {
+    width: 95%;
+    margin-top: -0.5rem;
+  }
 }
 @media screen and (max-width: 750px) {
-  .card-quiz,
-  .card-finished,
-  .card-shown-answers {
+  .butterflies-game .card-quiz,
+  .butterflies-game .card-finished,
+  .butterflies-game .card-shown-answers {
     margin-top: -1rem;
+    font-size: 17px;
+  }
+  .main-section {
+    font-size: 17px;
   }
 }
 @media screen and (max-width: 600px) {
