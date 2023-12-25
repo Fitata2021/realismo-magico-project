@@ -1,5 +1,5 @@
 .main-section {
-  margin-left: 20%;
+  margin-top: 2rem;
   width: 60%;
   font-size: 22px;
   padding: 2rem;
@@ -16,26 +16,19 @@
 .butterflies-game {
   width: 100%;
   display: flex;
-  justify-content: space-between;
-  margin-top: 13.5rem;
-  /* background-image: url("../images/couple-game-images/butterfly-card.jpg"); */
-  background-size: 200px 200px;
-  background-position: 10px 180px;
-  background-repeat: repeat;
+  justify-content: center;
+  flex-wrap: wrap;
 }
 
 .butterflies-game .butterfly_board {
-  margin-top: 8rem;
-  margin-right: 10%;
-  width: 40%;
-  height: 30rem;
+  margin-top: 2rem;
+  width: 500px;
   display: grid;
   grid-template-columns: repeat(4, 1fr);
   grid-template-rows: repeat(4, 1fr);
   background: #d8cca3;
   border-radius: 8px;
   border: hsl(37, 26%, 22%) dotted 8px;
-  position: absolute;
   top: 0rem;
   right: 4.5rem;
 }
@@ -55,51 +48,71 @@
 
 .butterflies-game .card-quiz {
   display: flex;
-  margin-left: 15%;
   justify-content: center;
-  margin-top: 0rem;
-  width: 28%;
+  width: 400px;
+  height: auto;
   background: #473c2a;
+  margin-left: 0;
   color: #d8cca3;
   border-radius: 8px;
   font-size: 1.2em;
-  height: 20rem;
 }
 
 .butterflies-game .card-quiz button {
-  width: 60%;
+  width: 130px;
+  justify-content: center;
 }
 
 .butterflies-game .card-finished {
   display: flex;
   justify-content: center;
-  margin-top: 1.5rem;
-  margin-left: 15%;
-  width: 24%;
-  background: #473c2a;
-  color: #d8cca3;
-  border-radius: 8px;
-  font-size: 1.2em;
-  height: 15rem;
-}
-
-.butterflies-game .card-shown-answers {
-  display: flex;
-  justify-content: center;
-  margin-top: 1.5rem;
-  margin-left: 15%;
   width: 400px;
   background: #473c2a;
   color: #d8cca3;
   border-radius: 8px;
   font-size: 1.2em;
-  height: 17rem;
+  height: 230px;
+}
+.butterflies-game .btns-container {
+  flex-direction: column;
+  align-items: center;
 }
 
+.butterflies-game .btns-container button {
+  margin: 1px;
+  width: 130px;
+}
+
+.butterflies-game .card-shown-answers {
+  display: flex;
+  justify-content: center;
+  width: 400px;
+  height: auto;
+  background: #473c2a;
+  color: #d8cca3;
+  border-radius: 8px;
+  font-size: 1.2em;
+}
+.butterflies-game .card-shown-answers .answer {
+  justify-content: center;
+  width: 115px;
+}
 .butterflies-game .card-shown-answers .play-again {
-  width: 80%;
+  justify-content: center;
+  width: 115px;
+  margin: 0px;
 }
-
+.butterflies-game .card-shown-answers .answers-right {
+  flex-direction: column;
+  align-items: center;
+}
+.butterflies-game .card-shown-answers button {
+  width: 25px;
+  background: rgba(253, 207, 56, 1);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
 .left {
   width: 100%;
   position: relative;
@@ -158,136 +171,30 @@
   left: 31rem;
 }
 
-@media screen and (max-width: 1330px) {
-  .butterflies-game .card-quiz {
-    height: 22rem;
-    width: 30%;
-  }
-}
-@media screen and (max-width: 1275px) {
-  .butterflies-game .card-finished {
-    width: 30%;
-  }
-}
-
-@media screen and (max-width: 1170px) {
+@media screen and (max-width: 920px) {
   .butterflies-game .butterfly_board {
-    margin-top: 8rem;
-    left: 50%;
-    transform: translate(-50%);
+    margin-top: 1rem;
     width: 400px;
   }
-  .butterflies-game .card-quiz {
-    height: 18rem;
-    width: 50%;
-    margin-left: 25%;
-    margin-top: 23rem;
-  }
-  .butterflies-game .card-finished {
-    height: 13rem;
-    width: 30%;
-    margin-left: 35%;
-    margin-top: 22rem;
+  .butterfly-active,
+  .butterfly-inactive {
+    width: 80px;
   }
 }
-
-@media screen and (max-width: 1070px) {
-  .butterflies-game {
-    justify-content: center;
-  }
-  .main-section {
-    margin-left: 0%;
-    width: 95%;
-  }
-  .butterflies-game .card-quiz {
-    width: 50%;
-    margin-left: 0%;
-  }
-  .butterflies-game .card-finished {
-    width: 320px;
-    margin-left: 0%;
-  }
-}
-
 @media screen and (max-width: 750px) {
-  .main-section {
-    margin-left: 0%;
-    width: 95%;
-    font-size: 18px;
-    padding: 1rem;
+  .card-quiz,
+  .card-finished,
+  .card-shown-answers {
+    margin-top: -1rem;
   }
-  .main-section h2 {
-    font-size: 22px;
-    padding: 1rem;
-  }
+}
+@media screen and (max-width: 600px) {
   .butterflies-game .butterfly_board {
-    margin-top: 6rem;
+    margin-top: 0.5rem;
+    width: 300px;
   }
-  .butterflies-game .card-quiz {
-    height: 18rem;
-    width: 70%;
-    margin-top: 21rem;
-    width: 380px;
-  }
-  .butterflies-game .card-finished {
-    margin-top: 20rem;
-  }
-  .border-button {
+  .butterfly-active,
+  .butterfly-inactive {
     width: 60px;
-    height: 60px;
-    /* background: rgba(253, 207, 56, 1); */
-  }
-  .play-button i {
-    font-size: 30px;
-    margin-left: 5px;
-  }
-}
-
-@media screen and (max-width: 550px) {
-  .butterflies-game .card-quiz {
-    height: 18rem;
-    margin-top: 21rem;
-  }
-}
-@media screen and (max-width: 445px) {
-  .butterflies-game .butterfly_board {
-    width: 98%;
-    height: auto;
-  }
-  .butterfly-inactive {
-    width: 80px;
-    padding-top: 5px;
-  }
-
-  .butterfly-active {
-    width: 80px;
-    padding-top: 5px;
-  }
-  .butterflies-game .card-quiz {
-    height: 20rem;
-    width: 95%;
-    margin-top: 16rem;
-  }
-  .butterflies-game .card-finished {
-    margin-top: 15rem;
-  }
-}
-@media screen and (max-width: 390px) {
-  .butterflies-game .card-quiz {
-    height: 25rem;
-  }
-}
-@media screen and (max-width: 370px) {
-  .butterfly-inactive {
-    width: 70px;
-  }
-
-  .butterfly-active {
-    width: 70px;
-  }
-  .butterflies-game .card-quiz {
-    height: 28rem;
-    width: 100%;
-    margin-left: 0%;
   }
 }

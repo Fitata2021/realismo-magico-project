@@ -8,7 +8,6 @@ const BooleanTest = () => {
   const [currentQuestion, setCurrentQuestion] = useState(0);
   const [score, setScore] = useState(0);
   const [statusGame, setStatusGame] = useState("game");
-  //const [statusAnswer, setStatusAnswer] = useState("start");
 
   function handleAnswer(isCorrect, e) {
     console.log(isCorrect);

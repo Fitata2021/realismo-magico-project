@@ -358,6 +358,7 @@ button:hover {
   .develop-section {
     margin-top: 2rem;
     height: 370px;
+    background-image: none;
   }
   .develop-section .right button {
     width: 60%;
