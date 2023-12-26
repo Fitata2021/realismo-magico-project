@@ -72,7 +72,7 @@ const Tests = () => {
           title="COMENZAR"
           onClick={() => navigate("/questions-test")}
         >
-          <h3>Responde contra Reloj</h3>
+          <h3>Contra Reloj</h3>
           <img src={question_images} alt="" className="card-img" />
         </li>
 

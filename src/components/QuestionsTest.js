@@ -55,12 +55,12 @@ const QuestionsTest = () => {
     return (
       <main>
         <section className="start-section">
-          <h2>RESPONDE CONTRA RELOJ!</h2>
+          <h2>CONTRA RELOJ!</h2>
           <p>
             Las preguntas estan diseñadas con 4 opciones de respuesta donde solo
             una de las opciones es la correcta. Tendras un tiempo limite para
             contestar, si se termina el tiempo y no has contestado, la pregunta
-            pasará a la siguiente. Al final del test obtendras tu puntuación.
+            pasará a la siguiente. Al final del test obtendrás tu puntuación.
           </p>
           <p>
             UNA VEZ SELECCIONES LA RESPUESTA, SE MARCARÁ DE COLOR VERDE SI ES

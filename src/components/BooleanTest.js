@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import "../styles/BooleanTest.css";
 import butterfliesTest from "../utils/ButterfliesTest";
 import booleanQuestions from "../utils/BooleanQuestions";
@@ -8,6 +8,9 @@ const BooleanTest = () => {
   const [currentQuestion, setCurrentQuestion] = useState(0);
   const [score, setScore] = useState(0);
   const [statusGame, setStatusGame] = useState("game");
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
 
   function handleAnswer(isCorrect, e) {
     console.log(isCorrect);
