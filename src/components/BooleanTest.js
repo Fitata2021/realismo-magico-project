@@ -121,14 +121,14 @@ const BooleanTest = () => {
                     : [reset(), setStatusGame("game")]
                 }
               >
-                <i className="fa-solid fa-arrow-right-long"></i>
+                <i className="fa-solid fa-chevron-right"></i>
               </button>
             ) : (
               <button
-                onClick={() => [reset(), setStatusGame("beginning")]}
+                onClick={() => [setStatusGame("finished")]}
                 className="play-again"
               >
-                Volver a Jugar
+                <i className="fa-solid fa-xmark"></i>
               </button>
             )}
           </div>

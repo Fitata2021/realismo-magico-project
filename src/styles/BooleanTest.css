@@ -97,22 +97,24 @@
   justify-content: center;
   width: 115px;
 }
-.butterflies-game .card-shown-answers .play-again {
-  justify-content: center;
-  width: 115px;
-  margin: 0px;
-}
 .butterflies-game .card-shown-answers .answers-right {
   flex-direction: column;
   align-items: center;
+  justify-content: center;
 }
 .butterflies-game .card-shown-answers button {
   width: 25px;
   background: rgba(253, 207, 56, 1);
   display: flex;
   flex-direction: column;
-  align-items: center;
 }
+
+/* .butterflies-game .card-shown-answers .play-again {
+  justify-content: center;
+  width: 25px;
+   text-align: center;
+} */
+
 .left {
   width: 100%;
   position: relative;
@@ -189,20 +191,77 @@
   .butterflies-game .card-quiz,
   .butterflies-game .card-finished,
   .butterflies-game .card-shown-answers {
-    margin-top: -1rem;
+    margin-top: -2.3rem;
     font-size: 17px;
+    position: absolute;
+    z-index: 5;
+    top: 6rem;
+    height: 220px;
+    .question-number {
+      margin-bottom: 9px;
+    }
+    .question-title {
+      margin-bottom: 9px;
+    }
   }
   .main-section {
     font-size: 17px;
+    justify-content: end;
+    margin-top: -2rem;
+    .info-title {
+      font-size: 20px;
+    }
+
+    .rigth-icon {
+      width: 30px;
+      height: 30px;
+    }
+    .rigth-icon i {
+      font-size: 30px;
+    }
+    .wrong-icon {
+      width: 30px;
+      height: 30px;
+    }
+    .wrong-icon i {
+      font-size: 30px;
+    }
+  }
+
+  .butterflies-game .butterfly_board {
+    margin-top: 12rem;
   }
 }
 @media screen and (max-width: 600px) {
   .butterflies-game .butterfly_board {
-    margin-top: 0.5rem;
     width: 300px;
   }
   .butterfly-active,
   .butterfly-inactive {
     width: 60px;
+  }
+  .butterflies-game .card-quiz,
+  .butterflies-game .card-finished,
+  .butterflies-game .card-shown-answers {
+    width: 100%;
+    border-radius: 0;
+  }
+  .butterflies-game .card-shown-answers {
+    flex-direction: column;
+    justify-content: center;
+  }
+  .butterflies-game .card-shown-answers button {
+    margin: 0;
+  }
+}
+
+@media screen and (max-width: 350px) {
+  .butterflies-game .card-quiz,
+  .butterflies-game .card-finished,
+  .butterflies-game .card-shown-answers {
+    height: 250px;
+  }
+  .butterflies-game .butterfly_board {
+    margin-top: 13.5rem;
   }
 }
