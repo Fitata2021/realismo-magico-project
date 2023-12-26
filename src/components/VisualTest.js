@@ -57,7 +57,7 @@ const VisualTest = () => {
                 </button>
               ) : (
                 <article className="info1">
-                  <p>Descubre al Pintor!</p>
+                  <h2 className="info-title">DESCUBRE AL PINTOR!</h2>
                   <p>
                     Este test visual permitirá reconocer el autor correcto de
                     cada obra de arte de acuerdo a sus características

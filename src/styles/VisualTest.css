@@ -190,7 +190,7 @@
 } */
 
 .visual-test .game-won {
-  margin-top: -6rem;
+  margin-top: 1rem;
 }
 
 @media screen and (max-width: 1197px) {
@@ -254,6 +254,9 @@
     margin-top: 0rem;
     font-size: 20px;
     left: 21.5%;
+    .info-title {
+      font-size: 20px;
+    }
   }
 }
 @media screen and (max-width: 607px) {
@@ -275,9 +278,6 @@
   .info1 {
     width: 100%;
     left: 20%;
-  }
-  .info1 {
-    width: 100%;
     margin-top: 0rem;
     font-size: 17px;
   }
@@ -306,7 +306,7 @@
   .exit-answers {
     width: 30px;
     height: 30px;
-    font-size: 17px;
+    font-size: 18px;
   }
 }
 @media screen and (max-width: 465px) {
@@ -320,6 +320,9 @@
   .info1 {
     margin-top: 0rem;
     left: 20%;
+  }
+  .visual-test .game-won {
+    font-size: 15px;
   }
 }
 @media screen and (max-width: 380px) {
