@@ -93,6 +93,7 @@ main {
   display: flex;
   flex-direction: column;
   width: 100%;
+  align-items: center;
   justify-content: center;
 }
 .answers-right button {
@@ -111,15 +112,14 @@ main {
   margin-left: 40%;
 }
 .answer {
-  width: 100%;
-  height: 25px;
+  width: 130px;
   font-size: 16px;
   color: #473c2a;
   background-color: #d8cca3;
   border-radius: 15px;
   display: flex;
   padding: 7px;
-  justify-content: flex-start;
+  justify-content: center;
   align-items: center;
   border: none;
   cursor: pointer;
@@ -185,7 +185,7 @@ main {
 /* finished */
 .finish-section {
   width: 100%;
-  margin-top: 11.5rem;
+  margin-top: 8.5rem;
   height: 370px;
   display: flex;
   justify-content: center;
@@ -198,7 +198,7 @@ main {
 .card-finished {
   display: flex;
   justify-content: center;
-  width: 30%;
+  width: 400px;
   background: #473c2a;
   color: #d8cca3;
   padding: 10px;
@@ -206,11 +206,25 @@ main {
   font-size: 1.2em;
   height: 15rem;
 }
-.card-finished button {
+.finish-section .card-finished .btns-container {
   display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
-  text-align: center;
+}
+.finish-section .card-finished button {
+  width: 130px;
+  font-size: 16px;
+  color: #473c2a;
+  background-color: #d8cca3;
+  border-radius: 15px;
+  display: flex;
+  padding: 7px;
+  justify-content: center;
+  align-items: center;
+  border: none;
+  cursor: pointer;
+  margin: 1px;
 }
 .game-finished {
   display: flex;
@@ -231,7 +245,7 @@ main {
 }
 .shown-answers-section {
   width: 100%;
-  margin-top: 11.5rem;
+  margin-top: 7rem;
   height: 370px;
   display: flex;
   justify-content: center;
@@ -244,27 +258,26 @@ main {
 .card-shown-answers {
   display: flex;
   justify-content: center;
-  width: 30%;
+  width: 400px;
+  height: auto;
   background: #473c2a;
   color: #d8cca3;
   padding: 10px;
   border-radius: 8px;
   font-size: 1.2em;
-  height: 17rem;
 }
-.btns-container button {
-  width: 100%;
+.shown-answers-section button {
+  width: 25px;
+  height: 25px;
   font-size: 16px;
   color: #473c2a;
-  background-color: #d8cca3;
-  border-radius: 15px;
+  background: rgba(253, 207, 56, 1);
   display: flex;
-  padding: 7px;
-  justify-content: center;
+
+  flex-direction: column;
   align-items: center;
   border: none;
   cursor: pointer;
-  margin: 1px;
 }
 
 .correct,
@@ -317,7 +330,27 @@ button:hover {
 }
 @media screen and (max-width: 750px) {
   .start-section {
-    margin-top: 0rem;
+    width: 95%;
+    margin-top: -2rem;
+    font-size: 17px;
+  }
+  .shown-answers-section {
+    margin-top: 2rem;
+  }
+
+  .rigth-icon {
+    width: 30px;
+    height: 30px;
+  }
+  .rigth-icon i {
+    font-size: 30px;
+  }
+  .wrong-icon {
+    width: 30px;
+    height: 30px;
+  }
+  .wrong-icon i {
+    font-size: 30px;
   }
   .border-button {
     width: 60px;
@@ -352,10 +385,28 @@ button:hover {
 }
 @media screen and (max-width: 460px) {
   .card-quiz {
-    width: 90%;
+    width: 100%;
     flex-direction: column;
+    margin-top: -2rem;
+    border-radius: 0;
   }
-  .develop-section {
+  .card-shown-answers,
+  .card-finished {
+    width: 100%;
+    flex-direction: column;
+    margin-top: -10rem;
+    border-radius: 0;
+  }
+
+  .card-shown-answers button {
+    margin: 0;
+  }
+  .card-finished .btns-container {
+    margin-top: 15px;
+  }
+  .develop-section,
+  .finish-section,
+  .shown-answers-section {
     margin-top: 2rem;
     height: 370px;
     background-image: none;

@@ -79,8 +79,18 @@
 }
 
 .butterflies-game .btns-container button {
-  margin: 1px;
   width: 130px;
+  font-size: 16px;
+  color: #473c2a;
+  background-color: #d8cca3;
+  border-radius: 15px;
+  display: flex;
+  padding: 7px;
+  justify-content: center;
+  align-items: center;
+  border: none;
+  cursor: pointer;
+  margin: 1px;
 }
 
 .butterflies-game .card-shown-answers {
@@ -113,6 +123,7 @@
 .butterflies-game .card-shown-answers button i {
   margin: 0;
   padding: 0;
+  width: 100%;
 }
 .left {
   width: 100%;
@@ -193,7 +204,7 @@
     margin-top: -2.3rem;
     font-size: 17px;
     position: absolute;
-    z-index: 5;
+    z-index: 2;
     top: 6rem;
     height: 220px;
     .question-number {

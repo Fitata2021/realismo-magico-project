@@ -164,11 +164,11 @@ const BooleanTest = () => {
           </p>
 
           <div className="play-button">
-            <div className="border-button">
-              <i
-                class="fa-solid fa-play"
-                onClick={() => [reset(), setStatusGame("beginning")]}
-              ></i>
+            <div
+              className="border-button"
+              onClick={() => [reset(), setStatusGame("beginning")]}
+            >
+              <i class="fa-solid fa-play"></i>
             </div>
           </div>
         </section>

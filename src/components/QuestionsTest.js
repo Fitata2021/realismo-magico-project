@@ -74,11 +74,11 @@ const QuestionsTest = () => {
             </div>
           </p>
           <div className="play-button">
-            <div className="border-button">
-              <i
-                class="fa-solid fa-play"
-                onClick={() => setQuizStatus("development")}
-              ></i>
+            <div
+              className="border-button"
+              onClick={() => setQuizStatus("development")}
+            >
+              <i class="fa-solid fa-play"></i>
             </div>
           </div>
         </section>
@@ -172,7 +172,11 @@ const QuestionsTest = () => {
                     : resetQuiz("beginning")
                 }
               >
-                <i className="fa-solid fa-arrow-right-long"></i>
+                {currentQuestion !== questions.length - 1 ? (
+                  <i className="fa-solid fa-chevron-right"></i>
+                ) : (
+                  <i className="fa-solid fa-xmark"></i>
+                )}
               </button>
             </div>
           </section>
