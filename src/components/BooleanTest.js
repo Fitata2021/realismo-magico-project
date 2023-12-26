@@ -135,13 +135,12 @@ const BooleanTest = () => {
         </section>
       ) : (
         <section className="main-section">
-          <h2 className="info-title">FALSO / VERDADERO</h2>
+          <h2 className="info-title">LIBERA MARIPOSAS!</h2>
           <p>
-            Para poder realizar este test es necesario que hayas abordado todo
-            el contenido sobre realismo mágico presentado en esta página. Cada
-            vez que aciertes en una pregunta le darás vida a una mariposa mágica
-            . Al final del test, obtendrás un puntaje equivalente a la cantidad
-            de mariposas que hayas liberado!
+            Debes seleccionar falso o verdadero según cada pregunta. Cada vez
+            que aciertes, le darás vida a una mariposa mágica . Al final del
+            test, obtendrás un puntaje equivalente a la cantidad de mariposas
+            que hayas liberado!
             <img
               className={"butterfly-active"}
               style={{ width: "30px", float: "right", margin: "0px" }}

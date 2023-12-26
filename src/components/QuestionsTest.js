@@ -55,14 +55,12 @@ const QuestionsTest = () => {
     return (
       <main>
         <section className="start-section">
-          <h2>SELECCION MULTIPLE</h2>
+          <h2>RESPONDE CONTRA RELOJ!</h2>
           <p>
-            Para poder realizar este test es necesario que hayas abordado todo
-            el contenido sobre realismo magico presentado en esta pagina. Las
-            preguntas estan diseñadas como selección multiple y solo una de las
-            opciones es correcta. Tendras un tiempo limite para contestar, si se
-            termina el tiempo y no has contestado, la pregunta pasará a la
-            siguiente. Al final del test obtendras tu puntuación.
+            Las preguntas estan diseñadas con 4 opciones de respuesta donde solo
+            una de las opciones es la correcta. Tendras un tiempo limite para
+            contestar, si se termina el tiempo y no has contestado, la pregunta
+            pasará a la siguiente. Al final del test obtendras tu puntuación.
           </p>
           <p>
             UNA VEZ SELECCIONES LA RESPUESTA, SE MARCARÁ DE COLOR VERDE SI ES

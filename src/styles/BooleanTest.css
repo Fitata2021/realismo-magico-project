@@ -104,17 +104,16 @@
 }
 .butterflies-game .card-shown-answers button {
   width: 25px;
+  height: 25px;
   background: rgba(253, 207, 56, 1);
   display: flex;
   flex-direction: column;
+  align-items: center;
 }
-
-/* .butterflies-game .card-shown-answers .play-again {
-  justify-content: center;
-  width: 25px;
-   text-align: center;
-} */
-
+.butterflies-game .card-shown-answers button i {
+  margin: 0;
+  padding: 0;
+}
 .left {
   width: 100%;
   position: relative;
@@ -229,7 +228,7 @@
   }
 
   .butterflies-game .butterfly_board {
-    margin-top: 12rem;
+    margin-top: 11.7rem;
   }
 }
 @media screen and (max-width: 600px) {

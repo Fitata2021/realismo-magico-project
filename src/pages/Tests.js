@@ -72,7 +72,7 @@ const Tests = () => {
           title="COMENZAR"
           onClick={() => navigate("/questions-test")}
         >
-          <h3>Responde a Tiempo</h3>
+          <h3>Responde contra Reloj</h3>
           <img src={question_images} alt="" className="card-img" />
         </li>
 
@@ -90,7 +90,7 @@ const Tests = () => {
           title="COMENZAR"
           onClick={() => navigate("/visual-test")}
         >
-          <h3>Crea tu obra</h3>
+          <h3>Crea una Obra</h3>
           <img src={visual_test} alt="" className="card-img" />
         </li>
       </ul>
