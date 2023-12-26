@@ -2,11 +2,14 @@
   display: flex;
   flex-direction: row;
   width: 100%;
-  height: 100vh;
-  position: relative;
-  z-index: 1;
 }
-
+.visual-test .container-question {
+  display: flex;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+  width: 90%;
+  margin-top: 4rem;
+}
 .instructions-button {
   width: 30px;
   height: 30px;
@@ -24,23 +27,24 @@
   cursor: pointer;
 }
 .info1 {
-  width: 250px;
-  height: 385px;
+  width: 80%;
   position: absolute;
+  margin-top: -2rem;
   z-index: 3;
-  left: 60%;
-  right: 0;
-  top: 0;
-  bottom: 150px;
-  margin: auto;
+  left: 65%;
+  transform: translateX(-20%);
   background: #d8cca3;
   color: #473c2a;
+  text-align: left;
+  padding: 10px;
+  border-radius: 5px;
+  font-size: 25px;
 }
 
 .info1 p:first-child {
   margin-bottom: 5px;
 }
-.info1 i {
+.info1 .exit-icon i {
   position: absolute;
   right: 12px;
   width: 25px;
@@ -55,12 +59,10 @@
 }
 
 .main-image {
-  width: 55%;
-  height: 500px;
+  width: 600px;
+  height: 450px;
   display: flex;
   justify-content: center;
-  margin-top: 5em;
-  margin-left: 3em;
   position: relative;
   z-index: 1;
 }
@@ -72,9 +74,6 @@
 }
 
 .answer-images-options {
-  margin-top: 6em;
-  margin-left: 3em;
-  margin-right: 5em;
   width: 400px;
   height: 400px;
   display: grid;
@@ -122,9 +121,9 @@
 
 .answer-images {
   margin: auto;
-  margin-top: -2em;
+  margin-top: 1em;
   width: 100%;
-  height: 450px;
+  height: 600px;
   display: flex;
   justify-content: space-around;
   flex-wrap: wrap;
@@ -175,13 +174,165 @@
   height: 50px;
   font-size: 30px;
   border-radius: 50%;
-  border: #d8cca3 solid 2px;
-  color: #d8cca3;
-  background: #473c2a;
+  border: #473c2a solid 2px;
+  color: #473c2a;
+  background: rgba(253, 207, 56, 1);
   padding: 2px;
   cursor: pointer;
   position: fixed;
-  bottom: 5px;
-  left: 50%;
+  filter: opacity(1);
+  bottom: 23rem;
+  right: -10px;
   transform: translateX(-50%);
+}
+/* .exit-answers:hover {
+  filter: opacity(1);
+} */
+
+.visual-test .game-won {
+  margin-top: -6rem;
+}
+
+@media screen and (max-width: 1197px) {
+  .answer-images {
+    height: 810px;
+  }
+}
+@media screen and (max-width: 1129px) {
+  .main-image {
+    width: 550px;
+    height: 400px;
+  }
+  .answer-images-options {
+    width: 280px;
+    height: 280px;
+    grid-gap: 15px;
+  }
+  .card-image-option {
+    width: 140px;
+    height: 140px;
+    font-size: 15px;
+  }
+}
+@media screen and (max-width: 945px) {
+  .main-image {
+    width: 500px;
+    height: 350px;
+  }
+}
+@media screen and (max-width: 902px) {
+  .answer-images {
+    height: 1110px;
+  }
+}
+@media screen and (max-width: 885px) {
+  .visual-test .container-question {
+    margin-top: 0rem;
+  }
+  .answer-images-options {
+    margin-top: 5px;
+  }
+  .info1 {
+    margin-top: 1rem;
+    left: 60%;
+  }
+}
+@media screen and (max-width: 867px) {
+  .info1 {
+    left: 28%;
+  }
+}
+@media screen and (max-width: 750px) {
+  .answer-images {
+    margin-top: -2rem;
+  }
+  .visual-test .container-question {
+    margin-top: -1rem;
+  }
+  .info1 {
+    width: 95%;
+    margin-top: 0rem;
+    font-size: 20px;
+    left: 21.5%;
+  }
+}
+@media screen and (max-width: 607px) {
+  .answer-images {
+    height: 2150px;
+  }
+}
+@media screen and (max-width: 570px) {
+  .main-image {
+    width: 450px;
+    height: 300px;
+  }
+  .answer-images-options {
+    grid-gap: 5px;
+  }
+  .container-question {
+    margin-top: -6rem;
+  }
+  .info1 {
+    width: 100%;
+    left: 20%;
+  }
+  .info1 {
+    width: 100%;
+    margin-top: 0rem;
+    font-size: 17px;
+  }
+}
+@media screen and (max-width: 515px) {
+  .main-image {
+    width: 400px;
+    height: 250px;
+  }
+  .answer-images-options {
+    grid-gap: 2px;
+    width: 220px;
+    height: 220px;
+  }
+  .card-image-option {
+    width: 115px;
+    height: 125px;
+  }
+  .answer-images-options p {
+    font-size: 12px;
+    margin-bottom: 2px;
+  }
+  .container-question {
+    margin-top: -15rem;
+  }
+  .exit-answers {
+    width: 30px;
+    height: 30px;
+    font-size: 17px;
+  }
+}
+@media screen and (max-width: 465px) {
+  .main-image {
+    width: 350px;
+    height: 200px;
+  }
+  .container-question {
+    margin-top: -18rem;
+  }
+  .info1 {
+    margin-top: 0rem;
+    left: 20%;
+  }
+}
+@media screen and (max-width: 380px) {
+  .visual-test .container-question {
+    width: 100%;
+  }
+  .container-question {
+    width: 100%;
+  }
+  .main-image {
+    width: 100%;
+  }
+  .info1 {
+    border-radius: 0;
+  }
 }

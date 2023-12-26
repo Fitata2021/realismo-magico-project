@@ -39,13 +39,14 @@ const VisualTest = () => {
     setScore(0);
     setArtworFindAuthor(1);
     setNumberQuestionScreen(1);
+    setToogleInstructions(false);
   };
 
   return (
     <div>
       <main className="visual-test">
         {numberQuestionScreen === 1 && (
-          <>
+          <div className="container-question">
             <section className="main-image">
               {toogleInstructions ? (
                 <button
@@ -56,19 +57,29 @@ const VisualTest = () => {
                 </button>
               ) : (
                 <article className="info1">
-                  <p>INSTRUCCIONES:</p>
+                  <p>Descubre al Pintor!</p>
                   <p>
                     Este test visual permitirá reconocer el autor correcto de
                     cada obra de arte de acuerdo a sus características
                     estilísticas y su forma de expresar lo real fantástico.
                     Debes seleccionar el autor correcto. Se mostrará en color
-                    verde cuando la elección sea correcta o de color rojo si es
-                    incorrecta. Al final del test obtendrás tu puntuación.
+                    verde cuando la elección sea correcta
+                    <div className="rigth-icon">
+                      <i className="fa-solid fa-check"></i>
+                    </div>
+                    o de color rojo si es incorrecta.
+                    <div className="wrong-icon">
+                      <i className="fa-solid fa-xmark"></i>
+                    </div>
+                    Al final del test obtendrás tu puntuación.
+                    <div className="exit-icon">
+                      <i
+                        className="fa-solid fa-xmark"
+                        onClick={() => setToogleInstructions(true)}
+                      ></i>
+                    </div>
+                    <br />
                   </p>
-                  <i
-                    className="fa-solid fa-xmark"
-                    onClick={() => setToogleInstructions(true)}
-                  ></i>
                 </article>
               )}
 
@@ -120,10 +131,10 @@ const VisualTest = () => {
                 <p>{ArtistData[4].name}</p>
               </div>
             </section>
-          </>
+          </div>
         )}
         {numberQuestionScreen === 2 && (
-          <>
+          <div className="container-question">
             <section className="main-image">
               <img src={ArtistData[artworkFindAuthor].artworks[4]} alt="" />
             </section>
@@ -157,10 +168,10 @@ const VisualTest = () => {
                 <p>{ArtistData[3].name}</p>
               </div>
             </section>
-          </>
+          </div>
         )}
         {numberQuestionScreen === 3 && (
-          <>
+          <div className="container-question">
             <section className="main-image">
               <img src={ArtistData[artworkFindAuthor].artworks[4]} alt="" />
             </section>
@@ -194,10 +205,10 @@ const VisualTest = () => {
                 <p>{ArtistData[1].name}</p>
               </div>
             </section>
-          </>
+          </div>
         )}
         {numberQuestionScreen === 4 && (
-          <>
+          <div className="container-question">
             <section className="main-image">
               <img src={ArtistData[artworkFindAuthor].artworks[4]} alt="" />
             </section>
@@ -231,10 +242,10 @@ const VisualTest = () => {
                 <p>{ArtistData[4].name}</p>
               </div>
             </section>
-          </>
+          </div>
         )}
         {numberQuestionScreen === 5 && (
-          <>
+          <div className="container-question">
             <section className="main-image">
               <img src={ArtistData[artworkFindAuthor].artworks[4]} alt="" />
             </section>
@@ -268,10 +279,10 @@ const VisualTest = () => {
                 <p>{ArtistData[2].name}</p>
               </div>
             </section>
-          </>
+          </div>
         )}
         {numberQuestionScreen === 6 && (
-          <>
+          <div className="container-question">
             <section className="main-image">
               <img src={ArtistData[artworkFindAuthor].artworks[4]} alt="" />
             </section>
@@ -305,10 +316,10 @@ const VisualTest = () => {
                 <p>{ArtistData[8].name}</p>
               </div>
             </section>
-          </>
+          </div>
         )}
         {numberQuestionScreen === 7 && (
-          <>
+          <div className="container-question">
             <section className="main-image">
               <img src={ArtistData[artworkFindAuthor].artworks[4]} alt="" />
             </section>
@@ -342,10 +353,10 @@ const VisualTest = () => {
                 <p>{ArtistData[0].name}</p>
               </div>
             </section>
-          </>
+          </div>
         )}
         {numberQuestionScreen === 8 && (
-          <>
+          <div className="container-question">
             <section className="main-image">
               <img src={ArtistData[artworkFindAuthor].artworks[4]} alt="" />
             </section>
@@ -379,7 +390,7 @@ const VisualTest = () => {
                 <p>{ArtistData[3].name}</p>
               </div>
             </section>
-          </>
+          </div>
         )}
         {numberQuestionScreen === 9 && (
           <>
@@ -451,10 +462,7 @@ const VisualTest = () => {
             </section>
             <section className="exit">
               <button className="exit-answers" onClick={() => restart()}>
-                <i
-                  className="fa-solid fa-xmark"
-                  onClick={() => setToogleInstructions(true)}
-                ></i>
+                <i className="fa-solid fa-xmark"></i>
               </button>
             </section>
           </div>

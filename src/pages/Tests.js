@@ -90,7 +90,7 @@ const Tests = () => {
           title="COMENZAR"
           onClick={() => navigate("/visual-test")}
         >
-          <h3>Crea una Obra</h3>
+          <h3>Descubre al Pintor</h3>
           <img src={visual_test} alt="" className="card-img" />
         </li>
       </ul>

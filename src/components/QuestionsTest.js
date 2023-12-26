@@ -67,7 +67,7 @@ const QuestionsTest = () => {
             CORRECTA
             <div className="rigth-icon">
               <i className="fa-solid fa-check"></i>
-            </div>{" "}
+            </div>
             Ó SE MARCARÁ DE COLOR ROJO SI ES INCORRECTA
             <div className="wrong-icon">
               <i className="fa-solid fa-xmark"></i>
