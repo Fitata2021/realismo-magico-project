@@ -179,8 +179,9 @@
   background-color: #f55050;
 }
 
-.game-won {
-  left: 31rem;
+.butterflies-game .game-won {
+  width: 50%;
+  left: 30%;
 }
 
 @media screen and (max-width: 920px) {
@@ -195,6 +196,14 @@
   .main-section {
     width: 95%;
     margin-top: -0.5rem;
+  }
+}
+@media screen and (max-width: 820px) {
+  .butterflies-game .game-won {
+    top: 5.5rem;
+    font-size: 20px;
+    left: 25%;
+    right: 25%;
   }
 }
 @media screen and (max-width: 750px) {
@@ -241,6 +250,11 @@
   .butterflies-game .butterfly_board {
     margin-top: 11.7rem;
   }
+  .butterflies-game .game-won {
+    top: 0rem;
+    width: 230px;
+    padding: 1px;
+  }
 }
 @media screen and (max-width: 600px) {
   .butterflies-game .butterfly_board {
@@ -264,7 +278,12 @@
     margin: 0;
   }
 }
-
+@media screen and (max-width: 400px) {
+  .butterflies-game .game-won {
+    left: 15%;
+    right: 15%;
+  }
+}
 @media screen and (max-width: 350px) {
   .butterflies-game .card-quiz,
   .butterflies-game .card-finished,

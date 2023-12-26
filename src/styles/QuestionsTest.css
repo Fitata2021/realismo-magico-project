@@ -360,6 +360,11 @@ button:hover {
     font-size: 30px;
     margin-left: 5px;
   }
+
+  .finish-section .game-won {
+    top: 5.5rem;
+    font-size: 20px;
+  }
 }
 @media screen and (max-width: 705px) {
   .start-section {
@@ -417,6 +422,12 @@ button:hover {
   }
   .missing-time span {
     font-size: 3rem;
+  }
+  .finish-section .game-won {
+    top: 4.5rem;
+    font-size: 20px;
+    left: 25%;
+    right: 25%;
   }
 }
 @media screen and (max-width: 380px) {
