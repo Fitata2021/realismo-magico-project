@@ -1,5 +1,6 @@
 import "./App.css";
 import { HashRouter, Routes, Route } from "react-router-dom";
+import { useEffect, useState } from "react";
 import {
   Home,
   Artistas,
@@ -21,6 +22,29 @@ import {
 } from "./components";
 
 function App() {
+  const [showScrollIcon, setShowScrollIcon] = useState(false);
+  useEffect(() => {
+    const handleScroll = () => {
+      if (window.scrollY > 1500) {
+        setShowScrollIcon(true);
+      } else {
+        setShowScrollIcon(false);
+      }
+    };
+
+    window.addEventListener("scroll", handleScroll);
+    return () => {
+      window.removeEventListener("scroll", handleScroll);
+    };
+  }, []);
+
+  const scrollToTop = () => {
+    window.scrollTo({
+      top: 0,
+      behavior: "smooth",
+    });
+  };
+
   return (
     <div className="App">
       <HashRouter>
@@ -48,6 +72,11 @@ function App() {
             element={<ArtworkCanvas />}
           />
         </Routes>
+        {showScrollIcon && (
+          <div className="go-up-icon" onClick={scrollToTop}>
+            <i className="fa-solid fa-chevron-up"></i>
+          </div>
+        )}
         <Footer />
       </HashRouter>
     </div>
