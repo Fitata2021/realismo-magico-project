@@ -112,7 +112,7 @@ const CouplesGame = () => {
               acabas de descubrir.
               <div className="warning-section">
                 <article>
-                  PUEDES HACER CLIC SOSTENIDO SOBRE LAS TARJETAS DESBLOQUEADAS
+                  PUEDES HACER CLIC SOSTENIDO SOBRE LAS TARJETAS DESCUBIERTAS
                   PARA AMPLIAR LA IMAGEN
                 </article>
                 <i class="fa-solid fa-expand"></i>

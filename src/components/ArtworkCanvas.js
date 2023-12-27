@@ -9,6 +9,10 @@ import "../styles/ArtworkCanvas.css";
 const ArtworkCanvas = () => {
   const [background, setBackground] = useState(backgroundCards[0].image);
 
+  const handleContextMenu = (e) => {
+    e.preventDefault(); // Evita la acción por defecto (como el menú contextual)
+  };
+
   useEffect(() => {
     window.scrollTo(0, 0);
     function onDrag(element) {
@@ -107,7 +111,7 @@ const ArtworkCanvas = () => {
         1.5,
         1.5,
         canvas.height / 5,
-        canvas.width / 2
+        canvas.width / 2,
       );
       pdf.save("mi-obra-realismo-magico.pdf");
     });
@@ -121,54 +125,63 @@ const ArtworkCanvas = () => {
           className="draggable"
           src={draggableImages[0].image}
           alt=""
+          onContextMenu={handleContextMenu}
         />
         <img
           id="pez"
           className="draggable"
           src={draggableImages[1].image}
           alt=""
+          onContextMenu={handleContextMenu}
         />
         <img
           id="jaguar"
           className="draggable"
           src={draggableImages[2].image}
           alt=""
+          onContextMenu={handleContextMenu}
         />
         <img
           id="armor"
           className="draggable"
           src={draggableImages[3].image}
           alt=""
+          onContextMenu={handleContextMenu}
         />
         <img
           id="flowers"
           className="draggable"
           src={draggableImages[4].image}
           alt=""
+          onContextMenu={handleContextMenu}
         />
         <img
           id="hyena"
           className="draggable"
           src={draggableImages[5].image}
           alt=""
+          onContextMenu={handleContextMenu}
         />
         <img
           id="fungus"
           className="draggable"
           src={draggableImages[6].image}
           alt=""
+          onContextMenu={handleContextMenu}
         />
         <img
           id="owl"
           className="draggable"
           src={draggableImages[7].image}
           alt=""
+          onContextMenu={handleContextMenu}
         />
         <img
           id="woman"
           className="draggable"
           src={draggableImages[8].image}
           alt=""
+          onContextMenu={handleContextMenu}
         />
       </div>
 
