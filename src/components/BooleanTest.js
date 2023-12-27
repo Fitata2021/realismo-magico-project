@@ -1,10 +1,12 @@
 import React, { useEffect, useState } from "react";
+import { useNavigate } from "react-router-dom";
 import "../styles/BooleanTest.css";
 import butterfliesTest from "../utils/ButterfliesTest";
 import booleanQuestions from "../utils/BooleanQuestions";
 import butterfly from "../images/couple-game-images/picmix.com_1899742.gif";
 
 const BooleanTest = () => {
+  const navigate = useNavigate();
   const [currentQuestion, setCurrentQuestion] = useState(0);
   const [score, setScore] = useState(0);
   const [statusGame, setStatusGame] = useState("game");
@@ -92,6 +94,9 @@ const BooleanTest = () => {
                 Ver Respuestas
               </button>
               <button onClick={() => [reset(), setStatusGame("game")]}>
+                Instrucciones
+              </button>
+              <button onClick={() => [reset(), navigate("/tests")]}>
                 Salir
               </button>
             </div>

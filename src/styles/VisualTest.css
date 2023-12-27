@@ -37,7 +37,7 @@
   color: #473c2a;
   text-align: left;
   padding: 10px;
-  border-radius: 5px;
+  border-radius: 10px;
   font-size: 25px;
 }
 
@@ -327,15 +327,12 @@
 }
 @media screen and (max-width: 380px) {
   .visual-test .container-question {
-    width: 100%;
+    width: 95%;
   }
   .container-question {
     width: 100%;
   }
   .main-image {
     width: 100%;
-  }
-  .info1 {
-    border-radius: 0;
   }
 }
