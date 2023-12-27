@@ -18,6 +18,10 @@ const CouplesGame = () => {
   const [selectCounter, setSelectCounter] = useState(0); //Cuenta las cartas seleccionadas
   const [infoCard, setInforCard] = useState(cardsList); //Contiene arreglo ordenado de data para respuestas
 
+  const handleContextMenu = (e) => {
+    e.preventDefault(); // Evita la acción por defecto (como el menú contextual)
+  };
+
   if (count === cardsList.length / 2) {
     cardsList.map((card) => (card.status = "finished"));
   }
@@ -142,7 +146,11 @@ const CouplesGame = () => {
             >
               {card.status !== "down" ? (
                 <>
-                  <img src={card.image} alt="" />
+                  <img
+                    src={card.image}
+                    alt=""
+                    onContextMenu={handleContextMenu}
+                  />
                   <div className="number-card">{Math.ceil(card.id / 2)}</div>
                 </>
               ) : (
