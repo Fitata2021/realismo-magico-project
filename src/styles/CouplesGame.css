@@ -511,7 +511,7 @@
   }
   .game-won {
     width: 60%;
-    z-index: 8;
+    z-index: 4;
   }
 }
 @media screen and (max-width: 475px) {
@@ -555,6 +555,8 @@
   }
   .couples-game-main .answers .finished {
     height: 37px;
+    padding-left: 4px;
+    padding-right: 4px;
   }
 }
 @media screen and (max-width: 400px) {
