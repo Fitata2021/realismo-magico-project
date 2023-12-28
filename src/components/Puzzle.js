@@ -8,9 +8,10 @@ const Puzzle = () => {
     window.scrollTo(0, 0);
   }, []);
 
+  const [toogleInstructions, setToogleInstructions] = useState(false);
   const [numberPuzzle, setNumberPuzzle] = useState(0);
   const [piecesList, setPiecesList] = useState(
-    [...piecesData[numberPuzzle]].sort(() => Math.random() - 0.5)
+    [...piecesData[numberPuzzle]].sort(() => Math.random() - 0.5),
   );
   const [countClic, setCountClic] = useState(1);
   const [pieceSelected, setPieceSelected] = useState(null);
@@ -88,7 +89,7 @@ const Puzzle = () => {
     setTheme("hide");
     setIsFinished(false);
     setPiecesList(
-      [...piecesData[numberPuzzle]].sort(() => Math.random() - 0.5)
+      [...piecesData[numberPuzzle]].sort(() => Math.random() - 0.5),
     );
     setCountClic(1);
     setPieceSelected(null);
@@ -96,24 +97,65 @@ const Puzzle = () => {
 
   return (
     <main className="puzzle-main">
-      <section className="info">
-        <h1 className="info-title">OBRA PUZZLE</h1>
-        <p>
-          Bienvenido a la sección de puzzles! Son tres puzzles que puedes armar.
-          En cada uno, lo que debes hacer es descubrir la imagen de una
-          increible obra de arte ordenando las piezas de modo que cada pieza
-          este en su correpondiente lugar hasta que puedas ver la imagen que
-          conforma la obra completa.
+      {counterPuzzle === piecesData.length && isFinished ? (
+        <p
+          className="game-won-final"
+          style={
+            toogleInstructions
+              ? { filter: "blur(0px)" }
+              : { filter: "blur(8px)" }
+          }
+        >
+          Felicitaciones! Haz terminado los 3 puzzles
         </p>
-        <div className="warning-section">
-          <article>
-            SELECCIONA DOS IMAGENES PARA QUE SE INTERCAMBIEN DE LUGAR
-          </article>
-          <i className="fa-solid fa-arrow-left-long"></i>
-        </div>
-      </section>
-
-      <section className="container-pieces">
+      ) : (
+        <p
+          className="game-won"
+          style={{
+            display: isFinished ? "inline" : "none",
+            filer: toogleInstructions ? "blur(0px)" : "blur(8px)",
+          }}
+        >
+          Muy bien, lo Lograste!
+        </p>
+      )}
+      {toogleInstructions ? (
+        <button
+          className="instructions-button"
+          onClick={() => setToogleInstructions(false)}
+        >
+          <i className="fa-solid fa-plus"></i>
+        </button>
+      ) : (
+        <section className="info">
+          <h1 className="info-title">OBRA PUZZLE</h1>
+          <p>
+            Bienvenido a la sección de puzzles! Son tres puzzles que puedes
+            armar. En cada uno, lo que debes hacer es descubrir la imagen de una
+            increible obra de arte ordenando las piezas de modo que cada pieza
+            este en su correpondiente lugar hasta que puedas ver la imagen que
+            conforma la obra completa.
+            <div className="warning-section">
+              <article>
+                SELECCIONA DOS IMAGENES PARA QUE SE INTERCAMBIEN DE LUGAR
+              </article>
+              <i className="fa-solid fa-arrow-right-arrow-left"></i>
+            </div>
+            <div className="exit-icon">
+              <i
+                className="fa-solid fa-xmark"
+                onClick={() => setToogleInstructions(true)}
+              ></i>
+            </div>
+          </p>
+        </section>
+      )}
+      <section
+        className="container-pieces"
+        style={
+          toogleInstructions ? { filter: "blur(0px)" } : { filter: "blur(8px)" }
+        }
+      >
         {piecesList.map((piece, index) => (
           <div
             className={`piece ${piece.status}`}
@@ -128,6 +170,11 @@ const Puzzle = () => {
         <>
           {counterPuzzle === piecesData.length ? (
             <button
+              style={
+                toogleInstructions
+                  ? { filter: "blur(0px)" }
+                  : { filter: "blur(8px)" }
+              }
               className="next"
               onClick={() => [replay(), setCounterPuzzle(1)]}
             >
@@ -136,6 +183,11 @@ const Puzzle = () => {
             </button>
           ) : (
             <button
+              style={
+                toogleInstructions
+                  ? { filter: "blur(0px)" }
+                  : { filter: "blur(8px)" }
+              }
               className="next"
               onClick={() => [replay(), setCounterPuzzle(counterPuzzle + 1)]}
             >
@@ -145,6 +197,11 @@ const Puzzle = () => {
           )}
 
           <button
+            style={
+              toogleInstructions
+                ? { filter: "blur(0px)" }
+                : { filter: "blur(8px)" }
+            }
             onClick={() => [reset(counterPuzzle - 1)]}
             className="reset-button"
           >
@@ -155,9 +212,14 @@ const Puzzle = () => {
         <div className="no-button"></div>
       )}
 
-      <section className="info-artwork">
+      <section
+        className="info-artwork"
+        style={
+          toogleInstructions ? { filter: "blur(0px)" } : { filter: "blur(8px)" }
+        }
+      >
         <div className={"info-" + theme}>
-          {counterPuzzle === piecesData.length && isFinished ? (
+          {/* {counterPuzzle === piecesData.length && isFinished ? (
             <p
               className="game-won-final"
               style={{ width: "50%", left: "21rem" }}
@@ -165,8 +227,15 @@ const Puzzle = () => {
               Felicitaciones! Haz terminado los 3 puzzles
             </p>
           ) : (
-            <p className="game-won">Muy bien, lo Lograste!</p>
-          )}
+            <p
+              className="game-won"
+              style={{
+                display: isFinished ? "inline" : "none",
+              }}
+            >
+              Muy bien, lo Lograste!
+            </p>
+          )} */}
           <p className="surprise-info">{infoArtwork[counterPuzzle - 1].info}</p>
         </div>
         {isFinished ? (
@@ -184,13 +253,9 @@ const Puzzle = () => {
             ></i>
           </div>
         )}
-
-        <div className="warning-section">
-          <article className="info-artwork-article">
-            ENCONTRARÁS INFORMACIÓN DETALLADA SOBRE LA OBRA AL RESOLVER EL
-            PUZZLE
-          </article>
-        </div>
+        <article className="info-artwork-article">
+          ENCONTRARÁS INFORMACIÓN DETALLADA SOBRE LA OBRA AL RESOLVER EL PUZZLE
+        </article>
       </section>
     </main>
   );

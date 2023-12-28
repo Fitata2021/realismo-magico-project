@@ -128,7 +128,16 @@ const CouplesGame = () => {
         )}
 
         {count === cardsList.length / 2 && (
-          <p className="game-won">Muy bien, lo Lograste!</p>
+          <p
+            className="game-won"
+            style={
+              toogleInstructions
+                ? { filter: "blur(0px)" }
+                : { filter: "blur(8px)" }
+            }
+          >
+            Muy bien, lo Lograste!
+          </p>
         )}
         <section
           className="cards-container"

@@ -155,6 +155,7 @@
 }
 .warning-section {
   display: flex;
+  justify-content: center;
   width: 95%;
 }
 .warning-section article {
@@ -207,7 +208,7 @@
   align-items: center;
   justify-content: center;
 }
-.reset-button {
+.couples-game-main .reset-button {
   height: 50px;
   width: 50px;
   font-size: 22px;
@@ -221,14 +222,14 @@
   border-radius: 50%;
   cursor: pointer;
 }
-.reset-button i {
+.couples-game-main .reset-button i {
   font-size: 30px;
   padding: 1px;
   color: #d8cca3;
   border-radius: 50%;
 }
 
-.reset-button:hover {
+.couples-game-main .reset-button:hover {
   box-shadow: 2px 2px 30px rgba(216, 204, 163, 1);
   color: rgba(253, 207, 56, 1);
   filter: sepia(1);
@@ -376,7 +377,7 @@
     height: 45px;
     font-size: 20px;
   }
-  .reset-button {
+  .couples-game-main .reset-button {
     height: 45px;
     width: 45px;
     font-size: 20px;
@@ -436,7 +437,7 @@
     height: 37px;
     margin: 1.5px auto;
   }
-  .reset-button {
+  .couples-game-main .reset-button {
     position: absolute;
     left: 20%;
     top: 1rem;
@@ -449,7 +450,7 @@
   }
 }
 @media screen and (max-width: 837px) {
-  .reset-button {
+  .couples-game-main .reset-button {
     left: 15%;
   }
   .couples-game-main .instructions-button {
@@ -470,7 +471,7 @@
   .couples-game-main .exit-icon {
     font-size: 20px;
   }
-  .reset-button {
+  .couples-game-main .reset-button {
     left: 10%;
   }
   .couples-game-main .instructions-button {
@@ -484,7 +485,7 @@
   .couples-game-main {
     width: 100%;
   }
-  .reset-button {
+  .couples-game-main .reset-button {
     left: 5%;
   }
   .couples-game-main .instructions-button {
@@ -500,7 +501,7 @@
     width: 100%;
     margin-top: 4.5rem;
   }
-  .reset-button {
+  .couples-game-main .reset-button {
     position: static;
     margin: 0;
     margin-left: 80px;
@@ -524,12 +525,12 @@
     width: 350px;
     margin-top: -14rem;
   }
-  .reset-button {
+  .couples-game-main .reset-button {
     width: 35px;
     height: 35px;
     font-size: 5px;
   }
-  .reset-button i {
+  .couples-game-main .reset-button i {
     font-size: 22px;
   }
   .couples-game-main .instructions-button {
@@ -568,7 +569,7 @@
     top: 4.5rem;
     left: 0;
   }
-  .reset-button {
+  .couples-game-main .reset-button {
     margin: 0;
   }
 

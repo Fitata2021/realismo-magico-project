@@ -1,49 +1,67 @@
 .puzzle-main {
   display: flex;
-  justify-content: space-around;
+  width: 100%;
+  justify-content: center;
+  flex-wrap: wrap;
   margin-top: 7.5rem;
   position: relative;
 }
 
 .container-pieces {
-  margin-left: 3.5rem;
-  width: 500px;
-  height: 500px;
+  width: 550px;
+  height: 550px;
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   grid-template-rows: repeat(3, 1fr);
   cursor: pointer;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
 }
 
 .puzzle-main .info {
-  width: 25%;
-  font-size: 17px;
-  background: #473c2a;
-  color: #d8cca3;
+  width: 500px;
+  font-size: 25px;
+  background: #d8cca3;
+  color: #473c2a;
   margin-left: 3rem;
   border-radius: 10px;
   text-align: justify;
   padding: 1rem;
-  height: 16.5rem;
-  margin-top: -8rem;
+  margin-top: -2rem;
+  position: absolute;
+  z-index: 5;
 }
 .puzzle-main .warning-section {
   display: flex;
-  width: 100%;
+  justify-content: center;
+  width: 95%;
+}
+.puzzle-main .exit-icon {
+  font-size: 25px;
+  display: flex;
+  justify-content: flex-end;
+}
+.puzzle-main .instructions-button {
+  left: 2.2rem;
+  width: 50px;
+  height: 50px;
+  font-size: 22px;
+  background: #d8cca3;
+  color: #473c2a;
 }
 .puzzle-main .warning-section article {
   height: 33%;
-  width: 55%;
+  width: 200px;
   margin-left: 3rem;
   padding: 5px;
-  background: #d8cca3;
+  background: #473c2a;
+  color: #d8cca3;
   font-weight: 600;
-  font-size: 15px;
+  font-size: 18px;
   text-align: justify;
-  color: #1a120b;
   border: 2px solid #1a120b;
-
-  margin-top: 4rem;
+  margin-top: 15px;
   border-radius: 10px;
 }
 .puzzle-main .warning-section i {
@@ -60,15 +78,17 @@
 }
 
 .puzzle-main .info-artwork {
-  width: 25%;
+  width: 300px;
   padding: 1rem;
-  height: 17.5rem;
+  margin-left: 10px;
+  margin-right: 10px;
+  height: auto;
   display: flex;
   flex-direction: column;
   justify-content: center;
   text-align: center;
-  margin: auto;
 }
+
 .puzzle-main .info-artwork .info {
   margin-top: 2rem;
   height: 500px;
@@ -83,7 +103,6 @@
 
 .puzzle-main .info-artwork .info-hide {
   margin-top: 2rem;
-  height: 500px;
   width: 100%;
   font-size: 17px;
   background: #473c2a;
@@ -97,7 +116,6 @@
 
 .puzzle-main .info-artwork .info-show {
   margin-top: 2rem;
-  height: 500px;
   width: 100%;
   font-size: 17px;
   background: #473c2a;
@@ -121,18 +139,12 @@
   margin-top: 3.5rem;
 }
 
-.puzzle-main .info-artwork .warning-section {
-  display: flex;
-  width: 70%;
-}
-
-.puzzle-main .warning-section .info-artwork-article {
+.puzzle-main .info-artwork-article {
   height: 85%;
   width: 90%;
   margin-left: 2rem;
   padding: 5px;
   background: #d8cca3;
-
   font-weight: 600;
   font-size: 15px;
   text-align: justify;
@@ -192,22 +204,24 @@
 }
 
 .piece.unselected {
-  width: 150px;
-  height: 150px;
+  width: 99%;
+  height: 99%;
+  background: #bea553;
+  display: flex;
+  justify-content: space-between;
 }
 .piece.unselected img {
-  width: 110%;
-  height: 110%;
+  width: 100%;
+  height: 100%;
 }
 
 .piece.selected {
-  width: 150px;
-  height: 150px;
+  width: 99%;
+  height: 99%;
 }
 .piece.selected img {
-  width: 110%;
-  height: 110%;
-  /* border: solid 2px rgba(253, 207, 56, 1); */
+  width: 100%;
+  height: 100%;
   box-shadow: 2px 2px 30px rgba(253, 207, 56, 0.7);
 }
 
@@ -218,18 +232,29 @@
   color: #473c2a;
   font-size: 35px;
   top: -2rem;
-  right: 0;
-  left: 32rem;
-  width: 26.2%;
+  left: 25%; /* Sitúa el borde izquierdo en el 50% del contenedor */
+  width: 50%;
+  text-align: center;
   border-radius: 8px;
   box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.3);
   position: absolute;
   z-index: 3;
 }
-.game-won-final {
+.puzzle-main .game-won-final {
+  width: fit-content;
+  position: absolute;
+  color: #473c2a;
+  padding: 5px;
+  background: rgba(253, 207, 56, 1);
+  font-size: 35px;
+  top: -2rem;
+  border-radius: 8px;
+  box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.3);
+  z-index: 3;
   animation-name: animacion-puzzle_finished;
   animation-duration: 1000ms;
 }
+
 @keyframes animacion-puzzle_finished {
   0% {
     transform: rotate(-5deg);
@@ -270,7 +295,7 @@
   color: #d8cca3;
   margin-right: 1px;
   margin-left: 0px;
-  margin-top: 27.5rem;
+  margin-top: 0rem;
   border: none;
   border-radius: 50%;
   cursor: pointer;
@@ -299,17 +324,17 @@
   width: 100px;
   background: rgba(253, 207, 56, 1);
   position: absolute;
-  right: 21rem;
+  z-index: 3;
+  right: 40%;
   top: 20rem;
   padding: 5px;
   font-size: 1rem;
   border-radius: 50%;
   border: none;
   cursor: pointer;
-  /* animation-name: animacion_ad-next;
-  animation-duration: 1000ms;
-  animation-timing-function: ease;
-  animation-iteration-count: infinite; */
+}
+.next i {
+  font-size: 30px;
 }
 @keyframes intermittent-animation {
   0% {
@@ -323,19 +348,196 @@
   }
 }
 
-.next i {
-  font-size: 30px;
+@media screen and (max-width: 1000px) {
+  .container-pieces {
+    width: 500px;
+    height: 500px;
+  }
 }
-.game-won-final {
-  position: absolute;
-  color: #473c2a;
-  width: 50%;
-  left: 21rem;
-  padding: 5px;
-  background: rgba(253, 207, 56, 1);
-  font-size: 35px;
-  top: -2rem;
-  border-radius: 8px;
-  box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.3);
-  z-index: 3;
+@media screen and (max-width: 953px) {
+  .puzzle-main .game-won-final {
+    font-size: 20px;
+  }
+  .puzzle-main .game-won {
+    font-size: 20px;
+  }
+}
+@media screen and (max-width: 950px) {
+  .container-pieces {
+    width: 400px;
+    height: 400px;
+  }
+}
+
+@media screen and (max-width: 845px) {
+  .puzzle-main {
+    flex-direction: column;
+  }
+  .no-button {
+    position: absolute;
+  }
+  .puzzle-main .info-artwork {
+    width: 80%;
+    flex-direction: row;
+    margin: 0;
+  }
+  .puzzle-main .info-artwork i {
+    transform: rotate(-90deg);
+  }
+  .puzzle-main .info-artwork {
+    width: 90%;
+  }
+  .puzzle-main .instructions-button {
+    left: 10%;
+  }
+  .puzzle-main .next {
+    right: 15%;
+    top: 20rem;
+  }
+}
+
+@media screen and (max-width: 750px) {
+  .puzzle-main .info {
+    margin-top: -2rem;
+    margin-left: 0;
+    margin-right: 0;
+    font-size: 20px;
+    width: 400px;
+  }
+
+  .container-pieces {
+    margin-top: -2.5rem;
+    width: 350px;
+    height: 350px;
+  }
+  .puzzle-main .info-artwork {
+    width: 100%;
+  }
+  .puzzle-main .reset-button {
+    position: absolute;
+    left: 10%;
+  }
+  .puzzle-main .next {
+    right: 10%;
+    top: 15rem;
+    font-size: 12px;
+    width: 80px;
+    height: 80px;
+  }
+  .puzzle-main .game-won-final {
+    margin-top: -2rem;
+  }
+}
+@media screen and (max-width: 565px) {
+  .puzzle-main .info {
+    font-size: 17px;
+  }
+}
+@media screen and (max-width: 560px) {
+  .puzzle-main .reset-button {
+    position: absolute;
+    left: 5%;
+  }
+  .puzzle-main .instructions-button {
+    left: 5%;
+  }
+  .puzzle-main .next {
+    right: 5%;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .container-pieces {
+    width: 320px;
+    height: 320px;
+  }
+  .puzzle-main .info-artwork {
+    padding: 5px;
+  }
+  .puzzle-main .info-artwork .info-hide {
+    margin-top: 2rem;
+    width: 100%;
+    font-size: 15px;
+    background: #473c2a;
+    color: #d8cca3;
+    filter: blur(5px);
+    margin: auto;
+    border-radius: 10px;
+    text-align: justify;
+    padding: 5px;
+  }
+  .puzzle-main .info-artwork .info-show {
+    margin-top: 2rem;
+    width: 100%;
+    font-size: 13px;
+    background: #473c2a;
+    color: #d8cca3;
+    margin: auto;
+    border-radius: 10px;
+    text-align: justify;
+    padding: 5px;
+  }
+  .puzzle-main .info-artwork-article {
+    font-size: 12px;
+  }
+  .puzzle-main .reset-button {
+    width: 35px;
+    height: 35px;
+    font-size: 5px;
+  }
+  .puzzle-main .reset-button i {
+    font-size: 22px;
+  }
+  .puzzle-main .instructions-button {
+    width: 35px;
+    height: 35px;
+  }
+  .puzzle-main .instructions-button i {
+    font-size: 22px;
+  }
+}
+
+@media screen and (max-width: 420px) {
+  .container-pieces {
+    margin-top: -1rem;
+  }
+  .puzzle-main .reset-button {
+    position: absolute;
+    left: 2%;
+  }
+  .puzzle-main .instructions-button {
+    left: 2%;
+  }
+  .puzzle-main .next {
+    right: 1%;
+  }
+  .puzzle-main .game-won {
+    width: 70%;
+    left: 15%;
+  }
+  .puzzle-main .game-won-final {
+    width: 90%;
+    height: 60px;
+  }
+}
+@media screen and (max-width: 400px) {
+  .puzzle-main .info {
+    width: 95%;
+  }
+}
+
+@media screen and (max-width: 390px) {
+  .container-pieces {
+    width: 100%;
+    height: auto;
+  }
+  .puzzle-main .reset-button {
+    position: static;
+  }
+  .puzzle-main .instructions-button {
+    top: -3.7rem;
+  }
+  .puzzle-main .next {
+    margin-top: 3rem;
+  }
 }
