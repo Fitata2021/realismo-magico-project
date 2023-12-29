@@ -15,35 +15,83 @@ const ArtworkCanvas = () => {
 
   useEffect(() => {
     window.scrollTo(0, 0);
-    function onDrag(element) {
-      const draggableElement = document.getElementById(element);
 
-      const interactInstance = interact(draggableElement);
+    interact(".draggable").draggable({
+      inertia: true,
+      modifiers: [
+        interact.modifiers.restrictRect({
+          restriction: "parent",
+          endOnly: true,
+        }),
+      ],
+      autoScroll: true,
 
-      interactInstance.draggable({
-        onmove: (event) => {
-          const target = event.target;
-          const x = (parseFloat(target.getAttribute("data-x")) || 0) + event.dx;
-          const y = (parseFloat(target.getAttribute("data-y")) || 0) + event.dy;
+      listeners: {
+        // call this function on every dragmove event
+        move: dragMoveListener,
 
-          target.style.transform = `translate(${x}px, ${y}px)`;
-          target.setAttribute("data-x", x);
-          target.setAttribute("data-y", y);
+        // call this function on every dragend event
+        end(event) {
+          var textEl = event.target.querySelector("p");
+
+          textEl &&
+            (textEl.textContent =
+              "moved a distance of " +
+              Math.sqrt(
+                (Math.pow(event.pageX - event.x0, 2) +
+                  Math.pow(event.pageY - event.y0, 2)) |
+                  0,
+              ).toFixed(2) +
+              "px");
         },
-      });
-      return () => {
-        interactInstance.unset();
-      };
+      },
+    });
+    function dragMoveListener(event) {
+      var target = event.target;
+      // keep the dragged position in the data-x/data-y attributes
+      var x = (parseFloat(target.getAttribute("data-x")) || 0) + event.dx;
+      var y = (parseFloat(target.getAttribute("data-y")) || 0) + event.dy;
+
+      // translate the element
+      target.style.transform = "translate(" + x + "px, " + y + "px)";
+
+      // update the posiion attributes
+      target.setAttribute("data-x", x);
+      target.setAttribute("data-y", y);
     }
-    onDrag("butterfly");
-    onDrag("pez");
-    onDrag("jaguar");
-    onDrag("armor");
-    onDrag("flowers");
-    onDrag("hyena");
-    onDrag("fungus");
-    onDrag("owl");
-    onDrag("woman");
+
+    // this function is used later in the resizing and gesture demos
+    window.dragMoveListener = dragMoveListener;
+
+    // function onDrag(element) {
+    //   const draggableElement = document.getElementById(element);
+
+    //   const interactInstance = interact(draggableElement);
+
+    //   interactInstance.draggable({
+    //     onmove: (event) => {
+    //       const target = event.target;
+    //       const x = (parseFloat(target.getAttribute("data-x")) || 0) + event.dx;
+    //       const y = (parseFloat(target.getAttribute("data-y")) || 0) + event.dy;
+
+    //       target.style.transform = `translate(${x}px, ${y}px)`;
+    //       target.setAttribute("data-x", x);
+    //       target.setAttribute("data-y", y);
+    //     },
+    //   });
+    //   return () => {
+    //     interactInstance.unset();
+    //   };
+    // }
+    // onDrag("butterfly");
+    // onDrag("pez");
+    // onDrag("jaguar");
+    // onDrag("armor");
+    // onDrag("flowers");
+    // onDrag("hyena");
+    // onDrag("fungus");
+    // onDrag("owl");
+    // onDrag("woman");
   }, []);
 
   function descargarComoPDF() {
