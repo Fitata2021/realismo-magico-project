@@ -120,7 +120,10 @@ const CouplesGame = () => {
               <div className="exit-icon">
                 <i
                   className="fa-solid fa-xmark"
-                  onClick={() => setToogleInstructions(true)}
+                  onClick={() => {
+                    setToogleInstructions(true);
+                    restart();
+                  }}
                 ></i>
               </div>
             </p>

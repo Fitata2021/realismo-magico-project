@@ -151,7 +151,7 @@
   color: #1a120b;
   border: 2px solid #1a120b;
   cursor: pointer;
-  margin-top: 1rem;
+  margin-top: 3rem;
   border-radius: 10px;
 }
 .puzzle-main .info-artwork .info-artwork-icon-finished {
@@ -380,6 +380,9 @@
 @media screen and (max-width: 845px) {
   .puzzle-main {
     flex-direction: column;
+  }
+  .puzzle-main .info-artwork-article {
+    margin-top: 1rem;
   }
   .no-button {
     position: absolute;
