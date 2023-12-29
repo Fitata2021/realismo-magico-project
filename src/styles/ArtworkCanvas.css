@@ -154,6 +154,15 @@ main {
   top: 45%;
 }
 
+#woman,
+#owl,
+#fungus,
+#hyena #flowers #armor #jaguar #pez #butterfly {
+  touch-action: none;
+  user-select: none;
+  transform: translate(0px, 0px);
+}
+
 @media screen and (max-width: 1380px) {
   .file-interact-dropzone {
     width: 700px;
