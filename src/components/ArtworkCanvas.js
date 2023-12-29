@@ -26,12 +26,7 @@ const ArtworkCanvas = () => {
 
     interact(".draggable").draggable({
       inertia: true,
-      modifiers: [
-        interact.modifiers.restrictRect({
-          restriction: "parent",
-          endOnly: true,
-        }),
-      ],
+      modifiers: [],
       autoScroll: true,
 
       listeners: {
