@@ -2,8 +2,9 @@ import React, { useEffect, useState } from "react";
 import interact from "interactjs";
 import backgroundCards from "../utils/BackgroundImages";
 import draggableImages from "../utils/DraggableImages";
-import jsPDF from "jspdf";
+// import jsPDF from "jspdf";
 import html2canvas from "html2canvas";
+import { saveAs } from "file-saver";
 import "../styles/ArtworkCanvas.css";
 
 const ArtworkCanvas = () => {
@@ -99,28 +100,48 @@ const ArtworkCanvas = () => {
     // onDrag("woman");
   }, []);
 
-  function descargarComoPDF() {
-    alert("se descargo pdf");
-    const divElement = document.getElementById("main-section");
-    html2canvas(divElement, {
-      //scale: 0.3, // Ajusta el escalamiento según sea necesario
-      windowWidth: divElement.offsetHeight, // Toma en cuenta el ancho del contenido
-      windowHeight: divElement.offsetWidth, // Toma en cuenta el alto del contenido
-    }).then((canvas) => {
-      const imgData = canvas.toDataURL("image/png");
+  function downloadArtWork(x, y, width, height) {
+    alert("se descargó");
+    const elementoCapturar = document.getElementById("main-section"); // Reemplaza 'elemento' con el ID de tu elemento
 
-      const pdf = new jsPDF();
-      pdf.addImage(
-        imgData,
-        "PNG",
-        1.5,
-        1.5,
-        canvas.height / 5,
-        canvas.width / 2,
-      );
-      pdf.save("mi-obra-realismo-magico.pdf");
+    html2canvas(elementoCapturar, {
+      // Establecer las dimensiones del área a capturar
+      x: x,
+      y: y,
+      width: width,
+      height: height,
+      scrollX: 0,
+      scrollY: 0,
+    }).then((canvas) => {
+      // Crear un enlace para descargar la imagen
+      canvas.toBlob((blob) => {
+        saveAs(blob, "captura_pantalla.jpg"); // Nombre del archivo a descargar
+      }, "artwork/jpeg");
     });
   }
+
+  // function descargarComoPDF() {
+  //   alert("se descargo pdf");
+  //   const divElement = document.getElementById("main-section");
+  //   html2canvas(divElement, {
+  //     //scale: 0.3, // Ajusta el escalamiento según sea necesario
+  //     windowWidth: divElement.offsetHeight, // Toma en cuenta el ancho del contenido
+  //     windowHeight: divElement.offsetWidth, // Toma en cuenta el alto del contenido
+  //   }).then((canvas) => {
+  //     const imgData = canvas.toDataURL("image/png");
+
+  //     const pdf = new jsPDF();
+  //     pdf.addImage(
+  //       imgData,
+  //       "PNG",
+  //       1.5,
+  //       1.5,
+  //       canvas.height / 5,
+  //       canvas.width / 2,
+  //     );
+  //     pdf.save("mi-obra-realismo-magico.pdf");
+  //   });
+  // }
 
   return (
     <main id="main-section">
@@ -249,7 +270,7 @@ const ArtworkCanvas = () => {
         />
 
         <i
-          onClick={() => descargarComoPDF()}
+          onClick={() => downloadArtWork(740, 25, 750, 500)}
           className="fa-solid fa-download"
         ></i>
       </div>

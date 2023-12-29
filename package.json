@@ -10,6 +10,7 @@
     "@testing-library/react": "^13.4.0",
     "@testing-library/user-event": "^13.5.0",
     "@types/react-dnd": "^3.0.2",
+    "file-saver": "^2.0.5",
     "html2canvas": "^1.4.1",
     "interactjs": "^1.10.19",
     "jspdf": "^2.5.1",
