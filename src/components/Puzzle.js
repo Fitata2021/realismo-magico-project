@@ -148,7 +148,7 @@ const Puzzle = () => {
           <div
             className={`piece ${piece.status}`}
             key={piece.id}
-            onClick={() => selectPiece(index)}
+            onClick={!isFinished ? () => selectPiece(index) : null}
           >
             <img src={piece.image} alt="" />
           </div>
