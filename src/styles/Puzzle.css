@@ -208,7 +208,6 @@
 .piece.unselected {
   width: 99%;
   height: 99%;
-  background: #bea553;
   display: flex;
   justify-content: space-between;
 }
@@ -334,6 +333,10 @@
   border-radius: 50%;
   border: none;
   cursor: pointer;
+  animation-name: intermittent-animation;
+  animation-duration: 1000ms;
+  animation-timing-function: ease;
+  animation-iteration-count: infinite;
 }
 .next i {
   font-size: 30px;

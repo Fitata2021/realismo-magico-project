@@ -101,7 +101,6 @@ const Puzzle = () => {
         <p
           className="game-won"
           style={{
-            // display: isFinished ? "inline" : "none",
             filer: toogleInstructions ? "blur(0px)" : "blur(8px)",
           }}
         >
@@ -225,7 +224,7 @@ const Puzzle = () => {
                 display: isFinished ? "inline" : "none",
               }}
             >
-              Muy bien, lo Lograste!
+              Muy bien, continua!
             </p>
           )} */}
           <p className="surprise-info">{infoArtwork[counterPuzzle - 1].info}</p>
