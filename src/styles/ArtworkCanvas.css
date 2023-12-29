@@ -1,5 +1,7 @@
 main {
-  margin-top: 6em;
+  margin-top: 8em;
+  display: flex;
+  justify-content: center;
 }
 .file-interact-dropzone {
   display: flex;
@@ -7,13 +9,8 @@ main {
   justify-content: center;
   font-size: 34px;
   border: 2px solid #473c2a;
-  border-radius: 10px;
-  width: 55%;
-  height: 32rem;
-  margin: auto;
-}
-.file-interact-dropzone img {
-  border-radius: 10px;
+  width: 750px;
+  height: 500px;
 }
 
 .background {
@@ -39,14 +36,14 @@ main {
 .option-images {
   display: flex;
   flex-direction: column;
-  width: 35%;
-  height: 80vh;
+  width: 550px;
+  height: 550px;
   padding: 3px;
-  margin: 1%;
+  margin: auto;
   background: #d8cca3;
   position: relative;
   /* flex-wrap: wrap; */
-  border-radius: 8px;
+  border-radius: 3px;
   /* position: absolute; */
 }
 
@@ -59,8 +56,9 @@ main {
 .background-images {
   display: flex;
   flex-direction: column;
-  margin: 1%;
-  width: 10%;
+  align-items: flex-start;
+  width: 200px;
+  padding-right: 5px;
 }
 .background-images i {
   font-size: 40px;
@@ -78,62 +76,218 @@ main {
 
 .background-images img {
   width: 100px;
-  margin: 1px;
+  height: 60px;
+  margin-top: 1px;
+  margin-left: 5px;
 }
 
 /* Draggables size... */
 
 #butterfly {
-  height: 50px;
-  width: 50px;
-  left: 40px;
-  top: 20px;
+  /* height: 50px;
+  width: 50px; */
+  height: 10%;
+  width: 10%;
+  left: 80%;
+  top: 60%;
 }
 #pez {
-  height: 110px;
-  width: 170px;
-  left: 0px;
-  top: 220px;
+  /* height: 110px;
+  width: 170px; */
+  height: 20%;
+  width: 32%;
+  left: 1%;
+  top: 40%;
 }
 #jaguar {
-  height: 170px;
-  width: 170px;
-  left: 10px;
-  top: 60px;
+  /* height: 170px;
+  width: 170px; */
+  height: 31%;
+  width: 31%;
+  left: 5%;
+  top: 8%;
 }
 #armor {
-  height: 270px;
-  width: 270px;
-  left: 180px;
-  top: -5px;
+  height: 53%;
+  width: 53%;
+  left: 49%;
+  top: -2%;
 }
 #flowers {
-  height: 120px;
-  width: 120px;
-  left: 190px;
-  top: 10px;
+  /* height: 120px;
+  width: 120px; */
+  height: 21.8%;
+  width: 21.8%;
+  left: 40%;
+  top: 5%;
 }
 #hyena {
-  height: 150px;
-  width: 150px;
-  left: 10px;
-  top: 330px;
+  /* height: 150px;
+  width: 150px; */
+  height: 27.5%;
+  width: 27.5%;
+  left: 4%;
+  top: 65%;
 }
 #fungus {
   height: 100px;
   width: 100px;
-  left: 190px;
-  top: 210px;
+  height: 18.5%;
+  width: 18.5%;
+  left: 33%;
+  top: 35%;
 }
 #owl {
-  height: 70px;
-  width: 70px;
-  left: 360px;
-  top: 430px;
+  /* height: 70px;
+  width: 70px; */
+  height: 13%;
+  width: 13%;
+  left: 80%;
+  top: 78%;
 }
 #woman {
-  height: 270px;
-  width: 270px;
-  left: 140px;
-  top: 230px;
+  /* height: 270px;
+  width: 270px; */
+  height: 49.3%;
+  width: 49.3%;
+  left: 31%;
+  top: 45%;
+}
+
+@media screen and (max-width: 1380px) {
+  .file-interact-dropzone {
+    width: 700px;
+    height: 450px;
+  }
+  .option-images {
+    width: 500px;
+    height: 500px;
+  }
+  .background-images {
+    width: 120px;
+  }
+}
+@media screen and (max-width: 1350px) {
+  .file-interact-dropzone {
+    width: 600px;
+    height: 380px;
+  }
+  .option-images {
+    width: 400px;
+    height: 400px;
+  }
+}
+@media screen and (max-width: 1130px) {
+  .file-interact-dropzone {
+    width: 550px;
+    height: 330px;
+  }
+  .option-images {
+    width: 350px;
+    height: 350px;
+  }
+  .background-images {
+    width: 110px;
+  }
+  .background-images img {
+    width: 80%;
+    height: 50px;
+    margin-top: 1px;
+    margin-left: 5px;
+  }
+  .background-images i {
+    font-size: 30px;
+    margin-top: 10px;
+    width: 80%;
+  }
+  .background-images i:hover {
+    font-size: 35px;
+  }
+}
+@media screen and (max-width: 1020px) {
+  .file-interact-dropzone {
+    width: 500px;
+    height: 280px;
+  }
+  .option-images {
+    width: 300px;
+    height: 300px;
+  }
+  .background-images {
+    margin-top: 2rem;
+  }
+}
+@media screen and (max-width: 920px) {
+  .file-interact-dropzone {
+    width: 450px;
+    height: 270px;
+  }
+  .option-images {
+    width: 250px;
+    height: 250px;
+  }
+}
+@media screen and (max-width: 815px) {
+  .file-interact-dropzone {
+    width: 380px;
+    height: 230px;
+  }
+  .option-images {
+    width: 210px;
+    height: 210px;
+  }
+  .background-images {
+    width: 60px;
+  }
+  .background-images img {
+    width: 80%;
+    height: 30px;
+    margin-left: 2px;
+  }
+  .background-images i {
+    font-size: 25px;
+    margin-top: 10px;
+    width: 80%;
+  }
+  .background-images i:hover {
+    font-size: 30px;
+  }
+}
+@media screen and (max-width: 750px) {
+  main {
+    margin-top: 4.5rem;
+  }
+}
+@media screen and (max-width: 657px) {
+  main {
+    flex-direction: column;
+  }
+  .option-images {
+    margin-bottom: 2px;
+  }
+  .background-images {
+    flex-direction: row;
+    width: 300px;
+    margin-top: 2px;
+  }
+}
+@media screen and (max-width: 380px) {
+  .file-interact-dropzone {
+    width: 98%;
+    height: 230px;
+  }
+  .background-images {
+    width: 80%;
+  }
+  .background-images img {
+    width: 15%;
+  }
+  .background-images i {
+    font-size: 22px;
+    margin-top: 10px;
+    width: 15%;
+  }
+  .background-images i:hover {
+    font-size: 37px;
+  }
 }
