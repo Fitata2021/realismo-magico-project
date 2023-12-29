@@ -125,12 +125,13 @@ main {
   cursor: pointer;
   margin: 5px;
 }
-
-.play-button {
+.start-section .exit-icon {
   width: 100%;
+  font-size: 25px;
   display: flex;
   justify-content: flex-end;
 }
+
 .border-button {
   width: 80px;
   height: 80px;
@@ -363,6 +364,9 @@ button:hover {
 
   .finish-section .game-won {
     top: 5.5rem;
+    font-size: 20px;
+  }
+  .start-section .exit-icon {
     font-size: 20px;
   }
 }

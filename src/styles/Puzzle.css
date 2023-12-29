@@ -24,7 +24,7 @@
   font-size: 25px;
   background: #d8cca3;
   color: #473c2a;
-  margin-left: 3rem;
+
   border-radius: 10px;
   text-align: justify;
   padding: 1rem;
@@ -140,9 +140,9 @@
 }
 
 .puzzle-main .info-artwork-article {
-  height: 85%;
-  width: 90%;
-  margin-left: 2rem;
+  width: fit-content;
+  height: 80%;
+  margin-left: 5px;
   padding: 5px;
   background: #d8cca3;
   font-weight: 600;
@@ -155,22 +155,24 @@
   border-radius: 10px;
 }
 .puzzle-main .info-artwork .info-artwork-icon-finished {
-  margin-top: -3rem;
-  width: 200px;
-  height: 80px;
+  margin-top: -2rem;
+  width: 80px;
+  height: 1px;
   text-align: center;
   animation-name: intermittent-animation;
   animation-duration: 1000ms;
   animation-timing-function: ease;
   animation-iteration-count: infinite;
+  background: none;
 }
 
-.info-artwork-icon-start {
+/* .info-artwork-icon-start {
   margin-top: -3rem;
   width: 200px;
   height: 80px;
   text-align: center;
-}
+  background: red;
+} */
 
 .puzzle-main .info-artwork .info-artwork-icon-active i {
   background: rgba(253, 207, 56, 1);
@@ -220,8 +222,8 @@
   height: 99%;
 }
 .piece.selected img {
-  width: 100%;
-  height: 100%;
+  width: 99%;
+  height: 99%;
   box-shadow: 2px 2px 30px rgba(253, 207, 56, 0.7);
 }
 
@@ -308,7 +310,6 @@
 }
 
 .puzzle-main .reset-button:hover {
-  /* box-shadow: 2px 2px 30px rgba(253, 207, 56, 0.7); */
   box-shadow: 2px 2px 30px rgba(216, 204, 163, 1);
   color: rgba(253, 207, 56, 1);
   filter: sepia(1);
@@ -317,6 +318,7 @@
 .puzzle-main .no-button {
   height: 50px;
   width: 50px;
+  background: #bea553;
 }
 
 .next {
@@ -367,6 +369,9 @@
     width: 400px;
     height: 400px;
   }
+  .puzzle-main .info {
+    margin-top: 4rem;
+  }
 }
 
 @media screen and (max-width: 845px) {
@@ -375,6 +380,9 @@
   }
   .no-button {
     position: absolute;
+  }
+  .puzzle-main .info {
+    margin-top: 0rem;
   }
   .puzzle-main .info-artwork {
     width: 80%;
@@ -417,6 +425,9 @@
     position: absolute;
     left: 10%;
   }
+  .puzzle-main .instructions-button {
+    top: -2.7rem;
+  }
   .puzzle-main .next {
     right: 10%;
     top: 15rem;
@@ -431,6 +442,7 @@
 @media screen and (max-width: 565px) {
   .puzzle-main .info {
     font-size: 17px;
+    margin-top: -6rem;
   }
 }
 @media screen and (max-width: 560px) {
@@ -498,9 +510,6 @@
 }
 
 @media screen and (max-width: 420px) {
-  .container-pieces {
-    margin-top: -1rem;
-  }
   .puzzle-main .reset-button {
     position: absolute;
     left: 2%;
@@ -528,8 +537,11 @@
 
 @media screen and (max-width: 390px) {
   .container-pieces {
-    width: 100%;
-    height: auto;
+    width: 330px;
+    height: 330px;
+  }
+  .puzzle-main .info {
+    margin-top: -3rem;
   }
   .puzzle-main .reset-button {
     position: static;
@@ -539,5 +551,18 @@
   }
   .puzzle-main .next {
     margin-top: 3rem;
+  }
+}
+
+@media screen and (max-width: 350px) {
+  .container-pieces {
+    width: 310px;
+    height: 310px;
+  }
+}
+@media screen and (max-width: 315px) {
+  .container-pieces {
+    width: 300px;
+    height: 300px;
   }
 }

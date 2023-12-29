@@ -19,6 +19,12 @@
   justify-content: center;
   flex-wrap: wrap;
 }
+.butterflies-game .exit-icon {
+  width: 100%;
+  font-size: 25px;
+  display: flex;
+  justify-content: flex-end;
+}
 
 .butterflies-game .butterfly_board {
   margin-top: 2rem;
@@ -207,6 +213,9 @@
   }
 }
 @media screen and (max-width: 750px) {
+  .butterflies-game .exit-icon {
+    font-size: 20px;
+  }
   .butterflies-game .card-quiz,
   .butterflies-game .card-finished,
   .butterflies-game .card-shown-answers {

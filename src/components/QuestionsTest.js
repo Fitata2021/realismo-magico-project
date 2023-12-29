@@ -73,13 +73,12 @@ const QuestionsTest = () => {
               <i className="fa-solid fa-xmark"></i>
             </div>
           </p>
-          <div className="play-button">
-            <div
-              className="border-button"
+
+          <div className="exit-icon">
+            <i
+              className="fa-solid fa-xmark"
               onClick={() => setQuizStatus("development")}
-            >
-              <i class="fa-solid fa-play"></i>
-            </div>
+            ></i>
           </div>
         </section>
       </main>

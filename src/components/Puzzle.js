@@ -97,22 +97,11 @@ const Puzzle = () => {
 
   return (
     <main className="puzzle-main">
-      {counterPuzzle === piecesData.length && isFinished ? (
-        <p
-          className="game-won-final"
-          style={
-            toogleInstructions
-              ? { filter: "blur(0px)" }
-              : { filter: "blur(8px)" }
-          }
-        >
-          Felicitaciones! Haz terminado los 3 puzzles
-        </p>
-      ) : (
+      {counterPuzzle === piecesData.length && isFinished && (
         <p
           className="game-won"
           style={{
-            display: isFinished ? "inline" : "none",
+            // display: isFinished ? "inline" : "none",
             filer: toogleInstructions ? "blur(0px)" : "blur(8px)",
           }}
         >
@@ -166,51 +155,54 @@ const Puzzle = () => {
           </div>
         ))}
       </section>
-      {isFinished ? (
-        <>
-          {counterPuzzle === piecesData.length ? (
-            <button
-              style={
-                toogleInstructions
-                  ? { filter: "blur(0px)" }
-                  : { filter: "blur(8px)" }
-              }
-              className="next"
-              onClick={() => [replay(), setCounterPuzzle(1)]}
-            >
-              <p style={{ fontSize: "14px" }}>Volver al primer Puzzle</p>
-              <i className="fa-regular fa-hand-pointer"></i>
-            </button>
-          ) : (
-            <button
-              style={
-                toogleInstructions
-                  ? { filter: "blur(0px)" }
-                  : { filter: "blur(8px)" }
-              }
-              className="next"
-              onClick={() => [replay(), setCounterPuzzle(counterPuzzle + 1)]}
-            >
-              <p>Siguiente Puzzle</p>
-              <i className="fa-regular fa-hand-pointer"></i>
-            </button>
-          )}
+      {
+        isFinished && (
+          <>
+            {counterPuzzle === piecesData.length ? (
+              <button
+                style={
+                  toogleInstructions
+                    ? { filter: "blur(0px)" }
+                    : { filter: "blur(8px)" }
+                }
+                className="next"
+                onClick={() => [replay(), setCounterPuzzle(1)]}
+              >
+                <p style={{ fontSize: "14px" }}>Volver al primer Puzzle</p>
+                <i className="fa-regular fa-hand-pointer"></i>
+              </button>
+            ) : (
+              <button
+                style={
+                  toogleInstructions
+                    ? { filter: "blur(0px)" }
+                    : { filter: "blur(8px)" }
+                }
+                className="next"
+                onClick={() => [replay(), setCounterPuzzle(counterPuzzle + 1)]}
+              >
+                <p>Siguiente Puzzle</p>
+                <i className="fa-regular fa-hand-pointer"></i>
+              </button>
+            )}
 
-          <button
-            style={
-              toogleInstructions
-                ? { filter: "blur(0px)" }
-                : { filter: "blur(8px)" }
-            }
-            onClick={() => [reset(counterPuzzle - 1)]}
-            className="reset-button"
-          >
-            <i className="fa-sharp fa-solid fa-rotate"></i>
-          </button>
-        </>
-      ) : (
-        <div className="no-button"></div>
-      )}
+            <button
+              style={
+                toogleInstructions
+                  ? { filter: "blur(0px)" }
+                  : { filter: "blur(8px)" }
+              }
+              onClick={() => [reset(counterPuzzle - 1)]}
+              className="reset-button"
+            >
+              <i className="fa-sharp fa-solid fa-rotate"></i>
+            </button>
+          </>
+        )
+        // : (
+        //   <div className="no-button"></div>
+        // )
+      }
 
       <section
         className="info-artwork"
