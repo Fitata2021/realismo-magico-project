@@ -260,7 +260,7 @@ main {
 }
 @media screen and (max-width: 657px) {
   main {
-    flex-direction: column;
+    flex-direction: column-reverse;
   }
   .option-images {
     margin-bottom: 2px;
