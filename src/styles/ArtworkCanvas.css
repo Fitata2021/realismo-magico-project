@@ -160,7 +160,12 @@ body.dragging {
 #woman,
 #owl,
 #fungus,
-#hyena #flowers #armor #jaguar #pez #butterfly {
+#hyena,
+#flowers,
+#armor,
+#jaguar,
+#pez,
+#butterfly {
   touch-action: none;
   user-select: none;
   transform: translate(0px, 0px);
