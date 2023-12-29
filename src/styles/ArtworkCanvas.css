@@ -3,6 +3,9 @@ main {
   display: flex;
   justify-content: center;
 }
+body.dragging {
+  overflow: hidden;
+}
 .file-interact-dropzone {
   display: flex;
   align-items: center;

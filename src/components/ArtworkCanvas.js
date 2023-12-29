@@ -13,6 +13,14 @@ const ArtworkCanvas = () => {
     e.preventDefault(); // Evita la acción por defecto (como el menú contextual)
   };
 
+  function startDrag() {
+    document.body.classList.add("dragging");
+  }
+
+  function endDrag() {
+    document.body.classList.remove("dragging");
+  }
+
   useEffect(() => {
     window.scrollTo(0, 0);
 
@@ -45,6 +53,8 @@ const ArtworkCanvas = () => {
               "px");
         },
       },
+      onstart: startDrag,
+      onend: endDrag,
     });
     function dragMoveListener(event) {
       var target = event.target;
