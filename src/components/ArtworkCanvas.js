@@ -9,14 +9,44 @@ import "../styles/ArtworkCanvas.css";
 
 const ArtworkCanvas = () => {
   const [background, setBackground] = useState(backgroundCards[0].image);
+  const [coordinateX, setCoordinateX] = useState(0);
+  const [coordinateY, setCoordinateY] = useState(0);
+  const [artworkWith, setArtworkWith] = useState(0);
+  const [artworkHeight, setArtworkHeight] = useState(0);
 
+  //Getting coordinates artwork...
+  useEffect(() => {
+    const artwork = document.getElementById("artworkfinished");
+    if (artwork) {
+      const rect = artwork.getBoundingClientRect();
+      const x = rect.left;
+      const y = rect.top;
+      const w = rect.right;
+      const z = rect.bottom;
+      const width = w - x;
+      const height = z - y;
+      // const width = rect.width;
+      // const height = rect.height;
+
+      setCoordinateX(x);
+      setCoordinateY(y);
+      setArtworkWith(width);
+      setArtworkHeight(height);
+
+      console.log(`x: ${x}, y: ${y}, width: ${width}, height: ${height}`);
+    }
+  }, []);
+
+  console.log(
+    `setx: ${coordinateX}, sety: ${coordinateY}, setwidth: ${artworkWith}, setheight: ${artworkHeight}`,
+  );
   const handleContextMenu = (e) => {
     e.preventDefault(); // Evita la acción por defecto (como el menú contextual)
   };
 
-  const recargarPagina = () => {
-    window.location.reload();
-  };
+  // const recargarPagina = () => {
+  //   window.location.reload();
+  // };
 
   function startDrag() {
     document.body.classList.add("dragging");
@@ -25,6 +55,8 @@ const ArtworkCanvas = () => {
   function endDrag() {
     document.body.classList.remove("dragging");
   }
+
+  //Move draggables elements inside container...
 
   useEffect(() => {
     window.scrollTo(0, 0);
@@ -77,36 +109,6 @@ const ArtworkCanvas = () => {
 
     // this function is used later in the resizing and gesture demos
     window.dragMoveListener = dragMoveListener;
-
-    // function onDrag(element) {
-    //   const draggableElement = document.getElementById(element);
-
-    //   const interactInstance = interact(draggableElement);
-
-    //   interactInstance.draggable({
-    //     onmove: (event) => {
-    //       const target = event.target;
-    //       const x = (parseFloat(target.getAttribute("data-x")) || 0) + event.dx;
-    //       const y = (parseFloat(target.getAttribute("data-y")) || 0) + event.dy;
-
-    //       target.style.transform = `translate(${x}px, ${y}px)`;
-    //       target.setAttribute("data-x", x);
-    //       target.setAttribute("data-y", y);
-    //     },
-    //   });
-    //   return () => {
-    //     interactInstance.unset();
-    //   };
-    // }
-    // onDrag("butterfly");
-    // onDrag("pez");
-    // onDrag("jaguar");
-    // onDrag("armor");
-    // onDrag("flowers");
-    // onDrag("hyena");
-    // onDrag("fungus");
-    // onDrag("owl");
-    // onDrag("woman");
   }, []);
 
   function downloadArtWork(x, y, width, height) {
@@ -220,13 +222,18 @@ const ArtworkCanvas = () => {
         </div>
 
         <div id="dropzone" className="file-interact-dropzone">
-          <img className="background" src={background} alt="" />
+          <img
+            className="background"
+            id="artworkfinished"
+            src={background}
+            alt=""
+          />
         </div>
       </div>
       <div className="background-images">
-        <button onClick={recargarPagina} className="reset-button">
+        {/* <button onClick={recargarPagina} className="reset-button">
           <i className="fa-sharp fa-solid fa-rotate"></i>
-        </button>
+        </button> */}
         <img
           onClick={() => {
             setBackground(backgroundCards[0].image);
@@ -264,7 +271,14 @@ const ArtworkCanvas = () => {
         />
         <div
           className="download-button"
-          onClick={() => downloadArtWork(740, 25, 750, 500)}
+          onClick={() =>
+            downloadArtWork(
+              coordinateX,
+              coordinateY - 128,
+              artworkWith,
+              artworkHeight,
+            )
+          }
         >
           <i className="fa-solid fa-download"></i>
         </div>
