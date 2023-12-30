@@ -14,6 +14,10 @@ const ArtworkCanvas = () => {
     e.preventDefault(); // Evita la acción por defecto (como el menú contextual)
   };
 
+  const recargarPagina = () => {
+    window.location.reload();
+  };
+
   function startDrag() {
     document.body.classList.add("dragging");
   }
@@ -27,7 +31,11 @@ const ArtworkCanvas = () => {
 
     interact(".draggable").draggable({
       inertia: true,
-      modifiers: [],
+      modifiers: [
+        interact.modifiers.restrictRect({
+          restriction: "#container-interact-draggables",
+        }),
+      ],
       autoScroll: true,
 
       listeners: {
@@ -52,6 +60,7 @@ const ArtworkCanvas = () => {
       onstart: startDrag,
       onend: endDrag,
     });
+
     function dragMoveListener(event) {
       var target = event.target;
       // keep the dragged position in the data-x/data-y attributes
@@ -120,119 +129,104 @@ const ArtworkCanvas = () => {
     });
   }
 
-  // function descargarComoPDF() {
-  //   alert("se descargo pdf");
-  //   const divElement = document.getElementById("main-section");
-  //   html2canvas(divElement, {
-  //     //scale: 0.3, // Ajusta el escalamiento según sea necesario
-  //     windowWidth: divElement.offsetHeight, // Toma en cuenta el ancho del contenido
-  //     windowHeight: divElement.offsetWidth, // Toma en cuenta el alto del contenido
-  //   }).then((canvas) => {
-  //     const imgData = canvas.toDataURL("image/png");
-
-  //     const pdf = new jsPDF();
-  //     pdf.addImage(
-  //       imgData,
-  //       "PNG",
-  //       1.5,
-  //       1.5,
-  //       canvas.height / 5,
-  //       canvas.width / 2,
-  //     );
-  //     pdf.save("mi-obra-realismo-magico.pdf");
-  //   });
-  // }
-
   return (
-    <main id="main-section">
-      <div className="option-images">
-        <img
-          id="butterfly"
-          className="draggable"
-          src={draggableImages[0].image}
-          alt=""
-          data-x={0}
-          data-y={0}
-          onContextMenu={handleContextMenu}
-        />
-        <img
-          id="pez"
-          className="draggable"
-          src={draggableImages[1].image}
-          alt=""
-          data-x={0}
-          data-y={0}
-          onContextMenu={handleContextMenu}
-        />
-        <img
-          id="jaguar"
-          className="draggable"
-          src={draggableImages[2].image}
-          alt=""
-          data-x={0}
-          data-y={0}
-          onContextMenu={handleContextMenu}
-        />
-        <img
-          id="armor"
-          className="draggable"
-          src={draggableImages[3].image}
-          alt=""
-          data-x={0}
-          data-y={0}
-          onContextMenu={handleContextMenu}
-        />
-        <img
-          id="flowers"
-          className="draggable"
-          src={draggableImages[4].image}
-          alt=""
-          data-x={0}
-          data-y={0}
-          onContextMenu={handleContextMenu}
-        />
-        <img
-          id="hyena"
-          className="draggable"
-          src={draggableImages[5].image}
-          alt=""
-          data-x={0}
-          data-y={0}
-          onContextMenu={handleContextMenu}
-        />
-        <img
-          id="fungus"
-          className="draggable"
-          src={draggableImages[6].image}
-          alt=""
-          data-x={0}
-          data-y={0}
-          onContextMenu={handleContextMenu}
-        />
-        <img
-          id="owl"
-          className="draggable"
-          src={draggableImages[7].image}
-          alt=""
-          data-x={0}
-          data-y={0}
-          onContextMenu={handleContextMenu}
-        />
-        <img
-          id="woman"
-          className="draggable"
-          src={draggableImages[8].image}
-          alt=""
-          data-x={0}
-          data-y={0}
-          onContextMenu={handleContextMenu}
-        />
-      </div>
+    <main className="main-artworkcanvas" id="main-section">
+      <div
+        id="container-interact-draggables"
+        className="container-interact-draggables"
+      >
+        <div className="option-images">
+          <img
+            id="butterfly"
+            className="draggable"
+            src={draggableImages[0].image}
+            alt=""
+            data-x={0}
+            data-y={0}
+            onContextMenu={handleContextMenu}
+          />
+          <img
+            id="pez"
+            className="draggable"
+            src={draggableImages[1].image}
+            alt=""
+            data-x={0}
+            data-y={0}
+            onContextMenu={handleContextMenu}
+          />
+          <img
+            id="jaguar"
+            className="draggable"
+            src={draggableImages[2].image}
+            alt=""
+            data-x={0}
+            data-y={0}
+            onContextMenu={handleContextMenu}
+          />
+          <img
+            id="armor"
+            className="draggable"
+            src={draggableImages[3].image}
+            alt=""
+            data-x={0}
+            data-y={0}
+            onContextMenu={handleContextMenu}
+          />
+          <img
+            id="flowers"
+            className="draggable"
+            src={draggableImages[4].image}
+            alt=""
+            data-x={0}
+            data-y={0}
+            onContextMenu={handleContextMenu}
+          />
+          <img
+            id="hyena"
+            className="draggable"
+            src={draggableImages[5].image}
+            alt=""
+            data-x={0}
+            data-y={0}
+            onContextMenu={handleContextMenu}
+          />
+          <img
+            id="fungus"
+            className="draggable"
+            src={draggableImages[6].image}
+            alt=""
+            data-x={0}
+            data-y={0}
+            onContextMenu={handleContextMenu}
+          />
+          <img
+            id="owl"
+            className="draggable"
+            src={draggableImages[7].image}
+            alt=""
+            data-x={0}
+            data-y={0}
+            onContextMenu={handleContextMenu}
+          />
+          <img
+            id="woman"
+            className="draggable"
+            src={draggableImages[8].image}
+            alt=""
+            data-x={0}
+            data-y={0}
+            onContextMenu={handleContextMenu}
+          />
+        </div>
 
-      <div id="dropzone" className="file-interact-dropzone">
-        <img className="background" src={background} alt="" />
+        <div id="dropzone" className="file-interact-dropzone">
+          <img className="background" src={background} alt="" />
+        </div>
       </div>
       <div className="background-images">
+        <button onClick={recargarPagina} className="reset-button">
+          <i className="fa-sharp fa-solid fa-rotate"></i>
+        </button>
         <img
           onClick={() => {
             setBackground(backgroundCards[0].image);
@@ -268,11 +262,12 @@ const ArtworkCanvas = () => {
           src={backgroundCards[4].image}
           alt=""
         />
-
-        <i
+        <div
+          className="download-button"
           onClick={() => downloadArtWork(740, 25, 750, 500)}
-          className="fa-solid fa-download"
-        ></i>
+        >
+          <i className="fa-solid fa-download"></i>
+        </div>
       </div>
     </main>
   );
