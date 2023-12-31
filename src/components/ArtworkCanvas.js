@@ -23,10 +23,10 @@ const ArtworkCanvas = () => {
       const y = rect.top;
       const w = rect.right;
       const z = rect.bottom;
-      const width = w - x;
-      const height = z - y;
-      // const width = rect.width;
-      // const height = rect.height;
+      // const width = w - x;
+      // const height = z - y;
+      const width = rect.width;
+      const height = rect.height;
 
       setCoordinateX(x);
       setCoordinateY(y);
@@ -111,10 +111,10 @@ const ArtworkCanvas = () => {
     window.dragMoveListener = dragMoveListener;
   }, []);
 
+  //Downloading the artwork image at user device...
   function downloadArtWork(x, y, width, height) {
-    alert("se descargó");
-    const elementoCapturar = document.getElementById("main-section"); // Reemplaza 'elemento' con el ID de tu elemento
-
+    alert("se descargó tu obra");
+    const elementoCapturar = document.getElementById("main-section");
     html2canvas(elementoCapturar, {
       // Establecer las dimensiones del área a capturar
       x: x,
@@ -126,8 +126,8 @@ const ArtworkCanvas = () => {
     }).then((canvas) => {
       // Crear un enlace para descargar la imagen
       canvas.toBlob((blob) => {
-        saveAs(blob, "captura_pantalla.jpg"); // Nombre del archivo a descargar
-      }, "artwork/jpeg");
+        saveAs(blob, "mi-obra_realismo-magico.jpg");
+      }, "mi-obra_realismo-magico/jpeg");
     });
   }
 
