@@ -21,8 +21,8 @@ const ArtworkCanvas = () => {
       const rect = artwork.getBoundingClientRect();
       const x = rect.left;
       const y = rect.top;
-      const w = rect.right;
-      const z = rect.bottom;
+      // const w = rect.right;
+      // const z = rect.bottom;
       // const width = w - x;
       // const height = z - y;
       const width = rect.width;
