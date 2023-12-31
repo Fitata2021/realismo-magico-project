@@ -287,7 +287,7 @@ body.dragging {
   .background-images {
     flex-direction: row;
     justify-content: center;
-    margin-top: -3.5rem;
+    margin-top: -4rem;
     width: 100%;
   }
   .background-images img {
@@ -337,6 +337,7 @@ body.dragging {
     justify-content: space-evenly;
     width: 85%;
     height: 32px;
+    margin-bottom: 2px;
   }
   .background-images .reset-button,
   .background-images .download-button {
