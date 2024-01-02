@@ -8,7 +8,7 @@
   justify-content: space-evenly;
   flex-wrap: wrap;
   width: 90%;
-  margin-top: 4rem;
+  margin-top: 7rem;
 }
 .instructions-button {
   width: 30px;
@@ -29,7 +29,7 @@
 .info1 {
   width: 80%;
   position: absolute;
-  margin-top: -2rem;
+  margin-top: 1rem;
   z-index: 3;
   left: 65%;
   transform: translateX(-20%);
@@ -121,7 +121,7 @@
 
 .answer-images {
   margin: auto;
-  margin-top: 1em;
+  margin-top: 5rem;
   width: 100%;
   height: 600px;
   display: flex;
@@ -227,7 +227,7 @@
 }
 @media screen and (max-width: 885px) {
   .visual-test .container-question {
-    margin-top: 0rem;
+    margin-top: 7rem;
   }
   .answer-images-options {
     margin-top: 5px;
@@ -244,10 +244,10 @@
 }
 @media screen and (max-width: 750px) {
   .answer-images {
-    margin-top: -2rem;
+    margin-top: 3rem;
   }
   .visual-test .container-question {
-    margin-top: -1rem;
+    margin-top: 4.5rem;
   }
   .info1 {
     width: 95%;
