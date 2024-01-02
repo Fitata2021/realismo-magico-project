@@ -1,8 +1,8 @@
 import React from "react";
 import banner from "../images/artists-images/gomez-banner.jpg";
-import couples_game from "../images/couple-game-images/couples_game.jpg";
-import PuzzleGame from "../images/couple-game-images/PuzzleGame.jpg";
-import canvasGame from "../images/couple-game-images/canvas_game.jpg";
+import couples_game from "../images/game-images/couples_game.jpg";
+import PuzzleGame from "../images/game-images/PuzzleGame.jpg";
+import canvasGame from "../images/game-images/canvas_game.jpg";
 import { useNavigate } from "react-router-dom";
 import "../styles/Juegos.css";
 import { useEffect } from "react";

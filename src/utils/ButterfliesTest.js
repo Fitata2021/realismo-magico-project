@@ -1,4 +1,4 @@
-import card from "../images/couple-game-images/butterfly-card.jpg";
+import card from "../images/utils-images/butterfly-card.jpg";
 
 const butterfliesTest = [
   {
