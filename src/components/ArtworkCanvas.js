@@ -3,8 +3,8 @@ import interact from "interactjs";
 import backgroundCards from "../utils/BackgroundImages";
 import draggableImages from "../utils/DraggableImages";
 // import jsPDF from "jspdf";
-import html2canvas from "html2canvas";
-import { saveAs } from "file-saver";
+// import html2canvas from "html2canvas";
+// import { saveAs } from "file-saver";
 import "../styles/ArtworkCanvas.css";
 
 const ArtworkCanvas = () => {
