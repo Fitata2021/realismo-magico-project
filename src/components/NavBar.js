@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from "react";
+import React, { useEffect, useState, useRef } from "react";
 import { useNavigate } from "react-router-dom";
 import "../styles/NavBar.css";
 // import butterfly from "../images/utils-images/picmix.com_1899742.gif";
@@ -9,6 +9,8 @@ const butterfly =
 const NavBar = () => {
   const navigate = useNavigate();
   const [menuToogle, setMenuToogle] = useState(window.innerWidth > 750);
+  const navOptionsRef = useRef(null);
+  const menuRef = useRef(null);
 
   useEffect(() => {
     const handleResize = () => {
@@ -21,6 +23,27 @@ const NavBar = () => {
     };
   }, []);
 
+  const handleClickOutside = (event) => {
+    if (window.innerWidth <= 750) {
+      if (
+        navOptionsRef.current &&
+        !navOptionsRef.current.contains(event.target) &&
+        menuRef.current &&
+        !menuRef.current.contains(event.target)
+      ) {
+        setMenuToogle(false);
+      }
+    }
+  };
+
+  useEffect(() => {
+    document.addEventListener("click", handleClickOutside);
+
+    return () => {
+      document.removeEventListener("click", handleClickOutside);
+    };
+  }, []);
+
   const showMenu = () => {
     setMenuToogle((prevMenuToogle) => !prevMenuToogle);
   };
@@ -29,7 +52,7 @@ const NavBar = () => {
     <div>
       <nav className="nav-bar">
         <ul className="title">
-          <i className="fa-solid fa-bars" onClick={showMenu}></i>
+          <i className="fa-solid fa-bars" onClick={showMenu} ref={menuRef}></i>
           <li className="title1">REALISMO </li>
           <div className="space-nav"></div>
           <li className="image-center-nav">
@@ -50,6 +73,7 @@ const NavBar = () => {
         </div>
       </nav>
       <nav
+        ref={navOptionsRef}
         className="nav-options"
         style={{ display: menuToogle ? "block" : "none" }}
       >
