@@ -15,7 +15,7 @@
   font-weight: 100;
   text-align: center;
   font-size: 35px;
-  margin-top: 2rem;
+  margin-top: 7rem;
   margin-bottom: 30px;
   letter-spacing: 15px;
   color: #1a120b;
@@ -43,6 +43,10 @@
   list-style: none;
 }
 .info-items {
+  margin: 5px 0;
+}
+
+.info-items-link {
   margin: 2rem 0;
   font-style: italic;
 }
@@ -138,7 +142,7 @@
 }
 @media screen and (max-width: 750px) {
   .artist-title {
-    margin-top: 0rem;
+    margin-top: 5rem;
   }
   .artworks {
     margin: 2px 0;
@@ -174,9 +178,9 @@
   .artist-title {
     font-size: 23px;
     letter-spacing: 10px;
-    margin-top: -1rem;
+    margin-top: 5rem;
   }
-  .info-items {
+  .info-items-link {
     width: 90%;
     font-size: 12px;
   }

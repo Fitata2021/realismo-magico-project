@@ -54,7 +54,7 @@ const ArtistDetail = () => {
         ))}
       </section>
 
-      <p className="info-items">
+      <p className="info-items-link">
         <strong>
           Si deseas conocer más sobre este artista y sus obras, visita su sitio
           oficial:{" "}
