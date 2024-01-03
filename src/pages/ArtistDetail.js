@@ -31,14 +31,6 @@ const ArtistDetail = () => {
           </li>
 
           <p>{artist.bio}</p>
-          <li>
-            <p className="info-items">
-              <strong>Sitio-Web: </strong>
-              <Link to={artist.webSite} target="_blank">
-                {artist.webSite}
-              </Link>
-            </p>
-          </li>
         </ul>
       </section>
       <section className="artist-video">
@@ -61,6 +53,16 @@ const ArtistDetail = () => {
           </div>
         ))}
       </section>
+
+      <p className="info-items">
+        <strong>
+          Si deseas conocer más sobre este artista y sus obras, visita su sitio
+          oficial:{" "}
+        </strong>
+        <Link to={artist.webSite} target="_blank">
+          {artist.webSite}
+        </Link>
+      </p>
     </main>
   );
 };

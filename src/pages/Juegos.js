@@ -1,11 +1,21 @@
 import React from "react";
-import banner from "../images/artists-images/gomez-banner.jpg";
-import couples_game from "../images/game-images/couples_game.jpg";
-import PuzzleGame from "../images/game-images/PuzzleGame.jpg";
-import canvasGame from "../images/game-images/canvas_game.jpg";
+// import banner from "../images/artists-images/gomez-banner.jpg";
+// import couples_game from "../images/game-images/couples_game.jpg";
+// import PuzzleGame from "../images/game-images/PuzzleGame.jpg";
+// import canvasGame from "../images/game-images/canvas_game.jpg";
 import { useNavigate } from "react-router-dom";
 import "../styles/Juegos.css";
 import { useEffect } from "react";
+
+const couples_game =
+  "https://imagedelivery.net/W9-AoheGofN712tx-fnwKA/e0945f7e-1c4c-4eb7-33da-2a2ac47e6100/public";
+const PuzzleGame =
+  "https://imagedelivery.net/W9-AoheGofN712tx-fnwKA/d1a1f4e6-095d-4063-0c33-c81c663f7300/public";
+const canvasGame =
+  "https://imagedelivery.net/W9-AoheGofN712tx-fnwKA/32145846-f850-4233-7e4e-bab6f7b2db00/public";
+
+const banner =
+  "https://imagedelivery.net/W9-AoheGofN712tx-fnwKA/b9b1a378-0f7f-4d84-0a01-73b3be1e4800/public";
 
 const Juegos = () => {
   useEffect(() => {

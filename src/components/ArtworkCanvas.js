@@ -9,37 +9,30 @@ import "../styles/ArtworkCanvas.css";
 
 const ArtworkCanvas = () => {
   const [background, setBackground] = useState(backgroundCards[0].image);
-  const [coordinateX, setCoordinateX] = useState(0);
-  const [coordinateY, setCoordinateY] = useState(0);
-  const [artworkWith, setArtworkWith] = useState(0);
-  const [artworkHeight, setArtworkHeight] = useState(0);
+  // const [coordinateX, setCoordinateX] = useState(0);
+  // const [coordinateY, setCoordinateY] = useState(0);
+  // const [artworkWith, setArtworkWith] = useState(0);
+  // const [artworkHeight, setArtworkHeight] = useState(0);
 
   //Getting coordinates artwork...
-  useEffect(() => {
-    const artwork = document.getElementById("artworkfinished");
-    if (artwork) {
-      const rect = artwork.getBoundingClientRect();
-      const x = rect.left;
-      const y = rect.top;
-      // const w = rect.right;
-      // const z = rect.bottom;
-      // const width = w - x;
-      // const height = z - y;
-      const width = rect.width;
-      const height = rect.height;
+  // useEffect(() => {
+  //   const artwork = document.getElementById("artworkfinished");
+  //   if (artwork) {
+  //     const rect = artwork.getBoundingClientRect();
+  //     const x = rect.left;
+  //     const y = rect.top;
+  //     const width = rect.width;
+  //     const height = rect.height;
 
-      setCoordinateX(x);
-      setCoordinateY(y);
-      setArtworkWith(width);
-      setArtworkHeight(height);
+  //     setCoordinateX(x);
+  //     setCoordinateY(y);
+  //     setArtworkWith(width);
+  //     setArtworkHeight(height);
 
-      console.log(`x: ${x}, y: ${y}, width: ${width}, height: ${height}`);
-    }
-  }, []);
+  //     console.log(`x: ${x}, y: ${y}, width: ${width}, height: ${height}`);
+  //   }
+  // }, []);
 
-  console.log(
-    `setx: ${coordinateX}, sety: ${coordinateY}, setwidth: ${artworkWith}, setheight: ${artworkHeight}`,
-  );
   const handleContextMenu = (e) => {
     e.preventDefault(); // Evita la acción por defecto (como el menú contextual)
   };
@@ -111,25 +104,24 @@ const ArtworkCanvas = () => {
     window.dragMoveListener = dragMoveListener;
   }, []);
 
-  //Downloading the artwork image at user device...
-  function downloadArtWork(x, y, width, height) {
-    alert("se descargó tu obra");
-    const elementoCapturar = document.getElementById("main-section");
-    html2canvas(elementoCapturar, {
-      // Establecer las dimensiones del área a capturar
-      x: x,
-      y: y,
-      width: width,
-      height: height,
-      scrollX: 0,
-      scrollY: 0,
-    }).then((canvas) => {
-      // Crear un enlace para descargar la imagen
-      canvas.toBlob((blob) => {
-        saveAs(blob, "mi-obra_realismo-magico.jpg");
-      }, "mi-obra_realismo-magico/jpeg");
-    });
-  }
+  // //Downloading the artwork image at user device...
+  // function downloadArtWork(x, y, width, height) {
+  //   alert("se descargó tu obra");
+  //   const elementoCapturar = document.getElementById("main-section");
+
+  //   html2canvas(elementoCapturar, {
+  //     x: x,
+  //     y: y,
+  //     width: width,
+  //     height: height,
+  //     scrollX: 0,
+  //     scrollY: 0,
+  //   }).then((canvas) => {
+  //     canvas.toBlob((blob) => {
+  //       saveAs(blob, "mi-obra_realismo-magico.jpg");
+  //     }, "mi-obra_realismo-magico/jpeg");
+  //   });
+  // }
 
   return (
     <main className="main-artworkcanvas" id="main-section">
@@ -269,7 +261,7 @@ const ArtworkCanvas = () => {
           src={backgroundCards[4].image}
           alt=""
         />
-        <div
+        {/* <div
           className="download-button"
           onClick={() =>
             downloadArtWork(
@@ -281,7 +273,7 @@ const ArtworkCanvas = () => {
           }
         >
           <i className="fa-solid fa-download"></i>
-        </div>
+        </div> */}
       </div>
     </main>
   );

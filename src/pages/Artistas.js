@@ -1,9 +1,12 @@
 import React from "react";
 import "../styles/Artistas.css";
-import banner from "../images/artists-images/lorca-banner.jpg";
+// import banner from "../images/artists-images/lorca-banner.jpg";
 import ArtistData from "../utils/ArtistData";
 import { useNavigate } from "react-router-dom";
 import { useEffect } from "react";
+
+const banner =
+  "https://imagedelivery.net/W9-AoheGofN712tx-fnwKA/78b4f550-a844-46b6-c324-a8aced0ed300/public";
 
 const Artistas = () => {
   useEffect(() => {

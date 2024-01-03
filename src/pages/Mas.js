@@ -1,7 +1,10 @@
 import React from "react";
-import banner from "../images/artists-images/pallares-banner.jpg";
+// import banner from "../images/artists-images/pallares-banner.jpg";
 import "../styles/Mas.css";
 import { useEffect } from "react";
+
+const banner =
+  "https://imagedelivery.net/W9-AoheGofN712tx-fnwKA/1af986f3-8eac-4053-c4ac-89bc3107d500/public";
 
 const Mas = () => {
   useEffect(() => {

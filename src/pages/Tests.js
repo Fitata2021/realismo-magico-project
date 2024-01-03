@@ -1,11 +1,22 @@
 import React from "react";
-import banner from "../images/artists-images/kahlo-banner.jpg";
-import question_images from "../images/test-images/question-test.jpg";
-import FV_test from "../images/test-images/FV-test.jpg";
-import visual_test from "../images/test-images/visual-test.jpg";
+// import banner from "../images/artists-images/kahlo-banner.jpg";
+// import question_images from "../images/test-images/question-test.jpg";
+// import FV_test from "../images/test-images/FV-test.jpg";
+// import visual_test from "../images/test-images/visual-test.jpg";
 import { useNavigate } from "react-router-dom";
 import "../styles/Tests.css";
 import { useEffect } from "react";
+
+const question_images =
+  "https://imagedelivery.net/W9-AoheGofN712tx-fnwKA/f1b1239d-008d-4866-0289-88fca5464000/public";
+const FV_test =
+  "https://imagedelivery.net/W9-AoheGofN712tx-fnwKA/b49392d2-362b-48b1-973f-da9afedb4b00/public";
+const visual_test =
+  "https://imagedelivery.net/W9-AoheGofN712tx-fnwKA/9029c6ad-54ae-41bd-5b0b-0f58311b0200/public";
+
+const banner =
+  "https://imagedelivery.net/W9-AoheGofN712tx-fnwKA/f9cd3f9a-455a-495f-050a-8589d6b6fc00/public";
+
 const Tests = () => {
   useEffect(() => {
     window.scrollTo(0, 0);

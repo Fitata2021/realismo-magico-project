@@ -43,7 +43,8 @@
   list-style: none;
 }
 .info-items {
-  margin: 5px 0;
+  margin: 2rem 0;
+  font-style: italic;
 }
 .artist-video {
   width: 60%;
@@ -174,5 +175,9 @@
     font-size: 23px;
     letter-spacing: 10px;
     margin-top: -1rem;
+  }
+  .info-items {
+    width: 90%;
+    font-size: 12px;
   }
 }

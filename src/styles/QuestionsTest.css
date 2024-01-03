@@ -25,7 +25,8 @@ main {
   width: 100%;
   margin-top: 9rem;
   height: 370px;
-  background-image: url("../images/utils-images/butterfly-card.jpg");
+  background-image: url("https://imagedelivery.net/W9-AoheGofN712tx-fnwKA/94190f33-10f1-458c-8f3f-c006488d7a00/public");
+  /* background-image: url("../images/utils-images/butterfly-card.jpg"); */
   background-size: 200px 200px;
   background-position: 10px 180px;
   background-repeat: repeat;
@@ -191,7 +192,8 @@ main {
   display: flex;
   justify-content: center;
   align-items: center;
-  background-image: url("../images/utils-images/butterfly-card.jpg");
+  background-image: url("https://imagedelivery.net/W9-AoheGofN712tx-fnwKA/94190f33-10f1-458c-8f3f-c006488d7a00/public");
+  /* background-image: url("../images/utils-images/butterfly-card.jpg"); */
   background-size: 200px 200px;
   background-position: 10px 180px;
   background-repeat: repeat;
@@ -251,7 +253,8 @@ main {
   display: flex;
   justify-content: center;
   align-items: center;
-  background-image: url("../images/utils-images/butterfly-card.jpg");
+  background-image: url("https://imagedelivery.net/W9-AoheGofN712tx-fnwKA/94190f33-10f1-458c-8f3f-c006488d7a00/public");
+  /* background-image: url("../images/utils-images/butterfly-card.jpg"); */
   background-size: 200px 200px;
   background-position: 10px 180px;
   background-repeat: repeat;

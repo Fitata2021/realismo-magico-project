@@ -1,6 +1,9 @@
 import React from "react";
 import "../styles/Footer.css";
-import universityLogo from "../images/santo-tomas-logo.png";
+// import universityLogo from "../images/utils-images/santo-tomas-logo.png";
+
+const universityLogo =
+  "https://imagedelivery.net/W9-AoheGofN712tx-fnwKA/a3cdf21e-f2bb-4133-fdde-582e680ff400/public";
 
 const Footer = () => {
   return (

@@ -1,13 +1,29 @@
 import React from "react";
-import banner from "../images/artists-images/rivera-banner.jpg";
+// import banner from "../images/artists-images/rivera-banner.jpg";
 import "../styles/Noticias.css";
 import { useEffect } from "react";
-import leonoraSculpture1 from "../images/news-images/leonora-sculpture1.jpg";
-import leonoraSculpture2 from "../images/news-images/leonora-sculpture2.jpg";
-import rostrosMacondo from "../images/news-images/macondo.jpg";
-import cesarRealismoMagico from "../images/news-images/cesar-realismomagico.jpg";
-import lorcaExpo from "../images/news-images/lorcaExpo.jpg";
-import botero from "../images/news-images/botero.jpg";
+// import leonoraSculpture1 from "../images/news-images/leonora-sculpture1-news.jpg";
+// import leonoraSculpture2 from "../images/news-images/leonora-sculpture2-news.jpg";
+// import rostrosMacondo from "../images/news-images/macondo-news.jpg";
+// import cesarRealismoMagico from "../images/news-images/cesar-realismomagico-news.jpg";
+// import lorcaExpo from "../images/news-images/lorcaExpo-news.jpg";
+// import botero from "../images/news-images/botero-news.jpg";
+
+const leonoraSculpture1 =
+  "https://imagedelivery.net/W9-AoheGofN712tx-fnwKA/22a85f21-cabc-4f6d-726a-27da8c0d1100/public";
+const leonoraSculpture2 =
+  "https://imagedelivery.net/W9-AoheGofN712tx-fnwKA/206df404-88d8-4de0-73d0-20d6109f6d00/public";
+const rostrosMacondo =
+  "https://imagedelivery.net/W9-AoheGofN712tx-fnwKA/bba067db-992c-4460-69ee-f29970fd6400/public";
+const cesarRealismoMagico =
+  "https://imagedelivery.net/W9-AoheGofN712tx-fnwKA/da789faf-be22-434b-3360-5ca731de0400/public";
+const lorcaExpo =
+  "https://imagedelivery.net/W9-AoheGofN712tx-fnwKA/1f7223d0-9a42-4e76-c4c4-50c487d60d00/public";
+const botero =
+  "https://imagedelivery.net/W9-AoheGofN712tx-fnwKA/f9b66995-54e9-4b08-d0b2-ab8d1f789400/public";
+
+const banner =
+  "https://imagedelivery.net/W9-AoheGofN712tx-fnwKA/c09af5c6-fb70-46f4-c409-a7cc13d2e800/public";
 
 const Noticias = () => {
   useEffect(() => {

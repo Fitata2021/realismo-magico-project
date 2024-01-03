@@ -1,11 +1,13 @@
 import React from "react";
-import banner from "../images/artists-images/cruz-banner.jpg";
+// import banner from "../images/artists-images/cruz-banner.jpg";
 import "../styles/Home.css";
 import { useEffect } from "react";
-
 import imglorca14 from "../images/artist-photos/lorca-artworks/imagelorca14.jpg";
 import imgRoh from "../images/artist-photos/franz-roh.jpg";
 import imgAncestral from "../images/artist-photos/cruz-artworks/imgCruz2.jpg";
+
+const banner =
+  "https://imagedelivery.net/W9-AoheGofN712tx-fnwKA/80f2a258-e66a-4f9b-382d-b4dcfcb69b00/public";
 
 const Home = () => {
   useEffect(() => {

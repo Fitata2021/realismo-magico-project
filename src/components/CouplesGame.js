@@ -2,7 +2,10 @@ import React, { useEffect, useState } from "react";
 
 import "../styles/CouplesGame.css";
 import arrayCards from "../utils/cardsData";
-import butterfly_card from "../images/utils-images/butterfly-card.jpg";
+// import butterfly_card from "../images/utils-images/butterfly-card.jpg";
+
+const butterfly_card =
+  "https://imagedelivery.net/W9-AoheGofN712tx-fnwKA/94190f33-10f1-458c-8f3f-c006488d7a00/public";
 
 const CouplesGame = () => {
   useEffect(() => {
