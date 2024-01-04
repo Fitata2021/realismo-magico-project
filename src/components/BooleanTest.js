@@ -3,6 +3,10 @@ import { useNavigate } from "react-router-dom";
 import "../styles/BooleanTest.css";
 import butterfliesTest from "../utils/ButterfliesTest";
 import booleanQuestions from "../utils/BooleanQuestions";
+import useSound from "use-sound";
+import soundIncorrect from "../sounds/game_error_tone.mp3";
+import soundCorrect from "../sounds/game_correct_tone.mp3";
+import finish_sound from "../sounds/fantasy_magic.mp3";
 // import butterfly from "../images/utils-images/picmix.com_1899742.gif";
 
 const butterfly =
@@ -13,6 +17,10 @@ const BooleanTest = () => {
   const [currentQuestion, setCurrentQuestion] = useState(0);
   const [score, setScore] = useState(0);
   const [statusGame, setStatusGame] = useState("game");
+  const [playSoundIncorrect] = useSound(soundIncorrect);
+  const [playSoundCorrect] = useSound(soundCorrect);
+  const [playFinish] = useSound(finish_sound);
+
   useEffect(() => {
     window.scrollTo(0, 0);
   }, []);
@@ -21,7 +29,10 @@ const BooleanTest = () => {
     console.log(isCorrect);
     if (isCorrect) {
       setScore(score + 1);
+      playSoundCorrect();
       butterfliesTest[currentQuestion].status = "free";
+    } else {
+      playSoundIncorrect();
     }
     e.target.classList.add(isCorrect ? "good" : "bad");
 
@@ -72,8 +83,9 @@ const BooleanTest = () => {
       ) : statusGame === "finished" ? (
         <section className="card-finished">
           {score === booleanQuestions.length && (
-            <p className="game-won">Muy bien, lo Lograste!</p>
-          )}
+              <p className="game-won">Muy bien, lo Lograste!</p>
+            ) &&
+            playFinish()}
           <div className="game-finished">
             {score < booleanQuestions.length ? (
               <span>

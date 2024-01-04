@@ -1,5 +1,9 @@
 import { useEffect, useState } from "react";
 import "../styles/Puzzle.css";
+import useSound from "use-sound";
+import sound1 from "../sounds/water_spray_bottle.mp3";
+import sound2 from "../sounds/bicycle_click.mp3";
+import finish_sound from "../sounds/fantasy_magic.mp3";
 
 import { piecesData, infoArtwork } from "../utils/piecesData";
 
@@ -8,6 +12,9 @@ const Puzzle = () => {
     window.scrollTo(0, 0);
   }, []);
 
+  const [playSound1] = useSound(sound1);
+  const [playSound2] = useSound(sound2);
+  const [playFinish] = useSound(finish_sound);
   const [toogleInstructions, setToogleInstructions] = useState(false);
   const [numberPuzzle, setNumberPuzzle] = useState(0);
   const [piecesList, setPiecesList] = useState(
@@ -38,6 +45,7 @@ const Puzzle = () => {
       unselectPieces();
       piecesList[index].status = "selected";
       setPiecesList([...piecesList]);
+      playSound1();
     }
     if (countClic === 2) {
       let piece2 = index;
@@ -47,6 +55,7 @@ const Puzzle = () => {
       setPieceSelected(index);
       piecesList[index].status = "selected";
       setPiecesList([...piecesList]);
+      playSound2();
       unselectPieces();
       setCountClic(1);
       compare();
@@ -67,6 +76,7 @@ const Puzzle = () => {
     if (counter === piecesData[numberPuzzle].length) {
       setIsFinished(true);
       setTheme("show");
+      playFinish();
 
       if (numberPuzzle < piecesData.length - 1) {
         setNumberPuzzle(numberPuzzle + 1);
@@ -110,7 +120,9 @@ const Puzzle = () => {
       {toogleInstructions ? (
         <button
           className="instructions-button"
-          onClick={() => setToogleInstructions(false)}
+          onClick={() => {
+            setToogleInstructions(false);
+          }}
         >
           <i className="fa-solid fa-plus"></i>
         </button>
@@ -132,7 +144,9 @@ const Puzzle = () => {
             <div className="exit-icon">
               <i
                 className="fa-solid fa-xmark"
-                onClick={() => setToogleInstructions(true)}
+                onClick={() => {
+                  setToogleInstructions(true);
+                }}
               ></i>
             </div>
           </p>

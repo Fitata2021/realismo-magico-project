@@ -1,12 +1,19 @@
 import React, { useEffect, useState } from "react";
 import questions from "../utils/Question";
 import "../styles/QuestionsTest.css";
+import useSound from "use-sound";
+import soundIncorrect from "../sounds/game_error_tone.mp3";
+import soundCorrect from "../sounds/game_correct_tone.mp3";
+import finish_sound from "../sounds/fantasy_magic.mp3";
 
 const QuestionsTest = () => {
   const [currentQuestion, setCurrentQuestion] = useState(0);
   const [score, setScore] = useState(0);
   const [quizStatus, setQuizStatus] = useState("beginning");
   const [missingTime, setMissingTime] = useState(15);
+  const [playSoundIncorrect] = useSound(soundIncorrect);
+  const [playSoundCorrect] = useSound(soundCorrect);
+  const [playFinish] = useSound(finish_sound);
 
   useEffect(() => {
     window.scrollTo(0, 0);
@@ -15,7 +22,12 @@ const QuestionsTest = () => {
     setMissingTime(15);
     //Handling score...
 
-    if (isCorrect) setScore(score + 1);
+    if (isCorrect) {
+      setScore(score + 1);
+      playSoundCorrect();
+    } else {
+      playSoundIncorrect();
+    }
     //Handling styles...
     e.target.classList.add(isCorrect ? "correct" : "incorrect");
     //Handling number question position...

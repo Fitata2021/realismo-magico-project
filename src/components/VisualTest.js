@@ -1,12 +1,19 @@
 import React, { useState, useEffect } from "react";
 import "../styles/VisualTest.css";
 import ArtistData from "../utils/ArtistData";
+import useSound from "use-sound";
+import soundIncorrect from "../sounds/game_error_tone.mp3";
+import soundCorrect from "../sounds/game_correct_tone.mp3";
+import finish_sound from "../sounds/fantasy_magic.mp3";
 
 const VisualTest = () => {
   const [score, setScore] = useState(0);
   const [artworkFindAuthor, setArtworFindAuthor] = useState(1);
   const [numberQuestionScreen, setNumberQuestionScreen] = useState(1);
   const [toogleInstructions, setToogleInstructions] = useState(false);
+  const [playSoundIncorrect] = useSound(soundIncorrect);
+  const [playSoundCorrect] = useSound(soundCorrect);
+  const [playFinish] = useSound(finish_sound);
 
   useEffect(() => {
     window.scrollTo(0, 0);
@@ -20,6 +27,7 @@ const VisualTest = () => {
     if (id === ArtistData[artworkFindAuthor].id) {
       setScore(score + 1);
       targetElement.classList.add("correct");
+      playSoundCorrect();
       setTimeout(() => {
         targetElement.classList.remove("correct");
         setArtworFindAuthor(artworkFindAuthor + 1);
@@ -27,6 +35,7 @@ const VisualTest = () => {
       }, 400);
     } else {
       targetElement.classList.add("incorrect");
+      playSoundIncorrect();
       setTimeout(() => {
         targetElement.classList.remove("incorrect");
         setArtworFindAuthor(artworkFindAuthor + 1);
@@ -397,8 +406,9 @@ const VisualTest = () => {
             <section className="finish-section">
               <section className="card-finished">
                 {score === 8 && (
-                  <p className="game-won">Muy bien, lo Lograste!</p>
-                )}
+                    <p className="game-won">Muy bien, lo Lograste!</p>
+                  ) &&
+                  playFinish()}
                 <div className="game-finished">
                   <span>Has obtenido {score} de 8</span>
                   <div className="btns-container">

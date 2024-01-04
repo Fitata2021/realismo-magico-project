@@ -35,15 +35,14 @@ const ArtworkCanvas = () => {
 
   const handleContextMenu = (e) => {
     e.preventDefault(); // Evita la acción por defecto (como el menú contextual)
+    document.body.classList.add("dragging");
   };
 
   // const recargarPagina = () => {
   //   window.location.reload();
   // };
 
-  function startDrag() {
-    document.body.classList.add("dragging");
-  }
+  function startDrag() {}
 
   function endDrag() {
     document.body.classList.remove("dragging");
