@@ -3,6 +3,11 @@ import React, { useEffect, useState } from "react";
 import "../styles/CouplesGame.css";
 import arrayCards from "../utils/cardsData";
 // import butterfly_card from "../images/utils-images/butterfly-card.jpg";
+import useSound from "use-sound";
+import soundIncorrect from "../sounds/game_error_tone.mp3";
+import soundCorrect from "../sounds/game_correct_tone.mp3";
+import sound1 from "../sounds/water_spray_bottle.mp3";
+import finish_sound from "../sounds/fantasy_magic.mp3";
 
 const butterfly_card =
   "https://imagedelivery.net/W9-AoheGofN712tx-fnwKA/94190f33-10f1-458c-8f3f-c006488d7a00/public";
@@ -20,6 +25,10 @@ const CouplesGame = () => {
   const [count, setCount] = useState(0); //Cuenta las parejas descubiertas
   const [selectCounter, setSelectCounter] = useState(0); //Cuenta las cartas seleccionadas
   const [infoCard, setInforCard] = useState(cardsList); //Contiene arreglo ordenado de data para respuestas
+  const [playSoundIncorrect] = useSound(soundIncorrect);
+  const [playSoundCorrect] = useSound(soundCorrect);
+  const [playSound1] = useSound(sound1);
+  const [playFinish] = useSound(finish_sound);
 
   const handleContextMenu = (e) => {
     e.preventDefault(); // Evita la acción por defecto (como el menú contextual)
@@ -37,6 +46,7 @@ const CouplesGame = () => {
       cardsList[index].status !== "finished"
     ) {
       cardsList[index].status = "selected";
+      playSound1();
       setCardsList([...cardsList]);
 
       if (prevIndex === -1) {
@@ -52,6 +62,8 @@ const CouplesGame = () => {
       setSelectCounter(0);
     }
   };
+
+  if (count === cardsList.length / 2) playFinish();
 
   const restart = () => {
     cardsList.map((card) => (card.status = "down"));
@@ -71,10 +83,12 @@ const CouplesGame = () => {
         setCount(count + 1);
         setSelectCounter(0);
         // setInfoCard(cardsList);
+        playSoundCorrect();
       } else {
         prev.status = "down";
         current.status = "down";
         setSelectCounter(0);
+        playSoundIncorrect();
       }
       setCardsList([...cardsList]);
       const result = {};

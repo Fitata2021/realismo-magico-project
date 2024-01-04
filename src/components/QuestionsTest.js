@@ -4,7 +4,7 @@ import "../styles/QuestionsTest.css";
 import useSound from "use-sound";
 import soundIncorrect from "../sounds/game_error_tone.mp3";
 import soundCorrect from "../sounds/game_correct_tone.mp3";
-// import finish_sound from "../sounds/fantasy_magic.mp3";
+import finish_sound from "../sounds/fantasy_magic.mp3";
 
 const QuestionsTest = () => {
   const [currentQuestion, setCurrentQuestion] = useState(0);
@@ -13,11 +13,16 @@ const QuestionsTest = () => {
   const [missingTime, setMissingTime] = useState(15);
   const [playSoundIncorrect] = useSound(soundIncorrect);
   const [playSoundCorrect] = useSound(soundCorrect);
-  // const [playFinish] = useSound(finish_sound);
+  const [playFinish] = useSound(finish_sound);
 
   useEffect(() => {
     window.scrollTo(0, 0);
   }, []);
+
+  useEffect(() => {
+    if (score === questions.length && quizStatus === "finished") playFinish();
+  }, [score, quizStatus]);
+
   function handleAnswer(isCorrect, e) {
     setMissingTime(15);
     //Handling score...
@@ -45,6 +50,7 @@ const QuestionsTest = () => {
     setQuizStatus(status);
     setMissingTime(15);
   }
+
   useEffect(() => {
     if (quizStatus !== "beginning" && quizStatus !== "shown_answers") {
       const interval = setInterval(() => {
