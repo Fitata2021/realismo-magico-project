@@ -4,6 +4,7 @@ import useSound from "use-sound";
 import sound1 from "../sounds/water_spray_bottle.mp3";
 import sound2 from "../sounds/bicycle_click.mp3";
 import finish_sound from "../sounds/fantasy_magic.mp3";
+import lionSound from "../sounds/chicken_sound.mp3";
 
 import { piecesData, infoArtwork } from "../utils/piecesData";
 
@@ -15,6 +16,7 @@ const Puzzle = () => {
   const [playSound1] = useSound(sound1);
   const [playSound2] = useSound(sound2);
   const [playFinish] = useSound(finish_sound);
+  const [playLion] = useSound(lionSound);
   const [toogleInstructions, setToogleInstructions] = useState(false);
   const [numberPuzzle, setNumberPuzzle] = useState(0);
   const [piecesList, setPiecesList] = useState(
@@ -77,6 +79,7 @@ const Puzzle = () => {
       setIsFinished(true);
       setTheme("show");
       playFinish();
+      playLion();
 
       if (numberPuzzle < piecesData.length - 1) {
         setNumberPuzzle(numberPuzzle + 1);
