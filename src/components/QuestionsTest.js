@@ -21,7 +21,7 @@ const QuestionsTest = () => {
 
   useEffect(() => {
     if (score === questions.length && quizStatus === "finished") playFinish();
-  }, [score, quizStatus]);
+  }, [score, quizStatus, playFinish]);
 
   function handleAnswer(isCorrect, e) {
     setMissingTime(15);
