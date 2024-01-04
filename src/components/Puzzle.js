@@ -4,7 +4,6 @@ import useSound from "use-sound";
 import sound1 from "../sounds/water_spray_bottle.mp3";
 import sound2 from "../sounds/bicycle_click.mp3";
 import finish_sound from "../sounds/fantasy_magic.mp3";
-import lionSound from "../sounds/lion_growl.mp3";
 
 import { piecesData, infoArtwork } from "../utils/piecesData";
 
