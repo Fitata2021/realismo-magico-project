@@ -156,7 +156,7 @@ main {
   display: flex;
   justify-content: center;
 }
-.rigth-icon {
+.start-section .rigth-icon {
   display: flex;
   justify-content: center;
   text-align: center;
@@ -170,7 +170,7 @@ main {
   margin: 10px;
 }
 
-.wrong-icon {
+.start-section .wrong-icon {
   display: flex;
   justify-content: center;
   text-align: center;
@@ -182,6 +182,16 @@ main {
   font-size: 48px;
   color: #473c2a;
   margin: 10px;
+}
+
+.develop-section .correct,
+.develop-section .correct:hover {
+  background-color: #8da860;
+}
+
+.develop-section .incorrect,
+.develop-section .incorrect:hover {
+  background-color: #f55050;
 }
 
 /* finished */
