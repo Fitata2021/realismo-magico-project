@@ -10,6 +10,11 @@ const Mas = () => {
   useEffect(() => {
     window.scrollTo(0, 0);
   }, []);
+  function deleteContent() {
+    var textarea = document.getElementById("textArea");
+    textarea.value = "";
+  }
+
   return (
     <div className="main-more">
       <h1 className="page-title">"QUOTES"</h1>
@@ -67,6 +72,30 @@ const Mas = () => {
           "La vida es un sueño, y los sueños, sueños son."
         </h2>
         <p className="author-subtitle">Pedro Calderón de la Barca</p>
+
+        <section className="comments">
+          <div className="questions-comments">
+            <h2>
+              Reflexiona de acuerdo a las siguientes preguntas, escribe en la
+              caja de texto y envianos tu comentario:
+            </h2>
+            <p>¿Que sentiste al ver las obras?</p>
+            <p>¿Cual fue la obra que más te llamo la atención y porque?</p>
+            <p>
+              ¿Si pudieras pintar una obra de realismo magico que pintarias?
+            </p>
+          </div>
+          <textarea
+            className="comments-box"
+            name=""
+            id="textArea"
+            cols="30"
+            rows="10"
+          ></textarea>
+          <button className="comments-button" onClick={() => deleteContent()}>
+            <b>Enviar</b>
+          </button>
+        </section>
 
         <h2 className="description-referentes">Referentes</h2>
         <p className="bibliografias">

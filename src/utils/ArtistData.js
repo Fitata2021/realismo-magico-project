@@ -515,7 +515,7 @@ const ArtistData = [
   {
     id: 3,
     name: "Jaime Rendon",
-    img: "https://imagedelivery.net/W9-AoheGofN712tx-fnwKA/228fe1c4-9b12-477a-270b-fe786ee18c00/public",
+    img: "https://imagedelivery.net/W9-AoheGofN712tx-fnwKA/e0a7e7c4-13b8-47d9-e8a7-e38db9cef800/public",
     country: "Colombia",
     estado: "Activo",
     video: "https://www.youtube.com/embed/fx_cnmEGZgU",

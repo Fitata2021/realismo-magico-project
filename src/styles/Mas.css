@@ -50,13 +50,47 @@
   margin-top: 10rem;
   margin-bottom: 2rem;
   letter-spacing: 0.5em;
-  margin-top: 10rem;
+  margin-top: 6rem;
   color: #1a120b;
   font-size: 32px;
 }
 .bibliografias {
   width: 98%;
   word-wrap: break-word;
+}
+.comments {
+  margin-top: 10rem;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  color: #473c2a;
+}
+.questions-comments {
+  width: 100%;
+  text-align: left;
+  margin: 15px;
+}
+.questions-comments h2 {
+  margin-bottom: 25px;
+}
+.questions-comments p {
+  font-size: 20px;
+}
+.comments-box {
+  width: 90%;
+  margin-left: 10px;
+  font-size: 20px;
+  padding: 5px;
+}
+.comments-button {
+  width: 60px;
+  height: 25px;
+  background: #eddfb3;
+  border: none;
+  border-radius: 3px;
+  font-size: 15px;
+  margin-left: 10px;
 }
 
 /* Responsive */
@@ -127,6 +161,9 @@
     font-size: 23px;
     letter-spacing: 6px;
   }
+  .questions-comments h2 {
+    font-size: 23px;
+  }
   .author-subtitle {
     margin-left: 18rem;
     font-size: 19px;
@@ -149,6 +186,9 @@
     font-size: 21px;
     letter-spacing: 4px;
   }
+  .questions-comments h2 {
+    font-size: 21px;
+  }
   .author-subtitle {
     margin-left: 18rem;
     font-size: 19px;
@@ -163,6 +203,9 @@
     margin-top: 4.5rem;
     font-size: 20px;
     letter-spacing: 3px;
+  }
+  .questions-comments h2 {
+    font-size: 20px;
   }
 }
 @media screen and (max-width: 530px) {
