@@ -156,7 +156,7 @@ main {
   display: flex;
   justify-content: center;
 }
-.start-section .rigth-icon {
+.rigth-icon {
   display: flex;
   justify-content: center;
   text-align: center;
@@ -170,7 +170,7 @@ main {
   margin: 10px;
 }
 
-.start-section .wrong-icon {
+.wrong-icon {
   display: flex;
   justify-content: center;
   text-align: center;
