@@ -32,7 +32,7 @@ const questions = [
   },
   {
     title:
-      "Están entre lo artistas latinoamericanos del realismo mágico en las artes plásticas:",
+      "Están entre los artistas latinoamericanos del realismo mágico en las artes plásticas:",
 
     options: [
       { answerText: "Frida Kahlo y Antonio Donghi", isCorrect: false },

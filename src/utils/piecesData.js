@@ -230,14 +230,14 @@ export const piecesData = [
 export const infoArtwork = [
   {
     id: 1,
-    info: "Esta es una majestuosa obbra de Federico Lorca Garcia que llama todos los elementos del realismo magico",
+    info: "Este es fragmento de una majestuosa obra de Guillermo Lorca realizada en el año 2021, se titula 'Las Jardineritas' y como se aprecia, logra fusionar conceptos como la ternura y el salvajismo en un escenario bastante improbable",
   },
   {
     id: 2,
-    info: "Esta es una majestuosa obra de tierras indigenas de Mexico que llama todos los elementos del realismo magico",
+    info: "Esta obra pictórica del año 2016, contiene elementos cotidianos y realistas pero con colores inusuales en un ambiente mágico de fondo vibrante a base de pinceladas rojas, es creación del artista Darwin Cruz y es titulado: 'Las Gallinas de Gustavo'",
   },
   {
     id: 3,
-    info: "Esta es una hermosa obra de Mario Gomez de Chile que llama todos los elementos del realismo magico",
+    info: "El artista Mario Gomez es capaz de crear mundos a partir de la representación de figuras de papel y seres realistas produciendo material visual que evoca la magia de la infancia eterna y la fantasía. Obra del año 2005 sin título.",
   },
 ];
