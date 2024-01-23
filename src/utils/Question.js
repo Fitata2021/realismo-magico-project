@@ -1,6 +1,6 @@
 const questions = [
   {
-    title: "Otra manera común de llamar al Realismo Magico es:",
+    title: "Otra manera común de llamar al Realismo Mágico es:",
 
     options: [
       { answerText: "Lo surreal y metafisico", isCorrect: false },
@@ -42,7 +42,7 @@ const questions = [
     ],
   },
   {
-    title: "Animal simbolico muy presente en las obras de Jaime Rendon",
+    title: "Animal simbólico muy presente en las obras de Jaime Rendon",
 
     options: [
       { answerText: "El Tigre", isCorrect: false },
@@ -113,9 +113,9 @@ const questions = [
 
     options: [
       { answerText: "Mitos y cuentos infantiles", isCorrect: false },
-      { answerText: "Artistas referentes y fotografías", isCorrect: false },
+      { answerText: "Artistas referentes y fotografías", isCorrect: true },
       { answerText: "Animales en vivo y en directo", isCorrect: false },
-      { answerText: "Historietas y novelas graficas", isCorrect: true },
+      { answerText: "Historietas y novelas graficas", isCorrect: false },
     ],
   },
   {
@@ -124,8 +124,8 @@ const questions = [
     options: [
       { answerText: "La vida de los indigenas", isCorrect: false },
       { answerText: "La vida de Diego Rivera", isCorrect: false },
-      { answerText: "Su propia vida", isCorrect: false },
-      { answerText: "La vida de su hermana", isCorrect: true },
+      { answerText: "Su propia vida", isCorrect: true },
+      { answerText: "La vida de su hermana", isCorrect: false },
     ],
   },
 ];

@@ -72,7 +72,7 @@ const booleanQuestions = [
   },
   {
     title:
-      "Podria considerarse el estilo de Frida Khalo como surrealista y tambien realista magico ",
+      "Podría considerarse el estilo de Frida Khalo como surrealista y tambien realista mágico ",
     options: [
       { answerText: "Verdadero", isCorrect: true },
       { answerText: "Falso", isCorrect: false },
