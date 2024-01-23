@@ -230,14 +230,14 @@ export const piecesData = [
 export const infoArtwork = [
   {
     id: 1,
-    info: "Este es fragmento de una majestuosa obra de Guillermo Lorca realizada en el año 2021, se titula 'Las Jardineritas' y como se aprecia, logra fusionar conceptos como la ternura y el salvajismo en un escenario bastante improbable",
+    info: "Fragmento de una obra de Guillermo Lorca realizada en el año 2021, se titula 'Las Jardineritas' y como se aprecia, logra fusionar conceptos como la ternura y el salvajismo en un escenario bastante improbable",
   },
   {
     id: 2,
-    info: "Esta obra pictórica del año 2016, contiene elementos cotidianos y realistas pero con colores inusuales en un ambiente mágico de fondo vibrante a base de pinceladas rojas, es creación del artista Darwin Cruz y es titulado: 'Las Gallinas de Gustavo'",
+    info: "Esta obra pictórica del año 2016, contiene elementos cotidianos y realistas pero con colores inusuales en un ambiente mágico de fondo vibrante, es creación del artista Darwin Cruz. Titulado: 'Las Gallinas de Gustavo'",
   },
   {
     id: 3,
-    info: "El artista Mario Gomez es capaz de crear mundos a partir de la representación de figuras de papel y seres realistas produciendo material visual que evoca la magia de la infancia eterna y la fantasía. Obra del año 2005 sin título.",
+    info: "El artista Mario Gomez es capaz de crear mundos a partir de la representación de figuras de papel y seres realistas evocando así, la magia de la infancia eterna y la fantasía. Obra del año 2005 sin título.",
   },
 ];
