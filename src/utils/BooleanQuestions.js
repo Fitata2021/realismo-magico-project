@@ -17,7 +17,7 @@ const booleanQuestions = [
   },
   {
     title:
-      "Cien años de soledad es una obra emblemática del Realismo Mágico escrita por Gabriel García Márquez",
+      "Los artistas del realismo mágico retornan al detalle minucioso del estilo clásico del realismo pero añadiendo la libertad de crear mundos mágicos y misteriosos",
     options: [
       { answerText: "Verdadero", isCorrect: true },
       { answerText: "Falso", isCorrect: false },

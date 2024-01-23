@@ -26,27 +26,30 @@ const Home = () => {
         <h2 className="description-title">Que es el Realismo Magico?</h2>
         <p>
           El realismo mágico es un estilo que ha dejado una marca indeleble en
-          la literatura mundial. Surgido en América Latina en el siglo XX, se
-          caracteriza por la combinación de elementos realistas y fantásticos en
-          una narrativa única que desafía las convenciones literarias
-          tradicionales. Otra manera de llamarlo es: "lo real maravilloso"
+          la historia del arte. Surgido en el siglo XX, se caracteriza por la
+          combinación de elementos realistas y fantásticos, desafiando las
+          convenciones tradicionales. A pesar de una persistente controversia en
+          torno a conceptos y definiciones, en Latinoamérica es comúnmente
+          relacionado con el concepto de "lo real maravilloso" del escritor
+          cubano Alejo Carpentier.
         </p>
 
         <p>
-          Una de las obras más emblemáticas del realismo mágico es "Cien años de
-          soledad" del escritor colombiano Gabriel García Márquez. En esta
-          novela, se crea un mundo donde lo mágico y lo real se entrelazan de
-          manera extraordinaria. Personajes que viven más de cien años, lluvias
-          interminables, objetos que levitan y otros fenómenos inexplicables dan
-          forma a un relato cautivador que atrapa al lector desde la primera
-          página.
+          Respecto al campo literario, entre las obras más emblemáticas del
+          realismo mágico destaca sin duda "Cien años de soledad" del escritor
+          colombiano Gabriel García Márquez. En esta novela, se crea un mundo
+          donde lo mágico y lo real se entrelazan de manera extraordinaria.
+          Personajes que viven más de cien años, lluvias interminables, objetos
+          que levitan y otros fenómenos inexplicables dan forma a un relato
+          cautivador que atrapa al lector desde la primera página.
         </p>
         <p>
-          Pero el realismo mágico no solo se limita a la literatura, sino que
-          también ha influido en otras formas de expresión artística como la
-          pintura. En el arte visual, han sido diferentes artistas los que han
+          Pero es importante saber que el realismo mágico no se limita
+          únicamente a la literatura; sino que también ha influido en otras
+          formas de expresión artística como las artes plásticas. En particular,
+          en el campo de la pintura, han sido diferentes artistas los que han
           utilizado elementos mágicos y oníricos en sus obras, desafiando la
-          realidad y creando imágenes surrealistas que desconciertan y fascinan
+          realidad y creando imágenes sorprendentes que desconciertan y fascinan
           al espectador.
         </p>
         <img className="lorca-painting" src={imglorca14} alt="" />
@@ -77,13 +80,13 @@ const Home = () => {
           realidad y a sumergirse en un mundo donde lo imposible se vuelve
           posible. A través de la combinación de lo cotidiano y lo fantástico,
           se crea una atmósfera única que captura la atención y la imaginación
-          del lector.
+          del lector o espectador.
         </p>
         <p>
-          En resumen, el realismo mágico es un estilo literario y artístico que
-          desafía las convenciones y mezcla elementos realistas con elementos
-          mágicos. A través de esta fusión, los escritores y artistas logran
-          crear un universo único y evocador que invita al lector a explorar la
+          En resumen, es un estilo literario y artístico que desafía las
+          convenciones y mezcla elementos realistas con elementos mágicos. A
+          través de esta fusión, los escritores y artistas logran crear un
+          universo único y evocador que invita al lector a explorar la
           complejidad de la existencia humana y a reflexionar sobre la
           naturaleza de la realidad.
         </p>
@@ -135,17 +138,11 @@ const Home = () => {
           resaltando la magia que subyace en el mundo que nos rodea.
         </p>
 
-        <p>
-          En resumen, Franz Roh acuñó el término "realismo mágico" para
-          describir una nueva fase del arte que se alejaba del expresionismo y
-          abrazaba una forma de objetividad en la representación de la realidad,
-          resaltando la magia que subyace en el mundo que nos rodea.
-        </p>
         <br />
         <h2 className="description-title">Latinoamerica</h2>
 
         <p>
-          Aunque el realismo magico en america latina es reconocido
+          Aunque el realismo magico en America Latina es reconocido
           principalmente en el campo de la literatura con grandes escritores que
           han elevado este movimiento a su punto mas algido, en el campo de las
           artes plásticas tambien ha sido explorado por artistas que han buscado
@@ -159,9 +156,9 @@ const Home = () => {
           latinoamericanas. Los dioses,los seres mitologicos,el inframundo,los
           animales sagrados y la manera de interpretar el mundo, han sido una
           una de las mas ricas fuentes de influencia para artistas plásticos en
-          su creación. De igual manera, la entremezcla de culturas debido a la
-          colonizacion ha permitido el nacimiento de nuevos estilos de vida y
-          expresion que se pueden evidenciar en las artes.
+          su procesos de creación. De igual manera, la entremezcla de culturas
+          debido a la colonizacion ha permitido el nacimiento de nuevos estilos
+          de vida y expresion que se pueden evidenciar en las artes.
         </p>
         <p>
           Existen tambien otros artistas plasticos inspirados en las narrativas
@@ -178,11 +175,12 @@ const Home = () => {
         </p>
         <br />
         <p>
-          Este espacio esta pensado para aprender un poco sobre el mundo del
-          realismo magico en las artes plasticas, principalmente en la pintura.
-          En las otras secciones, podrás encontrar mas infomacion y diferentes
-          actividades interactivas para abordar el tema de una manera muy
-          entretenida.
+          Este espacio está diseñado para explorar el fascinante mundo del
+          realismo mágico en las artes plásticas, centrándose especialmente en
+          la pintura. En las secciones adicionales, descubrirás más información
+          y participarás en diversas actividades interactivas que te sumergirán
+          en este tema de manera entretenida y educativa. ¡Bienvenido a un viaje
+          encantador a través de la magia y la creatividad artística!
         </p>
       </section>
     </div>

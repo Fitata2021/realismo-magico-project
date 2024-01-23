@@ -469,7 +469,7 @@ const imgSouza10 =
 const ArtistData = [
   {
     id: 1,
-    name: "Isabella Viviani",
+    name: "Isabel Viviani",
     img: "https://imagedelivery.net/W9-AoheGofN712tx-fnwKA/d55ce372-21ac-4fa6-6e33-e33632bc3500/public",
     country: "Chile",
     estado: "Activo",
@@ -615,7 +615,7 @@ const ArtistData = [
     estado: "Inactivo",
     video: "https://www.youtube.com/embed/6ERzcV4X708",
     webSite: "https://www.leocarrington.com/paintings-pinturas.html",
-    bio: "Leonora Carrington (1917-2011) fue una artista inglesa nacionalizada mexicana que se destacó dentro de la corriente surrealista. Aquí te compartimos sus obras en prosa, sus esculturas y pinturas más importantesLas pinturas de Leonora Carrington se inspiran en un mundo personal, íntimo y subjetivo, que surge de una fértil imaginación, influenciada fuertemente por los surrealistas y estimulada por lecturas fantásticas y esotéricas que fue aprehendiendo a lo largo de su vida. Estaba familiarizada desde pequeña con los mitos celtas, muy presentes en sus cuadros y obras de teatro, a los que sumó los mundos mágicos y fantásticos que descubrió en México, un país que tuvo una enorme influencia en su obra por la variedad de culturas indígenas y prehispánicas",
+    bio: "Leonora Carrington (1917-2011) fue una artista inglesa nacionalizada mexicana que se destacó dentro de la corriente surrealista aunque tiene variedad de obras que pueden ubicarse dentro del realismo mágico. Las pinturas de Leonora Carrington se inspiran en un mundo personal, íntimo y subjetivo, que surge de una fértil imaginación, influenciada fuertemente por los surrealistas y estimulada por lecturas fantásticas y esotéricas que fue aprehendiendo a lo largo de su vida. Estaba familiarizada desde pequeña con los mitos celtas, muy presentes en sus cuadros y obras de teatro, a los que sumó los mundos mágicos y fantásticos que descubrió en México, un país que tuvo una enorme influencia en su obra por la variedad de culturas indígenas y prehispánicas",
     artworks: [
       imgCarrington1,
       imgCarrington2,

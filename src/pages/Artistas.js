@@ -65,6 +65,9 @@ const Artistas = () => {
           Además, suelen incorporar elementos simbólicos y surrealistas, como
           objetos flotantes, paisajes oníricos, animales fantásticos y figuras
           humanas que desafían la gravedad o se transforman en otros seres.
+          Estos artistas retornan a la minuciosidady el detalle caracteristicos
+          del realismo clásico pero añadiendo la libertad y capacidad de crear
+          nuevos mundos magicos y misteriosos.
         </p>
 
         <p>
