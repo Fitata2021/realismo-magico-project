@@ -6,3 +6,4 @@ export { default as Puzzle } from "./Puzzle";
 export { default as BooleanTest } from "./BooleanTest";
 export { default as VisualTest } from "./VisualTest";
 export { default as ArtworkCanvas } from "./ArtworkCanvas";
+export { default as LoadingScreen } from "./LoadingScreen";

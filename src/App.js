@@ -1,6 +1,7 @@
 import "./App.css";
 import { HashRouter, Routes, Route } from "react-router-dom";
 import { useEffect, useState } from "react";
+import { useSelector } from "react-redux";
 import {
   Home,
   Artistas,
@@ -19,9 +20,11 @@ import {
   BooleanTest,
   VisualTest,
   ArtworkCanvas,
+  LoadingScreen,
 } from "./components";
 
 function App() {
+  const isLoading = useSelector((state) => state.isLoading);
   const [showScrollIcon, setShowScrollIcon] = useState(false);
   useEffect(() => {
     const handleScroll = () => {
@@ -48,6 +51,7 @@ function App() {
   return (
     <div className="App">
       <HashRouter>
+        {isLoading && <LoadingScreen />}
         <NavBar />
         <Routes>
           <Route path="/" element={<Home />} />
