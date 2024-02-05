@@ -1,10 +1,11 @@
 // import banner from "../images/artists-images/cruz-banner.jpg";
 import "../styles/Home.css";
+import { useDispatch, useSelector } from "react-redux";
+import { setIsLoadingFalse } from "../store/slices/isLoading.slice";
 import { useEffect } from "react";
 import imglorca14 from "../images/artist-photos/lorca-artworks/imagelorca14.jpg";
 import imgRoh from "../images/artist-photos/franz-roh.jpg";
 import imgAncestral from "../images/artist-photos/cruz-artworks/imgCruz2.jpg";
-import { setIsLoading } from "../store/slices/isLoading.slice";
 
 const banner =
   "https://imagedelivery.net/W9-AoheGofN712tx-fnwKA/80f2a258-e66a-4f9b-382d-b4dcfcb69b00/public";
@@ -14,26 +15,14 @@ const Home = () => {
     window.scrollTo(0, 0);
   }, []);
 
-  useEffect(() => {
-    const image = new Image();
+  const dispatch = useDispatch();
+  const isLoading = useSelector((state) => state.isLoading);
 
-    image.onload = () => {
-      setIsLoading(false);
-    };
+  console.log(isLoading);
 
-    image.onerror = () => {
-      setIsLoading(true);
-    };
-
-    // Configurar la URL de la imagen después de configurar los eventos
-    image.src = banner;
-
-    // Limpiar los event listeners si el componente se desmonta
-    return () => {
-      image.onload = null;
-      image.onerror = null;
-    };
-  }, []);
+  function handleLoading() {
+    dispatch(setIsLoadingFalse());
+  }
 
   return (
     <div className="main-nav-bar">
@@ -42,7 +31,12 @@ const Home = () => {
       <h3 className="home-subtitle">Carpentier</h3>
 
       <div className="container-banner-home">
-        <img src={banner} alt="" className="banner-home" />
+        <img
+          src={banner}
+          alt=""
+          className="banner-home"
+          onLoad={handleLoading}
+        />
       </div>
       <section className="description">
         <h2 className="description-title">Que es el Realismo Magico?</h2>
