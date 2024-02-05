@@ -1,4 +1,3 @@
-import React, { useState } from "react";
 // import banner from "../images/artists-images/cruz-banner.jpg";
 import "../styles/Home.css";
 import { useEffect } from "react";
@@ -15,11 +14,8 @@ const Home = () => {
     window.scrollTo(0, 0);
   }, []);
 
-  const [isLoading, setIsLoading] = useState(true);
-
   useEffect(() => {
     const image = new Image();
-    image.src = banner;
 
     image.onload = () => {
       setIsLoading(false);
@@ -29,8 +25,11 @@ const Home = () => {
       setIsLoading(true);
     };
 
+    // Configurar la URL de la imagen después de configurar los eventos
+    image.src = banner;
+
+    // Limpiar los event listeners si el componente se desmonta
     return () => {
-      // Limpiar los event listeners si el componente se desmonta
       image.onload = null;
       image.onerror = null;
     };
