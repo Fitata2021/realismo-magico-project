@@ -1,27 +1,14 @@
-import React, { useState } from "react";
 // import banner from "../images/artists-images/pallares-banner.jpg";
 import "../styles/Mas.css";
 import { useEffect } from "react";
-import { setIsLoading } from "../store/slices/isLoading.slice";
 
 const banner =
   "https://imagedelivery.net/W9-AoheGofN712tx-fnwKA/1af986f3-8eac-4053-c4ac-89bc3107d500/public";
 
 const Mas = () => {
-  const [loading, setLoading] = useState(true);
-
   useEffect(() => {
     window.scrollTo(0, 0);
   }, []);
-
-  useEffect(() => {
-    // Actualiza el estado global isLoading cuando la carga de la imagen cambia
-    setIsLoading(loading);
-  }, [loading]);
-  const handleImageLoad = () => {
-    // Cambia el estado local para indicar que la carga ha finalizado
-    setLoading(false);
-  };
 
   function deleteContent() {
     var textarea = document.getElementById("textArea");
@@ -32,12 +19,7 @@ const Mas = () => {
     <div className="main-more">
       <h1 className="page-title">"QUOTES"</h1>
       <div className="container">
-        <img
-          src={banner}
-          alt=""
-          className="banner-mas"
-          onLoad={handleImageLoad}
-        />
+        <img src={banner} alt="" className="banner-mas" />
       </div>
       <section className="description">
         <h2 className="quotes">

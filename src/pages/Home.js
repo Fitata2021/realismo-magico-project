@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 // import banner from "../images/artists-images/cruz-banner.jpg";
 import "../styles/Home.css";
 import { useEffect } from "react";
@@ -10,13 +10,32 @@ import { setIsLoading } from "../store/slices/isLoading.slice";
 const banner =
   "https://imagedelivery.net/W9-AoheGofN712tx-fnwKA/80f2a258-e66a-4f9b-382d-b4dcfcb69b00/public";
 
-if (!banner) {
-  setIsLoading(true);
-}
 const Home = () => {
   useEffect(() => {
     window.scrollTo(0, 0);
   }, []);
+
+  const [isLoading, setIsLoading] = useState(true);
+
+  useEffect(() => {
+    const image = new Image();
+    image.src = banner;
+
+    image.onload = () => {
+      setIsLoading(false);
+    };
+
+    image.onerror = () => {
+      setIsLoading(true);
+    };
+
+    return () => {
+      // Limpiar los event listeners si el componente se desmonta
+      image.onload = null;
+      image.onerror = null;
+    };
+  }, []);
+
   return (
     <div className="main-nav-bar">
       <h1 className="page-title">"LO REAL MARAVILLOSO"</h1>
