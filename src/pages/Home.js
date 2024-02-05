@@ -1,8 +1,11 @@
 // import banner from "../images/artists-images/cruz-banner.jpg";
 import "../styles/Home.css";
-import { useDispatch, useSelector } from "react-redux";
-import { setIsLoadingFalse } from "../store/slices/isLoading.slice";
-import { useEffect } from "react";
+import { useDispatch } from "react-redux";
+import {
+  setIsLoadingFalse,
+  setIsLoadingTrue,
+} from "../store/slices/isLoading.slice";
+import { useEffect, useState } from "react";
 import imglorca14 from "../images/artist-photos/lorca-artworks/imagelorca14.jpg";
 import imgRoh from "../images/artist-photos/franz-roh.jpg";
 import imgAncestral from "../images/artist-photos/cruz-artworks/imgCruz2.jpg";
@@ -16,13 +19,21 @@ const Home = () => {
   }, []);
 
   const dispatch = useDispatch();
-  const isLoading = useSelector((state) => state.isLoading);
+  const [imageLoaded, setImageLoaded] = useState(false);
 
-  console.log(isLoading);
+  useEffect(() => {
+    dispatch(setIsLoadingTrue());
 
-  function handleLoading() {
-    dispatch(setIsLoadingFalse());
-  }
+    const img = new Image();
+    img.src = banner;
+    img.onload = () => {
+      setImageLoaded(true);
+      dispatch(setIsLoadingFalse());
+    };
+    img.onerror = () => {
+      dispatch(setIsLoadingFalse());
+    };
+  }, [dispatch]);
 
   return (
     <div className="main-nav-bar">
@@ -30,14 +41,11 @@ const Home = () => {
       <h1 className="home-title">"Aquí lo insólito es lo cotidiano"</h1>
       <h3 className="home-subtitle">Carpentier</h3>
 
-      <div className="container-banner-home">
-        <img
-          src={banner}
-          alt=""
-          className="banner-home"
-          onLoad={handleLoading}
-        />
-      </div>
+      {imageLoaded ? (
+        <div className="container-banner-home">
+          <img src={banner} alt="" className="banner-home" />
+        </div>
+      ) : null}
       <section className="description">
         <h2 className="description-title">Que es el Realismo Magico?</h2>
         <p>
