@@ -8,8 +8,8 @@
 }
 
 .container-pieces {
-  width: 550px;
-  height: 550px;
+  width: 530px;
+  height: 530px;
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   grid-template-rows: repeat(3, 1fr);

@@ -234,10 +234,10 @@ export const infoArtwork = [
   },
   {
     id: 2,
-    info: "Esta obra pictórica del año 2016, contiene elementos cotidianos y realistas pero con colores inusuales en un ambiente mágico de fondo vibrante, es creación del artista Darwin Cruz. Titulado: 'Las Gallinas de Gustavo'",
+    info: "Esta obra pictórica del año 2016 contiene elementos cotidianos y realistas, pero con colores inusuales en un ambiente mágico de fondo vibrante, es creación del artista Darwin Cruz y está titulada 'Las Gallinas de Gustavo'",
   },
   {
     id: 3,
-    info: "El artista Mario Gomez es capaz de crear mundos a partir de la representación de figuras de papel y seres realistas evocando así, la magia de la infancia eterna y la fantasía. Obra del año 2005 sin título.",
+    info: "El artista Mario Gomez es capaz de crear mundos a partir de la representación de figuras de papel y seres realistas, evocando así la magia de la infancia eterna y la fantasía. Obra del año 2005 sin título",
   },
 ];

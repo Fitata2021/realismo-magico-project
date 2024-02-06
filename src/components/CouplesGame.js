@@ -8,6 +8,7 @@ import soundIncorrect from "../sounds/game_error_tone.mp3";
 import soundCorrect from "../sounds/game_correct_tone.mp3";
 import sound1 from "../sounds/water_spray_bottle.mp3";
 import finish_sound from "../sounds/fantasy_magic.mp3";
+import { useNavigate } from "react-router-dom";
 
 const butterfly_card =
   "https://imagedelivery.net/W9-AoheGofN712tx-fnwKA/94190f33-10f1-458c-8f3f-c006488d7a00/public";
@@ -29,6 +30,8 @@ const CouplesGame = () => {
   const [playSoundCorrect] = useSound(soundCorrect);
   const [playSound1] = useSound(sound1);
   const [playFinish] = useSound(finish_sound);
+
+  const navigate = useNavigate();
 
   const handleContextMenu = (e) => {
     e.preventDefault(); // Evita la acción por defecto (como el menú contextual)
@@ -110,6 +113,15 @@ const CouplesGame = () => {
   return (
     <div>
       <main className="couples-game-main">
+        <div
+          className="back-icon"
+          onClick={() => navigate("/games")}
+          style={
+            toogleInstructions ? { display: "inline" } : { display: "none" }
+          }
+        >
+          <i className="fa-solid fa-xmark"></i>
+        </div>
         {toogleInstructions ? (
           <button
             className="instructions-button"
@@ -188,7 +200,15 @@ const CouplesGame = () => {
             </div>
           ))}
         </section>
-        <button onClick={restart} className="reset-button">
+        <button
+          onClick={restart}
+          className="reset-button"
+          style={
+            toogleInstructions
+              ? { filter: "blur(0px)" }
+              : { filter: "blur(8px)" }
+          }
+        >
           <i className="fa-sharp fa-solid fa-rotate"></i>
         </button>
         <section

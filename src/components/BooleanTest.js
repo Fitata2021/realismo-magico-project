@@ -18,11 +18,13 @@ const BooleanTest = () => {
   const [currentQuestion, setCurrentQuestion] = useState(0);
   const [score, setScore] = useState(0);
   const [statusGame, setStatusGame] = useState("game");
+  const [toogle, setToogle] = useState(false);
   const [playSoundIncorrect] = useSound(soundIncorrect);
   const [playSoundCorrect] = useSound(soundCorrect);
   const [playFinish] = useSound(finish_sound);
   const [playSound1] = useSound(sound1);
 
+  console.log(toogle);
   useEffect(() => {
     window.scrollTo(0, 0);
   }, []);
@@ -60,9 +62,16 @@ const BooleanTest = () => {
 
   return (
     <main className="butterflies-game">
-      <div className="close-icon" onClick={() => navigate("/tests")}>
-        <i className="fa-solid fa-xmark"></i>
-      </div>
+      {
+        <div
+          className="close-icon"
+          onClick={() => navigate("/tests")}
+          style={toogle ? { display: "inline" } : { display: "none" }}
+        >
+          <i className="fa-solid fa-xmark"></i>
+        </div>
+      }
+
       {statusGame === "beginning" ? (
         <section className="card-quiz">
           <div className="left">
@@ -116,7 +125,13 @@ const BooleanTest = () => {
               >
                 Ver Respuestas
               </button>
-              <button onClick={() => [reset(), setStatusGame("game")]}>
+              <button
+                onClick={() => [
+                  reset(),
+                  setStatusGame("game"),
+                  setToogle(false),
+                ]}
+              >
                 Instrucciones
               </button>
             </div>
@@ -193,7 +208,11 @@ const BooleanTest = () => {
           <div className="exit-icon">
             <i
               className="fa-solid fa-xmark"
-              onClick={() => [reset(), setStatusGame("beginning")]}
+              onClick={() => [
+                reset(),
+                setStatusGame("beginning"),
+                setToogle(true),
+              ]}
             ></i>
           </div>
         </section>

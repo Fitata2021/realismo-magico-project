@@ -494,7 +494,12 @@ const VisualTest = () => {
               </div>
             </section>
             <section className="exit">
-              <button className="exit-answers" onClick={() => restart()}>
+              <button
+                className="exit-answers"
+                onClick={() => {
+                  setNumberQuestionScreen(9);
+                }}
+              >
                 <i className="fa-solid fa-xmark"></i>
               </button>
             </section>

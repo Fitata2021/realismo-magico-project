@@ -47,10 +47,9 @@
 
 .description-referentes {
   width: 90%;
-  margin-top: 10rem;
   margin-bottom: 2rem;
   letter-spacing: 0.5em;
-  margin-top: 6rem;
+  margin-top: 3rem;
   color: #1a120b;
   font-size: 32px;
 }
@@ -174,7 +173,7 @@
   }
   .description-referentes {
     letter-spacing: 8px;
-    font-size: 30px;
+    font-size: 25px;
   }
 }
 @media screen and (max-width: 640px) {
@@ -249,7 +248,7 @@
     letter-spacing: 6px;
   }
   .description-referentes {
-    font-size: 28px;
+    font-size: 22px;
     letter-spacing: 4px;
   }
 }

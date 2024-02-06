@@ -30,45 +30,48 @@ const Tests = () => {
       </div>
       <section className="description">
         <p>
-          {" "}
-          tres tests relacionados con el realismo mágico, un movimiento
-          artístico fascinante que ha dejado una huella significativa en el arte
-          latinoamericano. Estos tests nos permitirán evaluar nuestro
-          conocimiento y comprensión sobre este movimiento artístico único.
-          ¡Comencemos y descubramos cuánto sabemos sobre el realismo mágico!
+          En esta sección se encuentran tres tests relacionados con el realismo
+          mágico, un movimiento artístico fascinante que ha dejado una huella
+          significativa en el arte latinoamericano. Estos tests nos permitirán
+          evaluar el conocimiento y comprensión sobre este movimiento artístico
+          único. ¡Comencemos y descubramos cuánto sabemos sobre el realismo
+          mágico!
         </p>
 
-        <h3 className="test-titles">"Selecciona la opción correcta"</h3>
+        <h3 className="test-titles">"Contra Reloj"</h3>
 
         <p>
-          El primer test, llamado "Identifica las Obras", pondrá a prueba tu
-          capacidad para reconocer las obras más emblemáticas del realismo
-          mágico. Se te mostrarán imágenes de diferentes pinturas y tu objetivo
-          será identificar al artista y la obra correspondiente. Prepárate para
-          sumergirte en este mundo enigmático y poner a prueba tu conocimiento.
+          El primer test, explorará los conceptos del Realismo Mágico junto con
+          la vida y obra de los artistas más destacados del realismo mágico en
+          Latinoamérica. Se te presentarán preguntas sobre la biografía de los
+          artistas, sus técnicas artísticas y sus obras más reconocidas. De la
+          misma manera, sobre el concepto del movimiento artístico y sus
+          características. Demuestra cuánto conoces este movimiento y a sus
+          talentosos artistas y su contribución al movimiento del realismo
+          mágico.
         </p>
 
-        <h3 className="test-titles">"Conoce a los Artistas"</h3>
+        <h3 className="test-titles">"Libera Mariposas"</h3>
 
         <p>
-          En el segundo test, llamado "Conoce a los Artistas", exploraremos la
-          vida y obra de los artistas más destacados del realismo mágico en
-          Latinoamérica. Se te presentarán preguntas sobre su biografía, sus
-          influencias artísticas y sus obras más reconocidas. Demuestra cuánto
-          conoces a estos talentosos artistas y su contribución al movimiento
-          del realismo mágico.
+          En el segundo test, continuaremos evaluando tus conocimientos
+          adquiridos sobre este maravilloso movimiento en las artes plásticas.
+          El objetivo es que respondas el test las veces que lo consideres
+          necesario ya que al encontrar las repuestas correctas reforzarás tu
+          conocimiento. Prepárate para sumergirte en este mundo enigmático y
+          poner a prueba lo que has aprendido.
         </p>
 
-        <h3 className="test-titles">"Descubre el pintor"</h3>
+        <h3 className="test-titles">"Descubre al pintor"</h3>
 
         <p>
-          Por último, pero no menos importante, el tercer test, "Descubre el
-          pintor", sera un test visual que te desafiará a elegir de manera
-          correcta para lograr aprobar. Se te presentará una obra del realismo
-          magico y como opciones las imágenes de algunos artistas, tu tarea será
-          seleccionar el artista creador de la obra. Prepárate para poner a
-          prueba tu memoria visual y establecer las relaciones entre los
-          elementos y estilos propios de cada artista que estudiaste y su autor.
+          Por último, pero no menos importante, este tercer test, sera un test
+          visual que te desafiará a elegir de manera correcta para lograr
+          aprobar. Se te presentará una obra del realismo mágico y como opciones
+          las imágenes de algunos artistas, tu tarea será seleccionar el artista
+          creador de la obra. Prepárate para poner a prueba tu memoria visual y
+          establecer las relaciones entre los elementos y estilos propios de
+          cada artista que estudiaste y su autor en sus obras.
         </p>
 
         <p>

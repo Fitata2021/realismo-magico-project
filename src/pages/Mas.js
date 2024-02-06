@@ -17,15 +17,17 @@ const Mas = () => {
 
   return (
     <div className="main-more">
-      <h1 className="page-title">"QUOTES"</h1>
+      <h1 className="page-title">"MÁS"</h1>
       <div className="container">
         <img src={banner} alt="" className="banner-mas" />
       </div>
       <section className="description">
+        <h2 className="description-referentes">Quotes</h2>
         <h2 className="quotes">
           "La realidad puede ser retocada por el ojo mágico del realismo
           mágico."
         </h2>
+
         <p className="author-subtitle">Luis Sepúlveda</p>
         <h2 className="quotes">
           "Estamos en una región intermedia, entre el sueño y la vigilia, donde
@@ -74,6 +76,7 @@ const Mas = () => {
         <p className="author-subtitle">Pedro Calderón de la Barca</p>
 
         <section className="comments">
+          <h2 className="description-referentes">Deja tus comentarios</h2>
           <div className="questions-comments">
             <h2>
               Reflexiona de acuerdo a las siguientes preguntas, escribe en la
@@ -99,22 +102,84 @@ const Mas = () => {
 
         <h2 className="description-referentes">Referentes</h2>
         <p className="bibliografias">
+          Figallo, C. (2023). Una violencia silenciosa. Muestra de Camila
+          Figallo. Lienzo, (044), 80-95.
+        </p>
+
+        <p className="bibliografias">
+          Giuffré, M. P. (1998). El Realismo Mágico en la Pintura
+          Latinoamericana. Signos Universitarios, 17-33.
+        </p>
+
+        <p className="bibliografias">
+          Gomez, M. d. (2008). Manual Basico de Historia del Arte. Cáceres -
+          España: Universidad de Extremadura.
+        </p>
+
+        <p className="bibliografias">
+          La simbología, r. e. l. p. (2013). maestría en artes visuales escuela
+          nacional de artes plásticas pintura (doctoral dissertation,
+          universidad nacional autónoma de méxico).
+        </p>
+
+        <p className="bibliografias">
+          Nilsson, K. (2012). El realismo mágico, lo real maravilloso y la
+          novela fantástica. Umea - Suecia: Universidad de Umea.
+        </p>
+
+        <p className="bibliografias">
+          Ramos Cruz, G. (2010). Apuntes para reescribir la historia del arte
+          latinoamericano. La Puerta FBA, 49-55.
+        </p>
+
+        <p className="bibliografias">
+          Shórokhova, A. (2019). La Magia de lo Real. Realismo Magico en la
+          Pintura Post Expersionista segun Franz Roh. La Albolafia: Revista de
+          Humanidades y Cultura, 254-265.
+        </p>
+
+        <p className="bibliografias">
           http://www.leonoracarrington.com.mx/index.html
         </p>
+
+        <p className="bibliografias">
+          https://danzoneros.com/cultura-el-artista-darwin-cruz-busca-impulsar-el-arte-de-pueblos-originarios/
+        </p>
+
         <p className="bibliografias">
           https://es.wikidat.com/info/isabel-viviani
         </p>
+
         <p className="bibliografias">
           https://galeria13.cl/portfolio/mario-gomez/#:~:text=Estudi%C3%B3%20Licenciatura%20en%20Artes%20con,en%20esencia%20forma%20y%20color
         </p>
+
         <p className="bibliografias">
           https://lsgaleria.com/pages/biografia-arturo-rivera
         </p>
+
+        <p className="bibliografias">
+          https://www.catalogodasartes.com.br/artista/Claudio%20Luiz%20de%20Souza%20Pinto/
+        </p>
+
+        <p className="bibliografias">
+          https://www.madridacademyofart.com/es/blog/guillermo-lorca
+        </p>
+
         <p className="bibliografias">
           https://www.mexicodesconocido.com.mx/leonora-carrington-biografia-obras-y-pintura.html
         </p>
+
         <p className="bibliografias">
-          https://datos.bne.es/persona/XX1119271.html
+          https://www.radionacional.co/actualidad/el-realismo-lisergico-de-jaime-rendon-y-sus-portadas-de-discos
+        </p>
+
+        <p className="bibliografias">
+          https://www.wikiart.org/es/artists-by-art-movement/realismo-magico#!#resultType:masonry
+        </p>
+
+        <p className="bibliografias">
+          https://vianeygaleria.com/gallery_artists/marina-pallares/
         </p>
       </section>
     </div>

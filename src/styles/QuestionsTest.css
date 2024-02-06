@@ -7,7 +7,7 @@ main {
 .start-section {
   width: 60%;
   font-size: 22px;
-  margin-top: 8rem;
+  margin-top: 6rem;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -250,7 +250,7 @@ main {
   width: 240px;
   height: 8rem;
   margin-right: 8rem;
-  margin-top: 7.5rem;
+  margin-top: -4rem;
 }
 .missing-time span {
   font-size: 5rem;
