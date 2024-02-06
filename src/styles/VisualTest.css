@@ -27,9 +27,9 @@
   cursor: pointer;
 }
 .info1 {
-  width: 80%;
+  width: 90%;
   position: absolute;
-  margin-top: 1rem;
+  margin-top: -0.5rem;
   z-index: 3;
   left: 65%;
   transform: translateX(-20%);
@@ -190,7 +190,7 @@
 } */
 
 .visual-test .game-won {
-  margin-top: 1rem;
+  margin-top: 0;
 }
 
 @media screen and (max-width: 1197px) {
@@ -219,6 +219,9 @@
     width: 500px;
     height: 350px;
   }
+  .info1 {
+    width: 500px;
+  }
 }
 @media screen and (max-width: 902px) {
   .answer-images {
@@ -233,15 +236,11 @@
     margin-top: 5px;
   }
   .info1 {
-    margin-top: 1rem;
-    left: 60%;
+    width: 500px;
+    left: 20%;
   }
 }
-@media screen and (max-width: 867px) {
-  .info1 {
-    left: 28%;
-  }
-}
+
 @media screen and (max-width: 750px) {
   .answer-images {
     margin-top: 3rem;

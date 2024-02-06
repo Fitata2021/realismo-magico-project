@@ -6,12 +6,14 @@ import sound2 from "../sounds/bicycle_click.mp3";
 import finish_sound from "../sounds/fantasy_magic.mp3";
 
 import { piecesData, infoArtwork } from "../utils/piecesData";
+import { useNavigate } from "react-router-dom";
 
 const Puzzle = () => {
   useEffect(() => {
     window.scrollTo(0, 0);
   }, []);
 
+  const navigate = useNavigate();
   const [playSound1] = useSound(sound1);
   const [playSound2] = useSound(sound2);
   const [playFinish] = useSound(finish_sound);
@@ -107,6 +109,14 @@ const Puzzle = () => {
 
   return (
     <main className="puzzle-main">
+      <div
+        className="back-icon"
+        onClick={() => navigate("/games")}
+        style={toogleInstructions ? { display: "inline" } : { display: "none" }}
+      >
+        {" "}
+        <i className="fa-solid fa-xmark"></i>
+      </div>
       {counterPuzzle === piecesData.length && isFinished && (
         <p
           className="game-won"

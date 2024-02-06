@@ -191,6 +191,27 @@
   left: 30%;
 }
 
+.game-finished .game-won {
+  margin-top: 0.4rem;
+}
+
+.close-icon {
+  display: inline;
+  font-size: 25px;
+  position: fixed;
+  z-index: 10;
+  top: 5.5rem;
+  right: 1rem;
+  width: 37px;
+  height: 37px;
+  box-shadow: 0 0 0 3px rgba(253, 207, 56, 1);
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+.close-icon i {
+  color: rgba(253, 207, 56, 1);
+}
 @media screen and (max-width: 920px) {
   .butterflies-game .butterfly_board {
     margin-top: 1rem;
@@ -287,19 +308,26 @@
   .butterflies-game .card-shown-answers button {
     margin: 0;
   }
+  .close-icon {
+    height: 30px;
+    width: 30px;
+    font-size: 20px;
+    top: 4.5rem;
+    right: 0.5rem;
+  }
 }
 @media screen and (max-width: 400px) {
   .butterflies-game .game-won {
     left: 15%;
     right: 15%;
   }
-}
-@media screen and (max-width: 350px) {
   .butterflies-game .card-quiz,
   .butterflies-game .card-finished,
   .butterflies-game .card-shown-answers {
     height: 250px;
   }
+}
+@media screen and (max-width: 350px) {
   .butterflies-game .butterfly_board {
     margin-top: 13.5rem;
   }

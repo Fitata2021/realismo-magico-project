@@ -58,6 +58,9 @@ const BooleanTest = () => {
 
   return (
     <main className="butterflies-game">
+      <div className="close-icon" onClick={() => navigate("/games")}>
+        <i className="fa-solid fa-xmark"></i>
+      </div>
       {statusGame === "beginning" ? (
         <section className="card-quiz">
           <div className="left">
@@ -93,7 +96,10 @@ const BooleanTest = () => {
                 mariposas
               </span>
             ) : (
-              <span>Lograste darle vida a todas las mariposas</span>
+              <>
+                <p className="game-won">Muy bien, lo Lograste!</p>
+                <span>Liberaste a todas las mariposas!</span>
+              </>
             )}
 
             <div className="btns-container">
@@ -110,9 +116,6 @@ const BooleanTest = () => {
               </button>
               <button onClick={() => [reset(), setStatusGame("game")]}>
                 Instrucciones
-              </button>
-              <button onClick={() => [reset(), navigate("/tests")]}>
-                Salir
               </button>
             </div>
           </div>

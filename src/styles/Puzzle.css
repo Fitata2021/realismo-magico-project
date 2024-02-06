@@ -3,7 +3,7 @@
   width: 100%;
   justify-content: center;
   flex-wrap: wrap;
-  margin-top: 7.5rem;
+  margin-top: 7rem;
   position: relative;
 }
 
@@ -24,7 +24,6 @@
   font-size: 25px;
   background: #d8cca3;
   color: #473c2a;
-
   border-radius: 10px;
   text-align: justify;
   padding: 1rem;
@@ -43,6 +42,7 @@
   justify-content: flex-end;
 }
 .puzzle-main .instructions-button {
+  top: -1.5rem;
   left: 20.2rem;
   width: 50px;
   height: 50px;
@@ -559,7 +559,7 @@
     position: static;
   }
   .puzzle-main .instructions-button {
-    top: -3.7rem;
+    top: -3.5rem;
   }
   .puzzle-main .next {
     margin-top: 3rem;

@@ -6,9 +6,13 @@ import draggableImages from "../utils/DraggableImages";
 // import html2canvas from "html2canvas";
 // import { saveAs } from "file-saver";
 import "../styles/ArtworkCanvas.css";
+import { useNavigate } from "react-router-dom";
 
 const ArtworkCanvas = () => {
   const [background, setBackground] = useState(backgroundCards[0].image);
+  const [toogleInstructions, setToogleInstructions] = useState(false);
+
+  const navigate = useNavigate();
   // const [coordinateX, setCoordinateX] = useState(0);
   // const [coordinateY, setCoordinateY] = useState(0);
   // const [artworkWith, setArtworkWith] = useState(0);
@@ -125,8 +129,52 @@ const ArtworkCanvas = () => {
   return (
     <main className="main-artworkcanvas" id="main-section">
       <div
+        className="back-icon"
+        onClick={() => navigate("/games")}
+        style={toogleInstructions ? { display: "inline" } : { display: "none" }}
+      >
+        <i className="fa-solid fa-xmark"></i>
+      </div>
+      {toogleInstructions ? (
+        <button
+          className="instructions-button"
+          onClick={() => {
+            setToogleInstructions(false);
+          }}
+        >
+          <i className="fa-solid fa-plus"></i>
+        </button>
+      ) : (
+        <section className="info">
+          <h1 className="info-title">CREA TU OBRA</h1>
+          <p>
+            Ahora que conoces las características del Realismo Mágico podrás
+            crear una obra. Dispones de 5 escenarios que puedes cambiar haciendo
+            clic sobre ellos, y 9 personajes que puedes arrastrar y soltar para
+            ubicarlos según lo desees. Al terminar, captura la pantalla de tu
+            dispositivo, recorta la imagen y guarda tu obra.
+            <div className="warning-section">
+              <article>SELECCIONA, ARRASTRA, SUELTA</article>
+              <i className="fa-regular fa-object-group"></i>
+            </div>
+            <div className="exit-icon">
+              <i
+                className="fa-solid fa-xmark"
+                onClick={() => {
+                  setToogleInstructions(true);
+                }}
+              ></i>
+            </div>
+          </p>
+        </section>
+      )}
+
+      <div
         id="container-interact-draggables"
         className="container-interact-draggables"
+        style={
+          toogleInstructions ? { filter: "blur(0px)" } : { filter: "blur(8px)" }
+        }
       >
         <div className="option-images">
           <img
@@ -221,7 +269,12 @@ const ArtworkCanvas = () => {
           />
         </div>
       </div>
-      <div className="background-images">
+      <div
+        className="background-images"
+        style={
+          toogleInstructions ? { filter: "blur(0px)" } : { filter: "blur(8px)" }
+        }
+      >
         {/* <button onClick={recargarPagina} className="reset-button">
           <i className="fa-sharp fa-solid fa-rotate"></i>
         </button> */}

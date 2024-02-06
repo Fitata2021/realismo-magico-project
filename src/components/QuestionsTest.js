@@ -5,6 +5,7 @@ import useSound from "use-sound";
 import soundIncorrect from "../sounds/game_error_tone.mp3";
 import soundCorrect from "../sounds/game_correct_tone.mp3";
 import finish_sound from "../sounds/fantasy_magic.mp3";
+import { useNavigate } from "react-router-dom";
 
 const QuestionsTest = () => {
   const [currentQuestion, setCurrentQuestion] = useState(0);
@@ -14,6 +15,7 @@ const QuestionsTest = () => {
   const [playSoundIncorrect] = useSound(soundIncorrect);
   const [playSoundCorrect] = useSound(soundCorrect);
   const [playFinish] = useSound(finish_sound);
+  const navigate = useNavigate();
 
   useEffect(() => {
     window.scrollTo(0, 0);
@@ -106,6 +108,9 @@ const QuestionsTest = () => {
     return (
       <main>
         <section className="develop-section">
+          <div className="close-icon" onClick={() => navigate("/tests")}>
+            <i className="fa-solid fa-xmark"></i>
+          </div>
           <section className="card-quiz">
             <div className="left">
               <div className="question-number">
@@ -138,6 +143,9 @@ const QuestionsTest = () => {
     return (
       <main>
         <section className="finish-section">
+          <div className="close-icon" onClick={() => navigate("/tests")}>
+            <i className="fa-solid fa-xmark"></i>
+          </div>
           <section className="card-finished">
             {score === questions.length && (
               <p className="game-won">Muy bien, lo Lograste!</p>
@@ -153,7 +161,9 @@ const QuestionsTest = () => {
                 <button onClick={() => resetQuiz("shown_answers")}>
                   Ver Respuestas
                 </button>
-                <button onClick={() => resetQuiz("beginning")}>Salir</button>
+                <button onClick={() => resetQuiz("beginning")}>
+                  Instrucciones
+                </button>
               </div>
             </div>
           </section>
@@ -164,6 +174,9 @@ const QuestionsTest = () => {
     return (
       <main>
         <section className="shown-answers-section">
+          <div className="close-icon" onClick={() => navigate("/tests")}>
+            <i className="fa-solid fa-xmark"></i>
+          </div>
           <section className="card-shown-answers">
             <div className="left">
               <div className="question-number">

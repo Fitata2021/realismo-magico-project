@@ -441,10 +441,9 @@ button:hover {
     font-size: 3rem;
   }
   .finish-section .game-won {
-    top: 4.5rem;
+    top: 5.5rem;
     font-size: 20px;
-    left: 25%;
-    right: 25%;
+    right: 15%;
   }
 }
 @media screen and (max-width: 380px) {

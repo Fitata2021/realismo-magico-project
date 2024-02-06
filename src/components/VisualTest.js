@@ -5,6 +5,7 @@ import useSound from "use-sound";
 import soundIncorrect from "../sounds/game_error_tone.mp3";
 import soundCorrect from "../sounds/game_correct_tone.mp3";
 import finish_sound from "../sounds/fantasy_magic.mp3";
+import { useNavigate } from "react-router-dom";
 
 const VisualTest = () => {
   const [score, setScore] = useState(0);
@@ -14,6 +15,8 @@ const VisualTest = () => {
   const [playSoundIncorrect] = useSound(soundIncorrect);
   const [playSoundCorrect] = useSound(soundCorrect);
   const [playFinish] = useSound(finish_sound);
+
+  const navigate = useNavigate();
 
   useEffect(() => {
     window.scrollTo(0, 0);
@@ -54,6 +57,18 @@ const VisualTest = () => {
   return (
     <div>
       <main className="visual-test">
+        <div
+          className="close-icon"
+          style={{
+            display:
+              toogleInstructions && numberQuestionScreen !== 10
+                ? "inline"
+                : "none",
+          }}
+          onClick={() => navigate("/tests")}
+        >
+          <i className="fa-solid fa-xmark"></i>
+        </div>
         {numberQuestionScreen === 1 && (
           <div className="container-question">
             <section className="main-image">
@@ -405,13 +420,21 @@ const VisualTest = () => {
           <>
             <section className="finish-section">
               <section className="card-finished">
-                {score === 8 && (
-                    <p className="game-won">Muy bien, lo Lograste!</p>
-                  ) &&
-                  playFinish()}
+                {score === 8 && playFinish()}
                 <div className="game-finished">
+                  {score === 8 && (
+                    <p className="game-won">Muy bien, lo Lograste!</p>
+                  )}
                   <span>Has obtenido {score} de 8</span>
                   <div className="btns-container">
+                    <button
+                      onClick={() => {
+                        restart();
+                        setToogleInstructions(true);
+                      }}
+                    >
+                      Volver a Jugar
+                    </button>
                     <button
                       onClick={() =>
                         setNumberQuestionScreen(numberQuestionScreen + 1)
@@ -419,7 +442,7 @@ const VisualTest = () => {
                     >
                       Ver Respuestas
                     </button>
-                    <button onClick={() => restart()}>Salir</button>
+                    <button onClick={() => restart()}>Instrucciones</button>
                   </div>
                 </div>
               </section>

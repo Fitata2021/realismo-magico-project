@@ -3,6 +3,57 @@
   display: flex;
   justify-content: center;
 }
+
+.back-icon {
+  display: inline;
+  font-size: 25px;
+  position: fixed;
+  z-index: 10;
+  top: 6rem;
+  right: 2rem;
+  width: 37px;
+  height: 37px;
+  box-shadow: 0 0 0 3px rgba(253, 207, 56, 1);
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+.back-icon i {
+  color: rgba(253, 207, 56, 1);
+}
+.main-artworkcanvas .instructions-button {
+  width: 50px;
+  height: 50px;
+  font-size: 22px;
+  background: #d8cca3;
+  color: #473c2a;
+}
+
+.main-artworkcanvas .info {
+  top: 17rem;
+  width: 500px;
+  font-size: 25px;
+  background: #d8cca3;
+  color: #473c2a;
+  border-radius: 10px;
+  text-align: justify;
+  padding: 1rem;
+  margin-top: -2rem;
+  position: absolute;
+  z-index: 5;
+}
+.main-artworkcanvas .warning-section {
+  display: flex;
+  justify-content: center;
+  width: 50%;
+  margin: auto;
+}
+.main-artworkcanvas .exit-icon {
+  font-size: 25px;
+  display: flex;
+  justify-content: flex-end;
+}
+
 .container-interact-draggables {
   display: flex;
 }
@@ -216,6 +267,13 @@ body.dragging {
   .background-images {
     width: 120px;
   }
+  .main-artworkcanvas .info {
+    margin-top: -10rem;
+  }
+  .main-artworkcanvas .instructions-button {
+    top: 8rem;
+    left: 3rem;
+  }
 }
 @media screen and (max-width: 1350px) {
   .file-interact-dropzone {
@@ -243,6 +301,22 @@ body.dragging {
     align-items: start;
     margin-top: -3rem;
   }
+  .main-artworkcanvas .instructions-button {
+    top: 8rem;
+    left: 3rem;
+  }
+}
+@media screen and (max-width: 940px) {
+  .main-artworkcanvas .instructions-button {
+    left: 1rem;
+  }
+}
+
+@media screen and (max-width: 860px) {
+  .main-artworkcanvas .instructions-button {
+    top: 30rem;
+    left: 4.5rem;
+  }
 }
 
 @media screen and (max-width: 750px) {
@@ -259,6 +333,13 @@ body.dragging {
   }
   .background-images {
     margin: 0;
+  }
+  .main-artworkcanvas .info {
+    margin-top: -8rem;
+    margin-left: 0;
+    margin-right: 0;
+    font-size: 20px;
+    width: 400px;
   }
 }
 
@@ -291,6 +372,12 @@ body.dragging {
   .background-images img {
     margin: 1px;
   }
+  .main-artworkcanvas .info {
+    margin-top: -10rem;
+  }
+  .back-icon {
+    top: 35rem;
+  }
 }
 @media screen and (max-width: 660px) {
   .file-interact-dropzone {
@@ -312,6 +399,14 @@ body.dragging {
   }
 }
 
+@media screen and (max-width: 620px) {
+  .main-artworkcanvas .instructions-button {
+    left: 1rem;
+    width: 35px;
+    height: 35px;
+  }
+}
+
 @media screen and (max-width: 550px) {
   .file-interact-dropzone {
     width: 98%;
@@ -328,6 +423,15 @@ body.dragging {
   .background-images img {
     width: 18%;
   }
+  .main-artworkcanvas .info {
+    font-size: 17px;
+  }
+  .back-icon {
+    right: 0.5rem;
+    width: 30px;
+    height: 30px;
+    font-size: 20px;
+  }
 }
 
 @media screen and (max-width: 455px) {
@@ -343,7 +447,12 @@ body.dragging {
     height: 32px;
     font-size: 21px;
   }
+  .main-artworkcanvas .info {
+    width: 95%;
+    top: 15rem;
+  }
 }
+
 @media screen and (max-width: 450px) {
   .file-interact-dropzone {
     width: 98%;
@@ -353,7 +462,12 @@ body.dragging {
     width: 300px;
     height: 300px;
   }
+  .main-artworkcanvas .instructions-button {
+    top: 25rem;
+    left: 0.5rem;
+  }
 }
+
 @media screen and (max-width: 400px) {
   .container-interact-draggables {
     width: 100%;
@@ -375,6 +489,12 @@ body.dragging {
     width: 240px;
     height: 240 px;
   }
+  .main-artworkcanvas .info {
+    top: 15rem;
+  }
+  .main-artworkcanvas .instructions-button {
+    top: 20rem;
+  }
 }
 
 @media screen and (max-width: 370px) {
@@ -386,5 +506,8 @@ body.dragging {
 @media screen and (max-width: 330px) {
   .file-interact-dropzone {
     height: 200px;
+  }
+  .main-artworkcanvas .instructions-button {
+    left: 0;
   }
 }
