@@ -7,6 +7,7 @@ import useSound from "use-sound";
 import soundIncorrect from "../sounds/game_error_tone.mp3";
 import soundCorrect from "../sounds/game_correct_tone.mp3";
 import finish_sound from "../sounds/fantasy_magic.mp3";
+import sound1 from "../sounds/water_spray_bottle.mp3";
 // import butterfly from "../images/utils-images/picmix.com_1899742.gif";
 
 const butterfly =
@@ -20,6 +21,7 @@ const BooleanTest = () => {
   const [playSoundIncorrect] = useSound(soundIncorrect);
   const [playSoundCorrect] = useSound(soundCorrect);
   const [playFinish] = useSound(finish_sound);
+  const [playSound1] = useSound(sound1);
 
   useEffect(() => {
     window.scrollTo(0, 0);
@@ -58,7 +60,7 @@ const BooleanTest = () => {
 
   return (
     <main className="butterflies-game">
-      <div className="close-icon" onClick={() => navigate("/games")}>
+      <div className="close-icon" onClick={() => navigate("/tests")}>
         <i className="fa-solid fa-xmark"></i>
       </div>
       {statusGame === "beginning" ? (
@@ -147,11 +149,14 @@ const BooleanTest = () => {
                     : [reset(), setStatusGame("game")]
                 }
               >
-                <i className="fa-solid fa-chevron-right"></i>
+                <i
+                  className="fa-solid fa-chevron-right"
+                  onClick={playSound1()}
+                ></i>
               </button>
             ) : (
               <button
-                onClick={() => [setStatusGame("finished")]}
+                onClick={() => [setStatusGame("finished", playSound1())]}
                 className="play-again"
               >
                 <i className="fa-solid fa-xmark"></i>

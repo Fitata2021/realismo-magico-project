@@ -4,6 +4,7 @@ import "../styles/QuestionsTest.css";
 import useSound from "use-sound";
 import soundIncorrect from "../sounds/game_error_tone.mp3";
 import soundCorrect from "../sounds/game_correct_tone.mp3";
+import sound1 from "../sounds/water_spray_bottle.mp3";
 import finish_sound from "../sounds/fantasy_magic.mp3";
 import { useNavigate } from "react-router-dom";
 
@@ -15,6 +16,7 @@ const QuestionsTest = () => {
   const [playSoundIncorrect] = useSound(soundIncorrect);
   const [playSoundCorrect] = useSound(soundCorrect);
   const [playFinish] = useSound(finish_sound);
+  const [playSound1] = useSound(sound1);
   const navigate = useNavigate();
 
   useEffect(() => {
@@ -203,9 +205,12 @@ const QuestionsTest = () => {
                 }
               >
                 {currentQuestion !== questions.length - 1 ? (
-                  <i className="fa-solid fa-chevron-right"></i>
+                  <i
+                    className="fa-solid fa-chevron-right"
+                    onClick={playSound1()}
+                  ></i>
                 ) : (
-                  <i className="fa-solid fa-xmark"></i>
+                  <i className="fa-solid fa-xmark" onClick={playSound1()}></i>
                 )}
               </button>
             </div>
