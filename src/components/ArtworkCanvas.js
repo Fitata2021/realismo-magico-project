@@ -149,8 +149,8 @@ const ArtworkCanvas = () => {
           <h1 className="info-title">CREA TU OBRA</h1>
           <p>
             Ahora que conoces las características del Realismo Mágico podrás
-            crear una obra. Dispones de 5 escenarios que puedes cambiar haciendo
-            clic sobre ellos, y 9 personajes que puedes arrastrar y soltar para
+            crear una obra. Dispones de 5 escenarios que puedes cambiar pulsando
+            sobre ellos, y 9 personajes que puedes arrastrar y soltar para
             ubicarlos según lo desees. Al terminar, captura la pantalla de tu
             dispositivo, recorta la imagen y guarda tu obra.
             <div className="warning-section">
