@@ -23,8 +23,8 @@ const Artistas = () => {
       <section className="description">
         <h2 className="description-title">Que los caracteriza?</h2>
         <p>
-          Los artistas plásticos que trabajan en el movimiento del realismo
-          mágico son aquellos que utilizan su talento y creatividad para plasmar
+          Los artistas plásticos que trabajan en el movimiento del Realismo
+          Mágico son aquellos que utilizan su talento y creatividad para plasmar
           visualmente los elementos característicos de esta corriente artística.
           A través de sus obras, buscan transmitir la sensación de lo mágico y
           lo fantástico en combinación con elementos realistas, creando un mundo
@@ -32,7 +32,7 @@ const Artistas = () => {
         </p>
 
         <p>
-          La definición del realismo mágico en el arte plástico implica la
+          La definición del Realismo Mágico en el arte plástico implica la
           representación de escenas y objetos que desafían la lógica y la
           realidad convencional. Los artistas buscan combinar elementos
           cotidianos y reconocibles con elementos fantásticos y surrealistas,
@@ -42,7 +42,7 @@ const Artistas = () => {
 
         <p>
           Una de las características distintivas de los artistas plásticos del
-          realismo mágico es su habilidad para crear imágenes detalladas y
+          Realismo Mágico es su habilidad para crear imágenes detalladas y
           realistas, que capturan la atención y la imaginación del espectador.
           Utilizan técnicas precisas y minuciosas para representar cada detalle
           de sus obras, lo que contribuye a crear una sensación de verosimilitud
@@ -50,7 +50,7 @@ const Artistas = () => {
         </p>
 
         <p>
-          Los temas representados por los artistas del realismo mágico suelen
+          Los temas representados por los artistas suelen
           estar imbuidos de una atmósfera enigmática y misteriosa. Pueden
           abordar temas como el tiempo, la memoria, los sueños, la muerte y la
           dualidad de la existencia humana. Estos temas se presentan de manera
@@ -59,7 +59,7 @@ const Artistas = () => {
         </p>
 
         <p>
-          En cuanto al estilo visual, los artistas plásticos del realismo mágico
+          En cuanto al estilo visual, los artistas plásticos del Realismo Mágico
           suelen utilizar una paleta de colores rica y evocadora, que contribuye
           a crear la atmósfera mágica y enigmática que caracteriza a sus obras.
           Además, suelen incorporar elementos simbólicos y surrealistas, como
@@ -72,7 +72,7 @@ const Artistas = () => {
 
         <p>
           En resumen, los artistas plásticos que trabajan en el movimiento del
-          realismo mágico son aquellos que utilizan su talento y creatividad
+          Realismo Mágico son aquellos que utilizan su talento y creatividad
           para representar visualmente los elementos característicos de esta
           corriente artística. A través de su habilidad técnica y su
           imaginación, logran crear obras que combinan lo real y lo fantástico,

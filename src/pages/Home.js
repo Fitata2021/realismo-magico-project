@@ -56,7 +56,7 @@ const Home = () => {
           </div>
 
           <section className="description">
-            <h2 className="description-title">Que es el Realismo Magico?</h2>
+            <h2 className="description-title">Que es el Realismo Mágico?</h2>
             <p>
               El realismo mágico es un estilo que ha dejado una marca indeleble
               en la historia del arte. Surgido en el siglo XX, se caracteriza

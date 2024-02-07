@@ -74,7 +74,7 @@ const Noticias = () => {
         <br />
         <h2 className="description-title">
           UNA OBRA DE LEONORA CARRINGTON SE UBICARÁ DE MANERA PERMANENTE EN EL
-          JARDÍN DEL ANTIGUO PALACIO DEL ARZOBISPADO EN MEXICO
+          JARDÍN DEL ANTIGUO PALACIO DEL ARZOBISPADO EN MÉXICO
         </h2>
         <div className="container-news">
           <p>
@@ -107,7 +107,7 @@ const Noticias = () => {
             cada asistente habrá elaborado con sus propias manos una publicación
             artesanal que les invitará a relatar su propia visión del realismo
             mágico en Cali. Con este laboratorio vamos a explorar y proponer
-            desde la escritura, collage y dibujo el realismo mágico de Cali
+            desde la escritura, collage y dibujo el realismo mágico de Cali.
           </p>
         </div>
         <br />

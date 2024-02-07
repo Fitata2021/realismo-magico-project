@@ -31,11 +31,11 @@ const Juegos = () => {
       </div>
       <section className="description">
         <p>
-          El realismo mágico permite crear mundos nuevos y maravillosos donde
-          los mas irreales sueños se plasman en la realidad a traves del arte. A
-          través de estos juegos, podremos sumergirnos en este mundo enigmático
-          y explorar obras plásticas, características particulares y artistas
-          emblemáticos de este movimiento. Es hora de aprender jugando!
+          El Realismo Mágico permite crear mundos nuevos y maravillosos donde
+          los mas irreales sueños se plasman en la realidad a través del arte.
+          Por medio de estos juegos, podremos sumergirnos en este mundo
+          enigmático y explorar obras plásticas, características particulares y
+          artistas emblemáticos de este movimiento. Es hora de aprender jugando!
         </p>
 
         <h3 className="game-titles">"Obras Gemelas"</h3>
@@ -43,39 +43,39 @@ const Juegos = () => {
         <p>
           En este juego, tendrás la oportunidad de descubrir diferentes
           fragmentos de obras de los artistas plásticos más destacados del
-          realismo mágico en Latinoamérica. Con esta dinámica reconocerás sus
+          Realismo Mágico en Latinoamérica. Con esta dinámica reconocerás sus
           estilos, sus formas de representación y las particularidades de sus
           elementos. Tendrás la posibilidad de tener información técnica de sus
           obras lo que enriquecerá tu aprendizaje en trabajos artísticos que
           siguen dando vida y dejando una marca indeleble en el movimiento del
-          realismo mágico.
+          Realismo Mágico.
         </p>
 
         <h3 className="game-titles">Puzzle"</h3>
 
         <p>
           En este segundo juego, donde seguirás apreciando composiciones de este
-          movimiento que presentan todas las características del realismo
-          mágico. Será un ejercicio significativo en donde se proporciona el
+          movimiento que presentan todas las características del Realismo
+          Mágico. Será un ejercicio significativo en donde se proporciona el
           material visual que presenta una serie de elementos y características
-          propias del realismo mágico con el fin de que encuentres por ti mismo
-          en la contemplación, escencia de este movimiento que se comprende mas
-          en un proceso de observación que de alguna otra manera.
+          propias del Realismo Mágico con el fin de que encuentres por ti mismo
+          en la contemplación, la escencia de este movimiento que se comprende
+          más en un proceso de observación que de alguna otra manera.
         </p>
         <h3 className="game-titles">"Crea tu obra"</h3>
 
         <p>
           En este juego, se presentarán una serie de figuras que serviran para
-          componer una obra del realismo mágico. Tu objetivo, será componer tu
+          componer una obra del Realismo Mágico. Tu objetivo, será componer tu
           propia obra haciendo uso de estos elementos junto con los distintos
           escenarios sugeridos. Usa tu imaginación y creatividad de la misma
           manera que lo podrían hacer los artistas plásticos cuando componen sus
-          obras de realismo magico.
+          obras de Realismo Mágico.
         </p>
 
         <p>
           Estos tres juegos didácticos brindarán una experiencia interactiva y
-          divertida para sumergirse en el fascinante mundo del realismo mágico
+          divertida para sumergirse en el fascinante mundo del Realismo Mágico
           en Latinoamérica. A través de la exploración de obras de arte, la
           creación de tu propia realidad mágica y el análisis del simbolismo
           presente en las obras, podrás comprender mejor las características y

@@ -475,7 +475,7 @@ const ArtistData = [
     estado: "Activo",
     video: "https://www.youtube.com/embed/RiFE2STr0kE",
     webSite: "https://isabellaviviani.cl/",
-    bio: "Artista con más de 25 años de trayectoria, en 1992 se traslada a vivir a México, donde estudia pintura y escultura.​​Entre 1994 y 1997 forma parte del directorio del COMAV (Consejo Mundial de Artistas Visuales). ¿Es magia, cuando lo que parece tan real es realmente insólito? Así se desenvuelve maravillosamente la cultura popular latinoamericana, un sincretismo en el que se combina lo prehispánico con lo religioso y lo barroco. Sus obras se distinguen por el color, textura y sincretismo que se manifiestan en figuras y fondos de múltiples lecturas.",
+    bio: "Artista con más de 25 años de trayectoria, en 1992 se traslada a vivir a México, donde estudia pintura y escultura. ​​Entre 1994 y 1997 forma parte del directorio del COMAV (Consejo Mundial de Artistas Visuales). ¿Es magia, cuando lo que parece tan real es realmente insólito? Así se desenvuelve maravillosamente la cultura popular latinoamericana, un sincretismo en el que se combina lo prehispánico con lo religioso y lo barroco. Sus obras se distinguen por el color, textura y sincretismo que se manifiestan en figuras y fondos de múltiples lecturas.",
     artworks: [
       imgViviani1,
       imgViviani2,
@@ -520,7 +520,7 @@ const ArtistData = [
     estado: "Activo",
     video: "https://www.youtube.com/embed/fx_cnmEGZgU",
     webSite: "https://www.facebook.com/JaguarRendon/?locale=es_LA",
-    bio: "Oriundo de Medellín - Colombia, Jaime Rendón nació un día de diciembre de 1946. Junto a Augusto Rendón, su hermano mayor,  compartieron trabajos gráficos desde muy temprana edad. Inspirado por los revolcones ideológicos de finales de los sesenta, renunció tajantemente a la academia, dejando en manos de la intuición su aprendizaje. Su primeros trabajos fueron colaboraciones visuales en albumes de musica que evocaban la cultura hippie. Actualmente, sus obras llenas de colores calidos matizando elementos geometricos y sobre todo figurativos, muestran principalmente su aprecio y preocupacion por la naturaleza, en muchos de sus trabajos presenta el jaguar como animal poderoso de las montañas y selvas de latinoamerica",
+    bio: "Oriundo de Medellín - Colombia, Jaime Rendón nació un día de diciembre de 1946. Junto a Augusto Rendón, su hermano mayor,  compartieron trabajos gráficos desde muy temprana edad. Inspirado por los revolcones ideológicos de finales de los sesenta, renunció tajantemente a la academia, dejando en manos de la intuición su aprendizaje. Su primeros trabajos fueron colaboraciones visuales en albumes de musica que evocaban la cultura hippie. Actualmente, sus obras llenas de colores calidos matizando elementos geometricos y sobre todo figurativos, muestran principalmente su aprecio y preocupacion por la naturaleza, en muchos de sus trabajos presenta el jaguar como animal poderoso de las montañas y selvas de latinoamerica.",
     artworks: [
       imgRendon1,
       imgRendon2,
@@ -543,7 +543,7 @@ const ArtistData = [
     estado: "Activo",
     video: "https://www.youtube.com/embed/Kg6u908bQAM",
     webSite: "https://mariogomez.cl/",
-    bio: "Pintor, nació en 1968 en Concepción, Chile. Estudió Licenciatura en Artes con mención en pintura, en la Universidad Católica de Santiago. Comienza artísticamente en el apogeo del movimiento neofigurativo en Chile, por lo que su obra es en esencia forma y color.  El ser humano como eje central y contenido; más la fotografía como objeto e imagen, son elementos fundamentales en su trabajo, genera escenarios donde los elementos se relacionan de la manera más armónica posible sin que por ello le reste interés a las múltiples lecturas que se pueden realizar a partir de su iconografía, lo que sumado a la gran variedad de técnicas pictóricas genera un objeto artístico muy consistente en el tiempo. Todo esto ubica a Gómez de lleno dentro de la corriente artística latinoamericana del Realismo Mágico exponiendo en gran parte del mundo sus trabajos ",
+    bio: "Pintor, nació en 1968 en Concepción, Chile. Estudió Licenciatura en Artes con mención en pintura, en la Universidad Católica de Santiago. Comienza artísticamente en el apogeo del movimiento neofigurativo en Chile, por lo que su obra es en esencia forma y color.  El ser humano como eje central y contenido; más la fotografía como objeto e imagen, son elementos fundamentales en su trabajo, genera escenarios donde los elementos se relacionan de la manera más armónica posible sin que por ello le reste interés a las múltiples lecturas que se pueden realizar a partir de su iconografía, lo que sumado a la gran variedad de técnicas pictóricas genera un objeto artístico muy consistente en el tiempo. Todo esto ubica a Gómez de lleno dentro de la corriente artística latinoamericana del Realismo Mágico exponiendo en gran parte del mundo sus trabajos.",
     artworks: [
       imgGomez1,
       imgGomez2,
@@ -568,7 +568,7 @@ const ArtistData = [
     estado: "Inactivo",
     video: "https://www.youtube.com/embed/F8SgjGXOAe0",
     webSite: "https://www.facebook.com/MaestroArturoRivera/",
-    bio: "Arturo Rivera (1945-2021) fue un reconocido pintor mexicano, nacido en la Ciudad de México. Estudió en la Academia de San Carlos. A lo largo de su carrera, Rivera se destacó por su estilo único, que mezclaba realismo con elementos de surrealismo y expresionismo.Su trabajo abordó temas relacionados con la psicología humana, la violencia, la muerte y la belleza. Sus pinturas, a menudo oscuras y perturbadoras, exploran la naturaleza del ser humano y su relación con el mundo que lo rodea.Lo interesante del artista es la manera en la que confronta al espectador respecto a la condición humana; sobre lo que afecta al personaje. También se percibe en su obra la presencia del arte japonés y del arte europeo clásico, pero siempre adaptándose a la intención el artista de proponer un fuerte discurso sobre los sentimientos humanos. ",
+    bio: "Arturo Rivera (1945-2021) fue un reconocido pintor mexicano, nacido en la Ciudad de México. Estudió en la Academia de San Carlos. A lo largo de su carrera, Rivera se destacó por su estilo único, que mezclaba realismo con elementos de surrealismo y expresionismo. Su trabajo abordó temas relacionados con la psicología humana, la violencia, la muerte y la belleza. Sus pinturas, a menudo oscuras y perturbadoras, exploran la naturaleza del ser humano y su relación con el mundo que lo rodea. Lo interesante del artista es la manera en la que confronta al espectador respecto a la condición humana; sobre lo que afecta al personaje. También se percibe en su obra la presencia del arte japonés y del arte europeo clásico, pero siempre adaptándose a la intención el artista de proponer un fuerte discurso sobre los sentimientos humanos.",
     artworks: [
       imgRivera1,
       imgRivera2,
@@ -593,7 +593,7 @@ const ArtistData = [
     estado: "Activo",
     video: "https://www.youtube.com/embed/dBYnl9M5DCA",
     webSite: "https://marinapallares.wixsite.com/english/painting",
-    bio: "Artista plástica, mexicana nacida en 1980. Es una artista emergente que al momento cuenta con 13 exposiciones individuales y 40 colectivas. Su obra forma parte de la colección permanente del Museo Nacional del Tequila (Tequila, Jalisco), de la Pinacoteca Alfonso Michel (Colima, Colima) y del National Museum of Mexican Art (Chicago, Illinois, USA).Al inicio de su carrera exploró la fotografía pero despues decide orientarse y focalizarse completamente en la pintura y el grabado. Sus trabajos estan caracterizados por escenas fantasticas y magicas en amientes naturales , como el mar, el cielo y los bosques",
+    bio: "Artista plástica, mexicana nacida en 1980. Es una artista emergente que al momento cuenta con 13 exposiciones individuales y 40 colectivas. Su obra forma parte de la colección permanente del Museo Nacional del Tequila (Tequila, Jalisco), de la Pinacoteca Alfonso Michel (Colima, Colima) y del National Museum of Mexican Art (Chicago, Illinois, USA). Al inicio de su carrera exploró la fotografía pero despues decide orientarse y focalizarse completamente en la pintura y el grabado. Sus trabajos estan caracterizados por escenas fantasticas y magicas en ambientes naturales , como el mar, el cielo y los bosques.",
     artworks: [
       imgPallares1,
       imgPallares2,
@@ -658,7 +658,7 @@ const ArtistData = [
     estado: "Activo",
     video: "https://www.youtube.com/embed/YHK9zYzWUks",
     webSite: "https://www.guillermolorca.com/en",
-    bio: "Guillermo Lorca García Huidobro es uno de los pintores más destacados de la América Latina. Nació en la ciudad de Santiago de Chile el 8 de marzo de 1984. Desde muy joven manifestó un gran interés por el arte, ya que a los 15 años ya estaba estudiando pintura en la Escuela de Bellas Artes de la Universidad de Chile. Sus pinturas combinan elementos barrocos y renacentistas con surrealismo, imaginación y paranoia para crear imágenes que transmiten una opulencia seductora y una violencia salvaje.Lorca ha explorado muchos temas en su obra de arte, incluida la fe, la muerte, la tradición, la identidad y la familia.Además, Lorca es conocido por su exploración de los roles de género y la sexualidad, así como por su interés en el surrealismo y el realismo mágico",
+    bio: "Guillermo Lorca García Huidobro es uno de los pintores más destacados de la América Latina. Nació en la ciudad de Santiago de Chile el 8 de marzo de 1984. Desde muy joven manifestó un gran interés por el arte, ya que a los 15 años ya estaba estudiando pintura en la Escuela de Bellas Artes de la Universidad de Chile. Sus pinturas combinan elementos barrocos y renacentistas con surrealismo, imaginación y paranoia para crear imágenes que transmiten una opulencia seductora y una violencia salvaje .Lorca ha explorado muchos temas en su obra de arte, incluida la fe, la muerte, la tradición, la identidad y la familia.Además, Lorca es conocido por su exploración de los roles de género y la sexualidad, así como por su interés en el surrealismo y el Realismo Mágico.",
     artworks: [
       imglorca1,
       imglorca2,
@@ -684,7 +684,7 @@ const ArtistData = [
     estado: "Inactivo",
     video: "https://www.youtube.com/embed/uH2ho5JnjTg",
     webSite: "https://www.fridakahlo.org/",
-    bio: "Magdalena Carmen Frida Kahlo Calderón (Coyoacán, Ciudad de México, 6 de julio de 1907-13 de julio de 1954),​ conocida como Frida Kahlo, fue una pintora mexicana. Su obra gira temáticamente en torno a su biografía y a su propio sufrimiento. Fue autora de 150 obras, principalmente autorretratos, en los que proyectó sus dificultades por sobrevivir. En 1939 expuso sus pinturas en Francia gracias a una invitación de André Breton, quien intentó convencerla de que eran «surrealistas», aunque Kahlo decía que esta tendencia no correspondía con su arte ya que ella no pintaba sueños sino su propia vida.  Aunque gozó de la admiración de destacados pintores e intelectuales de su época, su obra alcanzó fama y verdadero reconocimiento internacional después de su muerte, especialmente a finales de los años de 1980 y principios de 1990",
+    bio: "Magdalena Carmen Frida Kahlo Calderón (Coyoacán, Ciudad de México, 6 de julio de 1907-13 de julio de 1954),​ conocida como Frida Kahlo, fue una pintora mexicana. Su obra gira temáticamente en torno a su biografía y a su propio sufrimiento. Fue autora de 150 obras, principalmente autorretratos, en los que proyectó sus dificultades por sobrevivir. En 1939 expuso sus pinturas en Francia gracias a una invitación de André Breton, quien intentó convencerla de que eran «surrealistas», aunque Kahlo decía que esta tendencia no correspondía con su arte ya que ella no pintaba sueños sino su propia vida.  Aunque gozó de la admiración de destacados pintores e intelectuales de su época, su obra alcanzó fama y verdadero reconocimiento internacional después de su muerte, especialmente a finales de los años de 1980 y principios de 1990.",
     artworks: [
       khalo1,
       khalo2,

@@ -17,7 +17,7 @@ const booleanQuestions = [
   },
   {
     title:
-      "Los artistas del realismo mágico retornan al detalle minucioso del estilo clásico del realismo pero añadiendo la libertad de crear mundos mágicos y misteriosos",
+      "Los artistas del Realismo Mágico retornan al detalle minucioso del estilo clásico del realismo pero añadiendo la libertad de crear mundos mágicos y misteriosos",
     options: [
       { answerText: "Verdadero", isCorrect: true },
       { answerText: "Falso", isCorrect: false },
@@ -89,7 +89,7 @@ const booleanQuestions = [
   },
   {
     title:
-      "Los temas abordados por los artistas del realismo mágico suelen incluir el tiempo, la memoria, los sueños y la muerte",
+      "Los temas abordados por los artistas del Realismo Mágico suelen incluir el tiempo, la memoria, los sueños y la muerte",
     options: [
       { answerText: "Verdadero", isCorrect: true },
       { answerText: "Falso", isCorrect: false },
@@ -97,7 +97,7 @@ const booleanQuestions = [
   },
   {
     title:
-      "Las obras de los artistas del realismo mágico no permiten espacio para la interpretación y la reflexión por parte del espectador",
+      "Las obras de los artistas del Realismo Mágico no permiten espacio para la interpretación y la reflexión por parte del espectador",
     options: [
       { answerText: "Verdadero", isCorrect: false },
       { answerText: "Falso", isCorrect: true },
@@ -120,7 +120,7 @@ const booleanQuestions = [
   },
   {
     title:
-      "Los artistas del realismo mágico exploran la relación entre la realidad y la fantasía en sus obras",
+      "El artista Mario Gomez además de la pintura también trabaja la escultura, el grabado y la acuarela",
     options: [
       { answerText: "Verdadero", isCorrect: true },
       { answerText: "Falso", isCorrect: false },

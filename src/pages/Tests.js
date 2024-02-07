@@ -30,8 +30,8 @@ const Tests = () => {
       </div>
       <section className="description">
         <p>
-          En esta sección se encuentran tres tests relacionados con el realismo
-          mágico, un movimiento artístico fascinante que ha dejado una huella
+          En esta sección se encuentran tres tests relacionados con el Realismo
+          Mágico, un movimiento artístico fascinante que ha dejado una huella
           significativa en el arte latinoamericano. Estos tests nos permitirán
           evaluar el conocimiento y comprensión sobre este movimiento artístico
           único. ¡Comencemos y descubramos cuánto sabemos sobre el realismo
@@ -41,14 +41,14 @@ const Tests = () => {
         <h3 className="test-titles">"Contra Reloj"</h3>
 
         <p>
-          El primer test, explorará los conceptos del Realismo Mágico junto con
-          la vida y obra de los artistas más destacados del realismo mágico en
-          Latinoamérica. Se te presentarán preguntas sobre la biografía de los
+          El primer test, explora los conceptos del Realismo Mágico junto con
+          la vida y obra de los artistas más destacados del Realismo Mágico en
+          Latinoamérica. Se te presentan preguntas sobre la biografía de los
           artistas, sus técnicas artísticas y sus obras más reconocidas. De la
           misma manera, sobre el concepto del movimiento artístico y sus
           características. Demuestra cuánto conoces este movimiento y a sus
-          talentosos artistas y su contribución al movimiento del realismo
-          mágico.
+          talentosos artistas y su contribución al movimiento del Realismo
+          Mágico.
         </p>
 
         <h3 className="test-titles">"Libera Mariposas"</h3>
@@ -76,7 +76,7 @@ const Tests = () => {
 
         <p>
           Espero que disfrutes de estos tests y que te permitan profundizar en
-          tu comprensión sobre el realismo mágico. ¡Buena suerte!
+          tu comprensión sobre el Realismo Mágico. ¡Buena suerte!
         </p>
       </section>
 
