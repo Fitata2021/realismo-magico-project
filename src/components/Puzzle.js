@@ -147,7 +147,7 @@ const Puzzle = () => {
             conforma la obra completa.
             <div className="warning-section">
               <article>
-                SELECCIONA DOS IMAGENES PARA QUE SE INTERCAMBIEN DE LUGAR
+                SELECCIONA DOS PIEZAS PARA QUE SE INTERCAMBIEN DE LUGAR
               </article>
               <i className="fa-solid fa-arrow-right-arrow-left"></i>
             </div>
