@@ -188,6 +188,7 @@
   font-size: 25px;
   display: flex;
   justify-content: flex-end;
+  cursor: pointer;
 }
 .couples-game-main .instructions-button {
   width: 50px;

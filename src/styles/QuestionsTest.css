@@ -131,6 +131,7 @@ main {
   font-size: 25px;
   display: flex;
   justify-content: flex-end;
+  cursor: pointer;
 }
 
 .border-button {

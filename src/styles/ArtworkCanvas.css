@@ -52,6 +52,7 @@
   font-size: 25px;
   display: flex;
   justify-content: flex-end;
+  cursor: pointer;
 }
 
 .container-interact-draggables {
@@ -271,8 +272,8 @@ body.dragging {
     margin-top: -10rem;
   }
   .main-artworkcanvas .instructions-button {
-    top: 8rem;
-    left: 3rem;
+    top: 4.8rem;
+    left: 2rem;
   }
 }
 @media screen and (max-width: 1350px) {
