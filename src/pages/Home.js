@@ -56,7 +56,7 @@ const Home = () => {
           </div>
 
           <section className="description">
-            <h2 className="description-title">Que es el Realismo Mágico?</h2>
+            <h2 className="description-title">¿Qué es el Realismo Mágico?</h2>
             <p>
               El realismo mágico es un estilo que ha dejado una marca indeleble
               en la historia del arte. Surgido en el siglo XX, se caracteriza
@@ -176,34 +176,34 @@ const Home = () => {
             </p>
 
             <br />
-            <h2 className="description-title">Latinoamerica</h2>
+            <h2 className="description-title">Latinoamérica</h2>
 
             <p>
-              Aunque el realismo magico en America Latina es reconocido
+              Aunque el realismo mágico en América Latina es reconocido
               principalmente en el campo de la literatura con grandes escritores
-              que han elevado este movimiento a su punto mas algido, en el campo
-              de las artes plásticas tambien ha sido explorado por artistas que
+              que han elevado este movimiento a su punto más álgido, en el campo
+              de las artes plásticas también ha sido explorado por artistas que
               han buscado incorporar esa magia ancestral y costumbrista
               latinoamericana de mitos, leyendas y tradiciones.
             </p>
             <p>
-              Lo improbable basado en la realidad y en la cosmovision de una
+              Lo improbable basado en la realidad y en la cosmovisión de una
               cultura con grandes arraigos antepasados reflejados en mitos e
-              historias son una parte importante de la identidad de muchas
-              comunidades latinoamericanas. Los dioses,los seres mitologicos,el
-              inframundo,los animales sagrados y la manera de interpretar el
-              mundo, han sido una una de las mas ricas fuentes de influencia
-              para artistas plásticos en su procesos de creación. De igual
-              manera, la entremezcla de culturas debido a la colonizacion ha
-              permitido el nacimiento de nuevos estilos de vida y expresion que
-              se pueden evidenciar en las artes.
+              historias es una parte importante de la identidad de muchas
+              comunidades latinoamericanas. Los dioses, los seres mitológicos,
+              el inframundo, los animales sagrados y la manera de interpretar el
+              mundo, han sido una de las más ricas fuentes de influencia para
+              artistas plásticos en sus procesos de creación. De igual manera,
+              la entremezcla de culturas debido a la colonización ha permitido
+              el nacimiento de nuevos estilos de vida y expresión que se pueden
+              evidenciar en las artes.
             </p>
             <p>
-              Existen tambien otros artistas plasticos inspirados en las
-              narrativas de los escritores pertenecientes al "realismo magico"
+              Existen también otros artistas plásticos inspirados en las
+              narrativas de los escritores pertenecientes al "realismo mágico"
               que en sus obras representan escenas de aquellas historias
-              fantasticas. En estos casos, buscan recrear los relatos
-              visualmente desde su propia manera grafica de interpretación y
+              fantásticas. En estos casos, buscan recrear los relatos
+              visualmente desde su propia manera gráfica de interpretación y
               llevando al espectador a contemplar y sentir la obra tanto
               literaria como plástica y visual.
             </p>
@@ -215,7 +215,7 @@ const Home = () => {
             <br />
             <p>
               Este espacio está diseñado para explorar el fascinante mundo del
-              realismo mágico en las artes plásticas, centrándose especialmente
+              Realismo mágico en las artes plásticas, centrándose especialmente
               en la pintura. En las secciones adicionales, descubrirás más
               información y participarás en diversas actividades interactivas
               que te sumergirán en este tema de manera entretenida y educativa.

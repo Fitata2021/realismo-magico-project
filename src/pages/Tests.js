@@ -41,8 +41,8 @@ const Tests = () => {
         <h3 className="test-titles">"Contra Reloj"</h3>
 
         <p>
-          El primer test, explora los conceptos del Realismo Mágico junto con
-          la vida y obra de los artistas más destacados del Realismo Mágico en
+          El primer test, explora los conceptos del Realismo Mágico junto con la
+          vida y obra de los artistas más destacados del Realismo Mágico en
           Latinoamérica. Se te presentan preguntas sobre la biografía de los
           artistas, sus técnicas artísticas y sus obras más reconocidas. De la
           misma manera, sobre el concepto del movimiento artístico y sus
@@ -65,7 +65,7 @@ const Tests = () => {
         <h3 className="test-titles">"Descubre al pintor"</h3>
 
         <p>
-          Por último, pero no menos importante, este tercer test, sera un test
+          Por último, pero no menos importante, este tercer test, será un test
           visual que te desafiará a elegir de manera correcta para lograr
           aprobar. Se te presentará una obra del realismo mágico y como opciones
           las imágenes de algunos artistas, tu tarea será seleccionar el artista

@@ -21,7 +21,7 @@ const Artistas = () => {
         <img src={banner} alt="" className="banner-artists" />
       </div>
       <section className="description">
-        <h2 className="description-title">Que los caracteriza?</h2>
+        <h2 className="description-title">¿Qué los caracteriza?</h2>
         <p>
           Los artistas plásticos que trabajan en el movimiento del Realismo
           Mágico son aquellos que utilizan su talento y creatividad para plasmar
@@ -50,12 +50,12 @@ const Artistas = () => {
         </p>
 
         <p>
-          Los temas representados por los artistas suelen
-          estar imbuidos de una atmósfera enigmática y misteriosa. Pueden
-          abordar temas como el tiempo, la memoria, los sueños, la muerte y la
-          dualidad de la existencia humana. Estos temas se presentan de manera
-          simbólica y metafórica, dejando espacio para la interpretación y la
-          reflexión por parte del espectador.
+          Los temas representados por los artistas suelen estar imbuidos de una
+          atmósfera enigmática y misteriosa. Pueden abordar temas como el
+          tiempo, la memoria, los sueños, la muerte y la dualidad de la
+          existencia humana. Estos temas se presentan de manera simbólica y
+          metafórica, dejando espacio para la interpretación y la reflexión por
+          parte del espectador.
         </p>
 
         <p>
@@ -65,9 +65,9 @@ const Artistas = () => {
           Además, suelen incorporar elementos simbólicos y surrealistas, como
           objetos flotantes, paisajes oníricos, animales fantásticos y figuras
           humanas que desafían la gravedad o se transforman en otros seres.
-          Estos artistas retornan a la minuciosidady el detalle caracteristicos
+          Estos artistas retornan a la minuciosidad y el detalle característicos
           del realismo clásico pero añadiendo la libertad y capacidad de crear
-          nuevos mundos magicos y misteriosos.
+          nuevos mundos mágicos y misteriosos.
         </p>
 
         <p>
@@ -89,11 +89,11 @@ const Artistas = () => {
         </p>
         <br />
         <p>
-          A continuación, se presentan algunos de los mayores exponenetes
-          latinoamericanos clasicos y contemporaneos que en su obra estan
-          enmarcados en el movimiento del realismo magico o que de alguna manera
+          A continuación, se presentan algunos de los mayores exponentes
+          latinoamericanos clásicos y contemporáneos que en su obra están
+          enmarcados en el movimiento del Realismo Mágico o que de alguna manera
           en su obra, tienen elementos que conectan con lo real maravilloso. Haz
-          clic en las imagenes para conocer un poco más sobre cada uno y su
+          clic en las imágenes para conocer un poco más sobre cada uno y su
           obra...
           <i
             className="fa-solid fa-hand-pointer"

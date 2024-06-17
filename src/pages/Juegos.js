@@ -32,10 +32,11 @@ const Juegos = () => {
       <section className="description">
         <p>
           El Realismo Mágico permite crear mundos nuevos y maravillosos donde
-          los mas irreales sueños se plasman en la realidad a través del arte.
+          los más irreales sueños se plasman en la realidad a través del arte.
           Por medio de estos juegos, podremos sumergirnos en este mundo
           enigmático y explorar obras plásticas, características particulares y
-          artistas emblemáticos de este movimiento. Es hora de aprender jugando!
+          artistas emblemáticos de este movimiento. ¡Es hora de aprender
+          jugando!
         </p>
 
         <h3 className="game-titles">"Obras Gemelas"</h3>
@@ -59,13 +60,13 @@ const Juegos = () => {
           Mágico. Será un ejercicio significativo en donde se proporciona el
           material visual que presenta una serie de elementos y características
           propias del Realismo Mágico con el fin de que encuentres por ti mismo
-          en la contemplación, la escencia de este movimiento que se comprende
+          en la contemplación, la esencia de este movimiento que se comprende
           más en un proceso de observación que de alguna otra manera.
         </p>
         <h3 className="game-titles">"Crea tu obra"</h3>
 
         <p>
-          En este juego, se presentarán una serie de figuras que serviran para
+          En este juego, se presentarán una serie de figuras que servirán para
           componer una obra del Realismo Mágico. Tu objetivo, será componer tu
           propia obra haciendo uso de estos elementos junto con los distintos
           escenarios sugeridos. Usa tu imaginación y creatividad de la misma
@@ -79,7 +80,7 @@ const Juegos = () => {
           en Latinoamérica. A través de la exploración de obras de arte, la
           creación de tu propia realidad mágica y el análisis del simbolismo
           presente en las obras, podrás comprender mejor las características y
-          significados detrás de este movimiento artístico. Te invito a
+          significados detrás de este movimiento artístico. ¡Te invito a
           disfrutar y aprender!
         </p>
       </section>
